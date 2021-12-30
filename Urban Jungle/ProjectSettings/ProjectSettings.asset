@@ -590,7 +590,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    1: CROSS_PLATFORM_INPUT
+    1: CROSS_PLATFORM_INPUT;STARTER_ASSETS_PACKAGES_CHECKED
     4: CROSS_PLATFORM_INPUT;MOBILE_INPUT
     7: CROSS_PLATFORM_INPUT;MOBILE_INPUT
     14: MOBILE_INPUT
@@ -681,7 +681,7 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 1
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
