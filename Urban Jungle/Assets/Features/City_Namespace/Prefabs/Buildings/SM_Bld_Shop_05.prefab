@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 453602}
   - component: {fileID: 3342362}
   - component: {fileID: 2358618}
+  - component: {fileID: 2727022696453129220}
   m_Layer: 0
   m_Name: SM_Bld_Shop_05_Glass
   m_TagString: Untagged
@@ -81,6 +82,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2727022696453129220
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.817108, y: 2.0172918, z: 0.053972483}
+  m_Center: {x: -2.5, y: 1.3693429, z: -0.13560927}
 --- !u!1 &192830
 GameObject:
   m_ObjectHideFlags: 0
