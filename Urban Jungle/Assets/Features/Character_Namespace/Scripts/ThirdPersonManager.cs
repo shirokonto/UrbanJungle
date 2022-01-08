@@ -23,9 +23,9 @@ namespace StarterAssets
 		[Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
 		[SerializeField] private bool grounded = true;
 		[Tooltip("Useful for rough ground")]
-		[SerializeField] private float groundedOffset = -0.09f;
+		[SerializeField] private float groundedOffset = -0.1f;
 		[Tooltip("The radius of the grounded check. Should match the radius of the CharacterController")]
-		[SerializeField] private float groundedRadius = 0.18f;
+		[SerializeField] private float groundedRadius = 0.2f;
 		[Tooltip("What layers the character uses as ground")]
 		[SerializeField] private LayerMask groundLayers;
 		
