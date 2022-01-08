@@ -3,25 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="58fd8f7b-cbc9-49c9-b218-dc1bc195f974" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_03.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Corner_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Corner_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Corner_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Corner_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Corner_03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Corner_03.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Door_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Door_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Door_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Door_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Door_Corner_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Door_Corner_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Door_Corner_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Door_Corner_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Roof_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Roof_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_03.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stack_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stack_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stack_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stack_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stack_03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stack_03.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stairs_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stairs_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stairs_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stairs_02.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Slow Run.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Slow Run.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Slow Run.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Slow Run.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Walk.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Walk.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Walk.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Walk.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/SharaController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/SharaController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/SharaController.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/SharaController.controller.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Mesh/Shara_Animated.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Mesh/Shara_Animated.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Wilma.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Wilma.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/ThirdPersonController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/ThirdPersonController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +23,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca496b8c93454b2f9b9924292c19379f13b800/3f/93e88f97/Component.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="22uSAQzwwyeJuEzXEeBo9HAGnUi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -78,6 +80,7 @@
       <workItem from="1640896245757" duration="2643000" />
       <workItem from="1640900105461" duration="102000" />
       <workItem from="1640900590919" duration="127000" />
+      <workItem from="1641643323680" duration="1470000" />
     </task>
     <task id="LOCAL-00001" summary="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526">
       <created>1640900662969</created>
