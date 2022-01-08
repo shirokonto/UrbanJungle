@@ -18,4 +18,4 @@ MonoBehaviour:
   speedChangeRate: 10
   forceWalk: 0
   jumpHeight: 1.2
-  jumpTimeout: 0.5
+  jumpTimeout: 0.2

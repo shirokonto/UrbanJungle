@@ -17,7 +17,7 @@ public class GroundedState : AnimatorState_SO
     [Tooltip("The height the player can jump")]
 	[SerializeField] private float jumpHeight = 1.2f;
     [Tooltip("Time required to pass before being able to jump again. Set to 0f to instantly jump again")]
-    [SerializeField] private float jumpTimeout = 0.50f;
+    [SerializeField] private float jumpTimeout = 0.2f;
     
     private float jumpTimeoutDelta;
     private float animationBlend;

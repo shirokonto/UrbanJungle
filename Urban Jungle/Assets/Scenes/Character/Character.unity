@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &800826829 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7406188044213055617, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
-  m_PrefabInstance: {fileID: 9097851232391682121}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1221041499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -258,14 +253,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 667382575753480770, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.274
-      objectReference: {fileID: 0}
-    - target: {fileID: 667382575753480770, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4810378045186561563, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
       propertyPath: m_Name
       value: Wilma
@@ -314,9 +301,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5398834176023504687, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
-      propertyPath: CinemachineCameraTarget
-      value: 
-      objectReference: {fileID: 800826829}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}

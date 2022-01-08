@@ -13,7 +13,7 @@ public class AirState : AnimatorState_SO
     
     [Header("Fall")]
     [Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
-    public float fallTimeout = 0.15f;
+    public float fallTimeout = 0.3f;
     
     private readonly int animIDJump = Animator.StringToHash("Jump");
     private readonly int animIDFreeFall = Animator.StringToHash("FreeFall");
