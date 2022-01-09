@@ -91,8 +91,8 @@ MonoBehaviour:
   groundedState: {fileID: 11400000, guid: aacdff07b1c71fe429eaaff7b90d9a59, type: 2}
   airState: {fileID: 11400000, guid: 96d652a8f2516544a9680d783feeaeac, type: 2}
   grounded: 1
-  groundedOffset: -0.09
-  groundedRadius: 0.18
+  groundedOffset: -0.1
+  groundedRadius: 0.2
   groundLayers:
     serializedVersion: 2
     m_Bits: 1
