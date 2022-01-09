@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58fd8f7b-cbc9-49c9-b218-dc1bc195f974" name="Changes" comment="" />
+    <list default="true" id="58fd8f7b-cbc9-49c9-b218-dc1bc195f974" name="Changes" comment="fixed collider issues" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +17,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_01.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca496b8c93454b2f9b9924292c19379f13b800/3f/93e88f97/Component.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="22uSAQzwwyeJuEzXEeBo9HAGnUi" />
