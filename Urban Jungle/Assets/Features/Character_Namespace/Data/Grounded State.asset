@@ -16,6 +16,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 96d652a8f2516544a9680d783feeaeac, type: 2}
   rotationSmoothTime: 0.12
   speedChangeRate: 10
+  crouchLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  walkLayer:
+    serializedVersion: 2
+    m_Bits: 128
   forceWalk: 0
   jumpHeight: 1.2
   jumpTimeout: 0.2

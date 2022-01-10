@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 using Utils.StateMachine_Namespace;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
@@ -47,7 +48,8 @@ namespace StarterAssets
 		
 		
 		private readonly int animIDGrounded = Animator.StringToHash("Grounded");
-		
+
+		private Collider[] groundedColliders;
 		private StateMachine stateMachine;
 
 		private void Awake()
@@ -73,10 +75,10 @@ namespace StarterAssets
 		private void Update()
 		{
 			animator = GetComponent<Animator>();
+			GroundedCheck();
 			
 			stateMachine.Update();
-
-			GroundedCheck();
+			
 			switch (grounded)
 			{
 				case true when stateMachine.GetCurrentState() is AirState:
@@ -107,7 +109,11 @@ namespace StarterAssets
 			// set sphere position, with offset
 			Vector3 position = transform.position;
 			Vector3 spherePosition = new Vector3(position.x, position.y - groundedOffset, position.z);
-			grounded = Physics.CheckSphere(spherePosition, groundedRadius, groundLayers, QueryTriggerInteraction.Ignore);
+
+			groundedColliders = Physics.OverlapSphere(spherePosition, groundedRadius, groundLayers,
+				QueryTriggerInteraction.Ignore);
+
+			grounded = groundedColliders.Length != 0;
 
 			// update animator if using character
 			if (animator != null)
@@ -126,6 +132,16 @@ namespace StarterAssets
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Vector3 position = transform.position;
 			Gizmos.DrawSphere(new Vector3(position.x, position.y - groundedOffset, position.z), groundedRadius);
+		}
+
+		public bool IsGroundedToLayer(LayerMask layerMask)
+		{
+			if (groundedColliders == null) return false;
+			
+			//converting from layer to layerMask: 1 << layer = layerMask
+			bool any = groundedColliders.Any(groundedCollider => 1 << groundedCollider.gameObject.layer == layerMask);
+
+			return grounded && any;
 		}
 	}
 }
