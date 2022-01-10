@@ -1,35 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58fd8f7b-cbc9-49c9-b218-dc1bc195f974" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_03.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Corner_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Corner_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Corner_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Corner_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Corner_03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Corner_03.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Door_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Door_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Door_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Door_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Door_Corner_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Door_Corner_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Door_Corner_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Door_Corner_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Roof_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Roof_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_03.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stack_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stack_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stack_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stack_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stack_03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stack_03.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stairs_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stairs_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stairs_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_Stairs_02.prefab" afterDir="false" />
-    </list>
+    <list default="true" id="58fd8f7b-cbc9-49c9-b218-dc1bc195f974" name="Changes" comment="fixed collider issues" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_01.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca496b8c93454b2f9b9924292c19379f13b800/3f/93e88f97/Component.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="22uSAQzwwyeJuEzXEeBo9HAGnUi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -78,6 +67,7 @@
       <workItem from="1640896245757" duration="2643000" />
       <workItem from="1640900105461" duration="102000" />
       <workItem from="1640900590919" duration="127000" />
+      <workItem from="1641643323680" duration="1470000" />
     </task>
     <task id="LOCAL-00001" summary="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526">
       <created>1640900662969</created>
@@ -86,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640900662969</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="removed unused asset">
+      <created>1641645351086</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641645351086</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +107,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526" />
+    <MESSAGE value="removed unused asset" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unused asset" />
   </component>
 </project>
