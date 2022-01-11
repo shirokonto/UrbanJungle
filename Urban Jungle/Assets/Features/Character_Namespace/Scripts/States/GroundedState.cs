@@ -10,6 +10,10 @@ public class GroundedState : AnimatorState_SO
 	[SerializeField] private float rotationSmoothTime = 0.12f;
 	[Tooltip("Acceleration and deceleration")]
 	[SerializeField] private float speedChangeRate = 10.0f;
+	[Tooltip("The Layer for crouching on objects")]
+	[SerializeField] private LayerMask crouchLayer;
+	[Tooltip("The Layer for force the character into a walk")]
+	[SerializeField] private LayerMask walkLayer;
 	[Tooltip("Whether the Character is forced to walk or not")]
 	[SerializeField] private bool forceWalk = false;
 
@@ -23,13 +27,17 @@ public class GroundedState : AnimatorState_SO
     private float animationBlend;
     private float rotationVelocity;
 
-    private float animBlendThreshold_StandIdle => 0;
-    private float animBlendThreshold_Walk => 1;
-    private float animBlendThreshold_SlowRun => 2;
-    private float animBlendThreshold_FastRun => 3;
+    private static float animBlendThreshold_DefaultMovement => 0;
+    private static float animBlendThreshold_Crouch => 1;
+
+    private static float animBlendThreshold_StandIdle => 0;
+    private static float animBlendThreshold_Walk => 1;
+    private static float animBlendThreshold_SlowRun => 2;
+    private static float animBlendThreshold_FastRun => 3;
     
     // animation IDs
     private readonly int animIDSpeed = Animator.StringToHash("Speed");
+    private readonly int animIDWalkType = Animator.StringToHash("WalkType");
     private readonly int animIDJump = Animator.StringToHash("Jump");
     private readonly int animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
 
@@ -73,9 +81,31 @@ public class GroundedState : AnimatorState_SO
     {
 	    // set target speed based on inputs
 	    float targetAnimationBlend = input.sprint ? animBlendThreshold_FastRun : animBlendThreshold_SlowRun;
-	    targetAnimationBlend = forceWalk ? animBlendThreshold_Walk : targetAnimationBlend;
+
+	    if (manager.IsGroundedToLayer(walkLayer) || forceWalk)
+	    {
+		    targetAnimationBlend = animBlendThreshold_Walk;
+	    }
+	    
+	    if (manager.IsGroundedToLayer(crouchLayer))
+	    {
+		    if (hasAnimator)
+		    {
+			    animator.SetFloat(animIDWalkType, animBlendThreshold_Crouch);
+		    }
+
+		    targetAnimationBlend = animBlendThreshold_Walk;
+	    }
+	    else
+	    {
+		    if (hasAnimator)
+		    {
+			    animator.SetFloat(animIDWalkType, animBlendThreshold_DefaultMovement);
+		    }
+	    }
 	    
 	    if (input.move == Vector2.zero) targetAnimationBlend = animBlendThreshold_StandIdle;
+	    
 	    float inputMagnitude = input.analogMovement ? input.move.magnitude : 1f;
 	    
 	    //set blend
