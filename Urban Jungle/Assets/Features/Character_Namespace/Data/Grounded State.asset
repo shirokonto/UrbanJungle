@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   validStateShifts:
   - {fileID: 11400000, guid: 96d652a8f2516544a9680d783feeaeac, type: 2}
+  - {fileID: 11400000, guid: dd659f4bcd6201641afdec9712198ef1, type: 2}
   rotationSmoothTime: 0.12
   speedChangeRate: 10
   crouchLayer:
