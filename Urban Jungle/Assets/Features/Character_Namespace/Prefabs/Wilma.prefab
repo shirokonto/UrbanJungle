@@ -91,6 +91,7 @@ MonoBehaviour:
   groundedState: {fileID: 11400000, guid: aacdff07b1c71fe429eaaff7b90d9a59, type: 2}
   airState: {fileID: 11400000, guid: 96d652a8f2516544a9680d783feeaeac, type: 2}
   ladderAnimatorState: {fileID: 11400000, guid: dd659f4bcd6201641afdec9712198ef1, type: 2}
+  seekAnimatorState: {fileID: 11400000, guid: c8e03e230ebcb034984bd29cbdd5be6a, type: 2}
   hipsRoot: {fileID: 5695748246004990708}
   ladderLayer:
     serializedVersion: 2
@@ -100,7 +101,7 @@ MonoBehaviour:
   groundedRadius: 0.21
   groundLayers:
     serializedVersion: 2
-    m_Bits: 449
+    m_Bits: 193
   gravity: -15
   transparentGreen: {r: 0, g: 1, b: 0, a: 0.35}
   transparentRed: {r: 1, g: 0, b: 0, a: 0.35}

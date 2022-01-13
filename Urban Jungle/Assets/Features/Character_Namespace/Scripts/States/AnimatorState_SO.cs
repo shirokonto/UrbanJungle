@@ -33,11 +33,17 @@ namespace Features.Character_Namespace.Scripts.States
         protected readonly int _animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
         protected readonly int _animIDFreeFall = Animator.StringToHash("FreeFall");
         protected readonly int _animIDClimbLadder = Animator.StringToHash("ClimbLadder");
+        protected readonly int _animIDClimbToLadderTop = Animator.StringToHash("ClimbToLadderTop");
     
     
         public bool IsValidStateShift(AnimatorState_SO requestedStateAnimator)
         {
-            return validStateShifts.Contains(requestedStateAnimator);
+            if (!validStateShifts.Contains(requestedStateAnimator))
+            {
+                Debug.LogWarning("The state shift was not possible because it is not contained in the validStateShift list");
+                return false;
+            }
+            return true;
         }
 
         public virtual void Enter(GameObject gameObject)

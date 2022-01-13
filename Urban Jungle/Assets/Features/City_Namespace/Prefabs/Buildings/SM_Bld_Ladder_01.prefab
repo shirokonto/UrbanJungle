@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3202511836855896912}
   - component: {fileID: 834692902043484058}
   - component: {fileID: -333960883523906775}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SM_Bld_Ladder_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,8 +107,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8122592334495378476}
   - component: {fileID: 3287215362400875084}
-  m_Layer: 8
-  m_Name: LadderTrigger
+  - component: {fileID: 5065438433698892697}
+  m_Layer: 0
+  m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,13 +122,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861762737041119472}
-  m_LocalRotation: {x: -1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 1.772, z: 0.546}
+  m_LocalRotation: {x: -1, y: -0, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 1.772, z: 0.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2008112960220202229}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &3287215362400875084
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -139,5 +140,19 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.06534195, y: 1, z: 1}
-  m_Center: {x: -0.0027942657, y: 0, z: 0}
+  m_Size: {x: 2, y: 1, z: 2}
+  m_Center: {x: 0, y: 0, z: -1}
+--- !u!114 &5065438433698892697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861762737041119472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad60cd3b81949a4380134da63db9fda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextState: {fileID: 11400000, guid: dd659f4bcd6201641afdec9712198ef1, type: 2}
+  seekTarget: {fileID: 8122592334495378476}

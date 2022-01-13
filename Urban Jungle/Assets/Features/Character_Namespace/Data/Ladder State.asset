@@ -15,3 +15,10 @@ MonoBehaviour:
   validStateShifts:
   - {fileID: 11400000, guid: aacdff07b1c71fe429eaaff7b90d9a59, type: 2}
   - {fileID: 11400000, guid: 96d652a8f2516544a9680d783feeaeac, type: 2}
+  floorLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  climbTimeout: 0.4
+  drawDebugRay: 1
+  raycastPositionY: 1
+  raycastDistance: 0.5

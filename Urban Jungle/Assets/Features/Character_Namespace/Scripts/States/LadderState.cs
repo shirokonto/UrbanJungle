@@ -6,134 +6,122 @@ namespace Features.Character_Namespace.Scripts.States
     [CreateAssetMenu]
     public class LadderState : AnimatorState_SO
     {
-        [Header("Movement")]
-        [Tooltip("How fast the character turns to face movement direction")]
-        [Range(0.0f, 10.0f)]
-        [SerializeField] private float rotationChangeRate = 5.0f;
-        [Tooltip("Acceleration and deceleration")]
-        [SerializeField] private float speedChangeRate = 10.0f;
-    
+        [SerializeField] private LayerMask floorLayer;
+        [SerializeField] private float climbTimeout = 0.3f;
+        [Header("Raycast")]
+        [SerializeField] private bool drawDebugRay;
+        [SerializeField] private float raycastPositionY = 1f;
+        [SerializeField] private float raycastDistance = 0.6f;
+        
         private Collider _ladderCollider;
-        private Vector3 _targetPoint;
-    
-        private enum LadderStates { Seek = 0, RotateTowards = 1, Climb = 2 }
-        private LadderStates _ladderStates;
+        private bool _isControllableClimb;
+        private float _climbTimeoutDelta;
 
         public override void Enter(GameObject gameObject)
         {
             base.Enter(gameObject);
 
-            _ladderStates = LadderStates.Seek;
+            //reset
+            _climbTimeoutDelta = climbTimeout;
+            _isControllableClimb = true;
 
-            var currentColliderTransform = _manager.CurrentTrigger.transform;
-            _ladderCollider = currentColliderTransform.parent.GetComponent<Collider>();
-        
-            _targetPoint = currentColliderTransform.position;
+            //cast a raycast for the ladder collider
+            _ladderCollider = GetRaycastHit().collider;
+
+            if (HasAnimator)
+            {
+                Animator.SetBool(_animIDClimbLadder, true);
+            }
         }
 
         public override void Execute()
         {
-            switch (_ladderStates)
+            if (_isControllableClimb && _climbTimeoutDelta < 0)
             {
-                case LadderStates.Seek:
-                    _manager.Speed_AnimationBlend = Mathf.Lerp(_manager.Speed_AnimationBlend, AnimBlendThreshold_Walk, Time.deltaTime * speedChangeRate);
-                    if (HasAnimator)
-                    {
-                        Animator.SetFloat(_animIDSpeed, _manager.Speed_AnimationBlend);
-                    }
-                    break;
-            
-                case LadderStates.RotateTowards:
-                    _manager.Speed_AnimationBlend = Mathf.Lerp(_manager.Speed_AnimationBlend, AnimBlendThreshold_DefaultMovement, Time.deltaTime * speedChangeRate);
-                    if (HasAnimator)
-                    {
-                        Animator.SetFloat(_animIDSpeed, _manager.Speed_AnimationBlend);
-                    }
-                    break;
-            
-                case LadderStates.Climb:
-                    Vector3 forward = _manager.hipsRoot.TransformDirection(Vector3.forward);
-                    var position = _manager.hipsRoot.position;
-                    Vector3 forwardAbove = new Vector3(position.x, position.y + 1, position.z);
+                Move();
 
-                    Debug.DrawRay(forwardAbove, forward, _manager.transparentRed);
-                    if (!Physics.Raycast(forwardAbove, forward, 2f, _manager.ladderLayer))
-                    {
-                        _ladderCollider.enabled = false;
-                        Animator.SetBool(_animIDClimbLadder, false);
-                        Debug.DrawRay(forwardAbove, forward, _manager.transparentRed);
-                    }
-                    else
-                    {
-                        Debug.DrawRay(forwardAbove, forward, _manager.transparentGreen);
-                    }
-                    break;
-            
-                default:
-                    throw new ArgumentOutOfRangeException();
+                if (_manager.IsGroundedToLayer(floorLayer))
+                {
+                    _manager.EnterGroundedState();
+                }
             }
+            _climbTimeoutDelta -= Time.deltaTime;
+
+            CheckLadderTopEnd();
         }
-    
+
         public override void OnAnimatorMove()
         {
-            switch (_ladderStates)
-            {
-                case LadderStates.Seek:
-                    MoveTowardsTarget(_targetPoint);
-                    break;
-                case LadderStates.RotateTowards:
-                    RotateTowardsTarget(_manager.CurrentTrigger.transform.rotation);
-                    break;
-                case LadderStates.Climb:
-                    Controller.Move(Animator.deltaPosition);
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
+            Controller.Move(Animator.deltaPosition);
         }
 
         public override void Exit()
         {
             base.Exit();
+            
             _ladderCollider.enabled = true;
-        }
-
-        private void RotateTowardsTarget(Quaternion targetRotation)
-        {
-            _transform.rotation = Quaternion.Lerp(_transform.rotation, targetRotation, Time.deltaTime * rotationChangeRate);
-
-            float offset = Quaternion.Angle(_transform.rotation, _manager.CurrentTrigger.transform.rotation);
-            if (offset < 5f)
+            if (HasAnimator)
             {
-                _transform.rotation = _manager.CurrentTrigger.transform.rotation;
-                
-                if (HasAnimator)
-                {
-                    Animator.SetBool(_animIDClimbLadder, true);
-                }
-                
-                _ladderStates = LadderStates.Climb;
+                Animator.SetBool(_animIDClimbLadder, false);
+                Animator.SetBool(_animIDClimbToLadderTop, false);
             }
         }
-    
-        void MoveTowardsTarget(Vector3 target) 
-        {
-            Vector3 offset = target - _transform.position;
 
-            Quaternion rotation = Quaternion.LookRotation(new Vector3(offset.x, 0, offset.z));
-            _transform.rotation = Quaternion.Lerp(_transform.rotation, rotation, Time.deltaTime * rotationChangeRate);
+        private RaycastHit GetRaycastHit()
+        {
+            Vector3 forward = _manager.hipsRoot.TransformDirection(Vector3.forward);
+            var position = _manager.hipsRoot.position;
+            Vector3 forwardAbove = new Vector3(position.x, position.y + raycastPositionY, position.z);
+            
+            Physics.Raycast(forwardAbove, forward, out RaycastHit rayCast, raycastDistance);
+            
+            return rayCast;
+        }
         
-            if (offset.magnitude > .1f) 
+        private void CheckLadderTopEnd()
+        {
+            Vector3 forward = _manager.hipsRoot.TransformDirection(Vector3.forward);
+            var position = _manager.hipsRoot.position;
+            Vector3 forwardAbove = new Vector3(position.x, position.y + raycastPositionY, position.z);
+
+            if (!Physics.Raycast(forwardAbove, forward, raycastDistance))
             {
-                Vector3 velocity = Animator.deltaPosition;
-                velocity.y = _manager.VerticalVelocity * Time.deltaTime;
-                Controller.Move(velocity);
+                _ladderCollider.enabled = false;
+                _isControllableClimb = false;
+                Animator.SetTrigger(_animIDClimbToLadderTop);
+                
+                if (drawDebugRay)
+                {
+                    Debug.DrawRay(forwardAbove, forward, _manager.transparentRed);
+                }
             }
             else
             {
-                Controller.Move(offset);
+                if (drawDebugRay)
+                {
+                    Debug.DrawRay(forwardAbove, forward, _manager.transparentGreen);
+                }
+            }
+        }
 
-                _ladderStates = LadderStates.RotateTowards;
+        private void Move()
+        {
+            if (Input.move.y == 0)
+            {
+                Animator.enabled = false;
+            }
+            else
+            {
+                Animator.enabled = true;
+
+                if (Input.move.y > 0)
+                {
+                    Animator.SetFloat(_animIDMotionSpeed, 1);
+                }
+                else
+                {
+                    Animator.SetFloat(_animIDMotionSpeed, -1);
+                }
             }
         }
     }

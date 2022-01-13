@@ -3,19 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="58fd8f7b-cbc9-49c9-b218-dc1bc195f974" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Climbing To Top.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Climbing To Top.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/SharaController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/SharaController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Air State.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Air State.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Grounded State.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Grounded State.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Ladder State.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Ladder State.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Wilma.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Wilma.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/AirState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/AirState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/AnimatorState_SO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/AnimatorState_SO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/GroundedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/GroundedState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/LadderState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/LadderState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/ThirdPersonManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/ThirdPersonManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Materials/PolygonCity_Mat_01_A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Materials/PolygonCity_Mat_01_A.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Props/SM_Prop_Power_Cables_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Props/SM_Prop_Power_Cables_01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Props/SM_Prop_Power_Cables_02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Props/SM_Prop_Power_Cables_02.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Props/SM_Prop_Power_Cables_03.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Props/SM_Prop_Power_Cables_03.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Ladder_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Ladder_01.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PoligonCity/City.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PoligonCity/City.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
@@ -51,6 +48,7 @@
     <setting file="file://$PROJECT_DIR$/../../../Local/ProceduralClimbing/Assets/StarterAssets/ThirdPersonController/Scripts/ThirdPersonManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca496b8c93454b2f9b9924292c19379f13b800/3f/93e88f97/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Local/ProceduralClimbing/Assets/StarterAssets/ThirdPersonController/Scripts/WallRunState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/SeekTriggerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="22uSAQzwwyeJuEzXEeBo9HAGnUi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -108,7 +106,8 @@
       <workItem from="1641853165136" duration="4556000" />
       <workItem from="1641904015968" duration="11307000" />
       <workItem from="1641920682860" duration="2716000" />
-      <workItem from="1641991120931" duration="13859000" />
+      <workItem from="1641991120931" duration="14480000" />
+      <workItem from="1642022400727" duration="10521000" />
     </task>
     <task id="LOCAL-00001" summary="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526">
       <created>1640900662969</created>
@@ -131,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641858651361</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implemented climbing animation">
+      <created>1642007648542</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642007648542</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +163,7 @@
     <MESSAGE value="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526" />
     <MESSAGE value="removed unused asset" />
     <MESSAGE value="added crouch based on layers" />
-    <option name="LAST_COMMIT_MESSAGE" value="added crouch based on layers" />
+    <MESSAGE value="implemented climbing animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented climbing animation" />
   </component>
 </project>

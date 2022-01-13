@@ -6,86 +6,58 @@ namespace Features.Character_Namespace.Scripts.States
     [CreateAssetMenu]
     public class SeekState : AnimatorState_SO
     {
-    [Header("Movement")]
+        [Header("Movement")]
         [Tooltip("How fast the character turns to face movement direction")]
         [Range(0.0f, 10.0f)]
         [SerializeField] private float rotationChangeRate = 5.0f;
         [Tooltip("Acceleration and deceleration")]
         [SerializeField] private float speedChangeRate = 10.0f;
+
+        private Transform _targetPoint;
+        private AnimatorState_SO nextState;
     
-        private Collider _ladderCollider;
-        private Vector3 _targetPoint;
-    
-        private enum LadderStates { Seek = 0, RotateTowards = 1, Climb = 2 }
-        private LadderStates _ladderStates;
+        private enum SeekStates { Move = 0, Rotate = 1}
+        private SeekStates _seekStates;
+
+        public void SetNextState(SeekTriggerBehaviour seekTriggerBehaviour)
+        {
+            nextState = seekTriggerBehaviour.nextState;
+            _targetPoint = seekTriggerBehaviour.seekTarget;
+        }
 
         public override void Enter(GameObject gameObject)
         {
             base.Enter(gameObject);
 
-            _ladderStates = LadderStates.Seek;
-
-            var currentColliderTransform = _manager.CurrentTrigger.transform;
-            _ladderCollider = currentColliderTransform.parent.GetComponent<Collider>();
-        
-            _targetPoint = currentColliderTransform.position;
+            _seekStates = SeekStates.Move;
         }
 
         public override void Execute()
         {
-            switch (_ladderStates)
+            _manager.Speed_AnimationBlend = _seekStates switch
             {
-                case LadderStates.Seek:
-                    _manager.Speed_AnimationBlend = Mathf.Lerp(_manager.Speed_AnimationBlend, AnimBlendThreshold_Walk, Time.deltaTime * speedChangeRate);
-                    if (HasAnimator)
-                    {
-                        Animator.SetFloat(_animIDSpeed, _manager.Speed_AnimationBlend);
-                    }
-                    break;
-            
-                case LadderStates.RotateTowards:
-                    _manager.Speed_AnimationBlend = Mathf.Lerp(_manager.Speed_AnimationBlend, AnimBlendThreshold_DefaultMovement, Time.deltaTime * speedChangeRate);
-                    if (HasAnimator)
-                    {
-                        Animator.SetFloat(_animIDSpeed, _manager.Speed_AnimationBlend);
-                    }
-                    break;
-            
-                case LadderStates.Climb:
-                    Vector3 forward = _manager.hipsRoot.TransformDirection(Vector3.forward);
-                    var position = _manager.hipsRoot.position;
-                    Vector3 forwardAbove = new Vector3(position.x, position.y + 1, position.z);
+                SeekStates.Move => Mathf.Lerp(_manager.Speed_AnimationBlend, AnimBlendThreshold_Walk,
+                    Time.deltaTime * speedChangeRate),
+                SeekStates.Rotate => Mathf.Lerp(_manager.Speed_AnimationBlend, AnimBlendThreshold_DefaultMovement,
+                    Time.deltaTime * speedChangeRate),
+                _ => throw new ArgumentOutOfRangeException()
+            };
 
-                    Debug.DrawRay(forwardAbove, forward, _manager.transparentRed);
-                    if (!Physics.Raycast(forwardAbove, forward, 2f, _manager.ladderLayer))
-                    {
-                        _ladderCollider.enabled = false;
-                        Animator.SetBool(_animIDClimbLadder, false);
-                        Debug.DrawRay(forwardAbove, forward, _manager.transparentRed);
-                    }
-                    else
-                    {
-                        Debug.DrawRay(forwardAbove, forward, _manager.transparentGreen);
-                    }
-                    break;
-            
-                default:
-                    throw new ArgumentOutOfRangeException();
+            if (HasAnimator)
+            {
+                Animator.SetFloat(_animIDSpeed, _manager.Speed_AnimationBlend);
             }
         }
     
         public override void OnAnimatorMove()
         {
-            switch (_ladderStates)
+            switch (_seekStates)
             {
-                case LadderStates.Seek:
-                    MoveTowardsTarget(_targetPoint);
+                case SeekStates.Move:
+                    MoveTowardsTarget(_targetPoint.position);
                     break;
-                case LadderStates.RotateTowards:
-                    RotateTowardsTarget(_manager.CurrentTrigger.transform.rotation);
-                    break;
-                case LadderStates.Climb:
-                    Controller.Move(Animator.deltaPosition);
+                case SeekStates.Rotate:
+                    RotateTowardsTarget(_targetPoint.rotation);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -95,28 +67,31 @@ namespace Features.Character_Namespace.Scripts.States
         public override void Exit()
         {
             base.Exit();
-            _ladderCollider.enabled = true;
+            
+            nextState = null;
         }
 
         private void RotateTowardsTarget(Quaternion targetRotation)
         {
             _transform.rotation = Quaternion.Lerp(_transform.rotation, targetRotation, Time.deltaTime * rotationChangeRate);
 
-            float offset = Quaternion.Angle(_transform.rotation, _manager.CurrentTrigger.transform.rotation);
+            float offset = Quaternion.Angle(_transform.rotation, targetRotation);
             if (offset < 5f)
             {
-                _transform.rotation = _manager.CurrentTrigger.transform.rotation;
-                
-                if (HasAnimator)
+                _transform.rotation = targetRotation;
+
+                if (nextState != null)
                 {
-                    Animator.SetBool(_animIDClimbLadder, true);
+                    _manager.RequestState(nextState);
                 }
-                
-                _ladderStates = LadderStates.Climb;
+                else
+                {
+                    Debug.LogError($"Use the SetNextState to pass a following state!");
+                }
             }
         }
     
-        void MoveTowardsTarget(Vector3 target) 
+        private void MoveTowardsTarget(Vector3 target) 
         {
             Vector3 offset = target - _transform.position;
 
@@ -133,7 +108,7 @@ namespace Features.Character_Namespace.Scripts.States
             {
                 Controller.Move(offset);
 
-                _ladderStates = LadderStates.RotateTowards;
+                _seekStates = SeekStates.Rotate;
             }
         }
     }

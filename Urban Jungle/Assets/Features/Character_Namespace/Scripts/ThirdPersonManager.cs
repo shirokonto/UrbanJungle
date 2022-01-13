@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 using Features.Character_Namespace.Scripts.States;
 using StarterAssets;
 using UnityEngine;
@@ -20,13 +21,15 @@ namespace Features.Character_Namespace.Scripts
 		[SerializeField][ReadOnly] private AnimatorState_SO currentState;
 		
 		[Header("Available States")]
-		[SerializeField] private AnimatorState_SO groundedState;
-		[SerializeField] private AnimatorState_SO airState;
-		[SerializeField] private AnimatorState_SO ladderAnimatorState;
+		[SerializeField] private GroundedState groundedState;
+		[SerializeField] private AirState airState;
+		[SerializeField] private LadderState ladderAnimatorState;
+		[SerializeField] private SeekState seekAnimatorState;
 		
-		[Header("Ladder Climb")]
+		[Header("Character")]
 		[SerializeField] public Transform hipsRoot;
-		[SerializeField] public LayerMask ladderLayer;
+		[Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
+		public float gravity = -15.0f;
 		
 		[Header("Player Grounded")]
 		[Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
@@ -37,11 +40,7 @@ namespace Features.Character_Namespace.Scripts
 		[SerializeField] private float groundedRadius = 0.2f;
 		[Tooltip("What layers the character uses as ground")]
 		[SerializeField] private LayerMask groundLayers;
-		
-		[Space(10)]
-		[Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
-		public float gravity = -15.0f;
-		
+
 		[Header("Debug")]
 		public Color transparentGreen = new Color(0.0f, 1.0f, 0.0f, 0.35f);
 		public Color transparentRed = new Color(1.0f, 0.0f, 0.0f, 0.35f);
@@ -51,7 +50,6 @@ namespace Features.Character_Namespace.Scripts
 		public CharacterController Controller { get; private set; }
 		public StarterAssetsInputs Input { get; private set; }
 		public GameObject MainCamera { get; private set; }
-		public Collider CurrentTrigger { get; private set; }
 		
 		//Values getter and setter
 		public float JumpSpeed { get; set; }
@@ -105,13 +103,11 @@ namespace Features.Character_Namespace.Scripts
 
 		private void OnTriggerEnter(Collider trigger)
 		{
-			CurrentTrigger = trigger;
-			RequestState(ladderAnimatorState);
-		}
-
-		private void OnTriggerExit(Collider trigger)
-		{
-			CurrentTrigger = null;
+			if (trigger.TryGetComponent(typeof(SeekTriggerBehaviour), out Component seekTriggerBehaviour))
+			{
+				seekAnimatorState.SetNextState(seekTriggerBehaviour as SeekTriggerBehaviour);
+				RequestState(seekAnimatorState);
+			}
 		}
 
 		private void OnAnimatorMove()
@@ -119,15 +115,6 @@ namespace Features.Character_Namespace.Scripts
 			_stateMachine.OnAnimatorMove();
 		}
 
-		private void RequestState(AnimatorState_SO stateAnimator)
-		{
-			if (((AnimatorState_SO) _stateMachine.GetCurrentState()).IsValidStateShift(stateAnimator))
-			{
-				_stateMachine.ChangeState(stateAnimator, gameObject);
-				currentState = stateAnimator;
-			}
-		}
-		
 		[SuppressMessage("ReSharper", "Unity.PreferNonAllocApi")]
 		private void GroundedCheck()
 		{
@@ -161,31 +148,21 @@ namespace Features.Character_Namespace.Scripts
 			if (_groundedColliders == null) return false;
 			
 			//converting from layer to layerMask: 1 << layer = layerMask
-			bool any = false;
-			foreach (Collider groundedCollider in _groundedColliders)
+			return grounded && _groundedColliders.Any(groundedCollider => 1 << groundedCollider.gameObject.layer == layerMask);
+		}
+		
+		public void RequestState(AnimatorState_SO stateAnimator)
+		{
+			if (((AnimatorState_SO) _stateMachine.GetCurrentState()).IsValidStateShift(stateAnimator))
 			{
-				if (1 << groundedCollider.gameObject.layer == layerMask)
-				{
-					CurrentTrigger = groundedCollider;
-					any = true;
-					break;
-				}
+				_stateMachine.ChangeState(stateAnimator, gameObject);
+				currentState = stateAnimator;
 			}
-			
-			return grounded && any;
 		}
 
 		public void EnterGroundedState()
 		{
 			RequestState(groundedState);
-		}
-
-		[SuppressMessage("ReSharper", "Unity.InefficientPropertyAccess")]
-		public void AlignToNormal(RaycastHit raycastHit)
-		{
-			transform.position = raycastHit.point;
-			var q = Quaternion.FromToRotation(transform.forward * -1, raycastHit.normal);
-			transform.rotation = q * transform.rotation;
 		}
 	}
 }
