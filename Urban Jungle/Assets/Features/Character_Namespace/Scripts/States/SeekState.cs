@@ -15,6 +15,7 @@ namespace Features.Character_Namespace.Scripts.States
 
         private Transform _targetPoint;
         private AnimatorState_SO nextState;
+        private float seekSpeed;
     
         private enum SeekStates { Move = 0, Rotate = 1}
         private SeekStates _seekStates;
@@ -23,6 +24,7 @@ namespace Features.Character_Namespace.Scripts.States
         {
             nextState = seekTriggerBehaviour.nextState;
             _targetPoint = seekTriggerBehaviour.seekTarget;
+            seekSpeed = seekTriggerBehaviour.seekSpeed;
         }
 
         public override void Enter(GameObject gameObject)
@@ -36,7 +38,7 @@ namespace Features.Character_Namespace.Scripts.States
         {
             _manager.Speed_AnimationBlend = _seekStates switch
             {
-                SeekStates.Move => Mathf.Lerp(_manager.Speed_AnimationBlend, AnimBlendThreshold_Walk,
+                SeekStates.Move => Mathf.Lerp(_manager.Speed_AnimationBlend, seekSpeed,
                     Time.deltaTime * speedChangeRate),
                 SeekStates.Rotate => Mathf.Lerp(_manager.Speed_AnimationBlend, AnimBlendThreshold_DefaultMovement,
                     Time.deltaTime * speedChangeRate),

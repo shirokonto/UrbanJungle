@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 3287215362400875084}
   - component: {fileID: 5065438433698892697}
   m_Layer: 0
-  m_Name: Trigger
+  m_Name: SeekTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -156,3 +156,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextState: {fileID: 11400000, guid: dd659f4bcd6201641afdec9712198ef1, type: 2}
   seekTarget: {fileID: 8122592334495378476}
+  seekSpeed: 1

@@ -101,6 +101,11 @@ namespace Features.Character_Namespace.Scripts
 			}
 		}
 
+		private void OnAnimatorMove()
+		{
+			_stateMachine.OnAnimatorMove();
+		}
+		
 		private void OnTriggerEnter(Collider trigger)
 		{
 			if (trigger.TryGetComponent(typeof(SeekTriggerBehaviour), out Component seekTriggerBehaviour))
@@ -108,11 +113,6 @@ namespace Features.Character_Namespace.Scripts
 				seekAnimatorState.SetNextState(seekTriggerBehaviour as SeekTriggerBehaviour);
 				RequestState(seekAnimatorState);
 			}
-		}
-
-		private void OnAnimatorMove()
-		{
-			_stateMachine.OnAnimatorMove();
 		}
 
 		[SuppressMessage("ReSharper", "Unity.PreferNonAllocApi")]
