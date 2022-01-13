@@ -1,12 +1,15 @@
-﻿using System.Linq;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using Features.Character_Namespace.Scripts.States;
+using StarterAssets;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using Utils.StateMachine_Namespace;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
-using UnityEngine.InputSystem;
 #endif
 
 
-namespace StarterAssets
+namespace Features.Character_Namespace.Scripts
 {
 	[RequireComponent(typeof(CharacterController))]
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -14,11 +17,19 @@ namespace StarterAssets
 #endif
 	public class ThirdPersonManager : MonoBehaviour
 	{
+		// ReSharper disable once NotAccessedField.Local
 		[SerializeField][ReadOnly] private AnimatorState_SO currentState;
 		
 		[Header("Available States")]
-		[SerializeField] private AnimatorState_SO groundedState;
-		[SerializeField] private AnimatorState_SO airState;
+		[SerializeField] private GroundedState groundedState;
+		[SerializeField] private AirState airState;
+		[SerializeField] private LadderState ladderAnimatorState;
+		[SerializeField] private SeekState seekAnimatorState;
+		
+		[Header("Character")]
+		[SerializeField] public Transform hipsRoot;
+		[Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
+		public float gravity = -15.0f;
 		
 		[Header("Player Grounded")]
 		[Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
@@ -29,62 +40,62 @@ namespace StarterAssets
 		[SerializeField] private float groundedRadius = 0.2f;
 		[Tooltip("What layers the character uses as ground")]
 		[SerializeField] private LayerMask groundLayers;
-		
-		[Space(10)]
-		[Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
-		public float gravity = -15.0f;
+
+		[Header("Debug")]
+		public Color transparentGreen = new Color(0.0f, 1.0f, 0.0f, 0.35f);
+		public Color transparentRed = new Color(1.0f, 0.0f, 0.0f, 0.35f);
 
 		//References getter and setter
-		public Animator animator { get; private set; }
-		public CharacterController controller { get; private set; }
-		public StarterAssetsInputs input { get; private set; }
-		public GameObject mainCamera { get; private set; }
+		public Animator Animator { get; private set; }
+		public CharacterController Controller { get; private set; }
+		public StarterAssetsInputs Input { get; private set; }
+		public GameObject MainCamera { get; private set; }
 		
 		//Values getter and setter
-		public float jumpSpeed { get; set; }
-		public float targetRotation { get; set; }
-		public float verticalVelocity { get; set; }
-		public static float terminalVelocity => 53.0f;
+		public float JumpSpeed { get; set; }
+		public float Speed_AnimationBlend { get; set; }
+		public float TargetRotation { get; set; }
+		public float VerticalVelocity { get; set; }
+		public static float TerminalVelocity => 53.0f;
 		
-		
-		private readonly int animIDGrounded = Animator.StringToHash("Grounded");
+		private readonly int _animIDGrounded = Animator.StringToHash("Grounded");
 
-		private Collider[] groundedColliders;
-		private StateMachine stateMachine;
+		private Collider[] _groundedColliders;
+		private StateMachine _stateMachine;
 
 		private void Awake()
 		{
 			// get a reference to our main camera
-			if (mainCamera == null)
+			if (MainCamera == null)
 			{
-				mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+				MainCamera = GameObject.FindGameObjectWithTag("MainCamera");
 			}
 		}
 
 		private void Start()
 		{
-			animator = GetComponent<Animator>();
-			controller = GetComponent<CharacterController>();
-			input = GetComponent<StarterAssetsInputs>();
+			Animator = GetComponent<Animator>();
+			Controller = GetComponent<CharacterController>();
+			Input = GetComponent<StarterAssetsInputs>();
 
-			stateMachine = new StateMachine();
-			stateMachine.Initialize(groundedState, gameObject);
+			_stateMachine = new StateMachine();
+			_stateMachine.Initialize(groundedState, gameObject);
 			currentState = groundedState;
 		}
 
 		private void Update()
 		{
-			animator = GetComponent<Animator>();
+			Animator = GetComponent<Animator>();
 			GroundedCheck();
 			
-			stateMachine.Update();
+			_stateMachine.Update();
 			
 			switch (grounded)
 			{
-				case true when stateMachine.GetCurrentState() is AirState:
+				case true when _stateMachine.GetCurrentState() is AirState:
 					RequestState(groundedState);
 					break;
-				case false when stateMachine.GetCurrentState() is GroundedState:
+				case false when _stateMachine.GetCurrentState() is GroundedState:
 					RequestState(airState);
 					break;
 			}
@@ -92,41 +103,39 @@ namespace StarterAssets
 
 		private void OnAnimatorMove()
 		{
-			stateMachine.OnAnimatorMove();
-		}
-
-		private void RequestState(AnimatorState_SO stateAnimator)
-		{
-			if (((AnimatorState_SO) stateMachine.GetCurrentState()).IsValidStateShift(stateAnimator))
-			{
-				stateMachine.ChangeState(stateAnimator, gameObject);
-				currentState = stateAnimator;
-			}
+			_stateMachine.OnAnimatorMove();
 		}
 		
+		private void OnTriggerEnter(Collider trigger)
+		{
+			if (trigger.TryGetComponent(typeof(SeekTriggerBehaviour), out Component seekTriggerBehaviour))
+			{
+				seekAnimatorState.SetNextState(seekTriggerBehaviour as SeekTriggerBehaviour);
+				RequestState(seekAnimatorState);
+			}
+		}
+
+		[SuppressMessage("ReSharper", "Unity.PreferNonAllocApi")]
 		private void GroundedCheck()
 		{
 			// set sphere position, with offset
 			Vector3 position = transform.position;
 			Vector3 spherePosition = new Vector3(position.x, position.y - groundedOffset, position.z);
-
-			groundedColliders = Physics.OverlapSphere(spherePosition, groundedRadius, groundLayers,
+			
+			_groundedColliders = Physics.OverlapSphere(spherePosition, groundedRadius, groundLayers,
 				QueryTriggerInteraction.Ignore);
 
-			grounded = groundedColliders.Length != 0;
+			grounded = _groundedColliders.Length != 0;
 
 			// update animator if using character
-			if (animator != null)
+			if (Animator != null)
 			{
-				animator.SetBool(animIDGrounded, grounded);
+				Animator.SetBool(_animIDGrounded, grounded);
 			}
 		}
 		
 		private void OnDrawGizmosSelected()
 		{
-			Color transparentGreen = new Color(0.0f, 1.0f, 0.0f, 0.35f);
-			Color transparentRed = new Color(1.0f, 0.0f, 0.0f, 0.35f);
-
 			Gizmos.color = grounded ? transparentGreen : transparentRed;
 		
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
@@ -136,12 +145,24 @@ namespace StarterAssets
 
 		public bool IsGroundedToLayer(LayerMask layerMask)
 		{
-			if (groundedColliders == null) return false;
+			if (_groundedColliders == null) return false;
 			
 			//converting from layer to layerMask: 1 << layer = layerMask
-			bool any = groundedColliders.Any(groundedCollider => 1 << groundedCollider.gameObject.layer == layerMask);
+			return grounded && _groundedColliders.Any(groundedCollider => 1 << groundedCollider.gameObject.layer == layerMask);
+		}
+		
+		public void RequestState(AnimatorState_SO stateAnimator)
+		{
+			if (((AnimatorState_SO) _stateMachine.GetCurrentState()).IsValidStateShift(stateAnimator))
+			{
+				_stateMachine.ChangeState(stateAnimator, gameObject);
+				currentState = stateAnimator;
+			}
+		}
 
-			return grounded && any;
+		public void EnterGroundedState()
+		{
+			RequestState(groundedState);
 		}
 	}
 }

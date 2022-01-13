@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3312184}
   - component: {fileID: 2309106}
   - component: {fileID: -6066971197090250287}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Prop_Power_Cables_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
