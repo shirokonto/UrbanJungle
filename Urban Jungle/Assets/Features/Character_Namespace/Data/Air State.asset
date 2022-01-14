@@ -17,4 +17,8 @@ MonoBehaviour:
   - {fileID: 11400000}
   rotationSmoothTime: 0.12
   enableRotation: 1
+  bounceLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  bounceAnimatorState: {fileID: 0}
   fallTimeout: 0.3
