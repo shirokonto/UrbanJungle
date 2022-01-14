@@ -13,26 +13,15 @@ namespace Features.Character_Namespace.Scripts.States
         [Tooltip("Should the character be able to move the flight direction")]
         [SerializeField] private bool enableRotation = true;
 
-        [SerializeField] public LayerMask bounceLayer;
-    
         [Header("Fall")]
         [Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
         public float fallTimeout = 0.3f;
 
         private float _fallTimeoutDelta;
         private float _rotationVelocity;
-        private bool _isValidStateShift;
-
-        public override bool IsValidStateShift(AnimatorState_SO requestedStateAnimator)
+        
+        protected override void Enter()
         {
-            return base.IsValidStateShift(requestedStateAnimator) && _isValidStateShift;
-        }
-
-        public override void Enter(GameObject gameObject)
-        {
-            base.Enter(gameObject);
-
-            _isValidStateShift = true;
             _fallTimeoutDelta = fallTimeout;
         }
 
@@ -44,19 +33,6 @@ namespace Features.Character_Namespace.Scripts.States
             if (enableRotation)
             {
                 ApplyRotation();
-            }
-            
-            if (_manager.IsGroundedToLayer(bounceLayer, out Collider floorCollider))
-            {
-                //disable state shift to groundedState
-                _isValidStateShift = false;
-                
-                BounceBehaviour bounceBehaviour = floorCollider.GetComponent<BounceBehaviour>();
-                bounceBehaviour.ApplyBounce(_manager);
-            }
-            else
-            {
-                _isValidStateShift = true;
             }
         }
 
@@ -73,7 +49,6 @@ namespace Features.Character_Namespace.Scripts.States
             // update animator if using character
             if (HasAnimator)
             {
-                Animator.SetBool(_animIDJump, false);
                 Animator.SetBool(_animIDFreeFall, false);
             }
         }

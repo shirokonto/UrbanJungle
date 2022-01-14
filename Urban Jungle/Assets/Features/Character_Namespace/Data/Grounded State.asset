@@ -15,6 +15,7 @@ MonoBehaviour:
   validStateShifts:
   - {fileID: 11400000, guid: 96d652a8f2516544a9680d783feeaeac, type: 2}
   - {fileID: 11400000, guid: c8e03e230ebcb034984bd29cbdd5be6a, type: 2}
+  - {fileID: 11400000, guid: 7ec24b1c845580244bcca376f6cf8fff, type: 2}
   rotationSmoothTime: 0.12
   speedChangeRate: 10
   crouchLayer:
@@ -24,5 +25,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   forceWalk: 0
-  jumpHeight: 1.2
   jumpTimeout: 0.2

@@ -37,20 +37,25 @@ namespace Features.Character_Namespace.Scripts.States
         protected readonly int _animIDGrounded = Animator.StringToHash("Grounded");
     
     
-        public virtual bool IsValidStateShift(AnimatorState_SO requestedStateAnimator)
+        public bool IsValidStateShift(AnimatorState_SO requestedStateAnimator)
         {
             if (!validStateShifts.Contains(requestedStateAnimator))
             {
-                Debug.LogWarning("The state shift was not possible because it is not contained in the validStateShift list");
+                Debug.LogWarning($"The state shift was not possible because {this.name} doesn't contain {requestedStateAnimator.name} in the validStateShift list");
                 return false;
             }
             return true;
         }
+        
+        protected virtual void Enter() { }
+        
 
-        public virtual void Enter(GameObject gameObject)
+        public void Enter(GameObject gameObject)
         {
             _manager = gameObject.GetComponent<ThirdPersonManager>();
             _transform = gameObject.transform;
+            
+            Enter();
         }
 
         public virtual void Execute() { }
