@@ -8,6 +8,9 @@ namespace Features.Character_Namespace.Scripts
         [SerializeField] private float maxVelocity = 12;
         [SerializeField] private float jumpSpeedAddition = 1;
         [SerializeField] private float maxJumpSpeed = 3;
+        
+        private static float StandIdleSpeed => 0;
+        private static float FastRunSpeed => 3;
 
         public void ApplyBounce(ThirdPersonManager manager)
         {
@@ -32,7 +35,7 @@ namespace Features.Character_Namespace.Scripts
                 }
             }
 
-            manager.JumpSpeed = Mathf.Clamp(Mathf.Round(manager.JumpSpeed), 0, 3);
+            manager.JumpSpeed = Mathf.Clamp(Mathf.Round(manager.JumpSpeed), StandIdleSpeed, FastRunSpeed);
         }
     }
 }
