@@ -773,6 +773,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 970721668125220297, guid: a0aa93537ddb2224497aca7d5ddab426, type: 3}
   m_PrefabInstance: {fileID: 416174926}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &452740725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1197476776369506, guid: eef8306c54f201a4e8cd536d25207e32, type: 3}
+  m_PrefabInstance: {fileID: 453700530}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &452740730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452740725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fd9c797692644f41a9e39168d9070b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityAddition: 1
+  maxVelocity: 6
+  jumpSpeedAddition: 1
+  maxJumpSpeed: 3
 --- !u!1001 &453700530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -780,6 +801,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 739781715}
     m_Modifications:
+    - target: {fileID: 1197476776369506, guid: eef8306c54f201a4e8cd536d25207e32, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197476776369506, guid: eef8306c54f201a4e8cd536d25207e32, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1774811779915186, guid: eef8306c54f201a4e8cd536d25207e32, type: 3}
       propertyPath: m_Name
       value: Bed_Set
