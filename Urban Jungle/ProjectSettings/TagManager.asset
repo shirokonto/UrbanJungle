@@ -11,9 +11,9 @@ TagManager:
   - Character
   - Water
   - UI
-  - 
-  - 
-  - 
+  - ForceCharacterCrouch
+  - ForceCharacterWalk
+  - Bouncable
   - 
   - 
   - 
