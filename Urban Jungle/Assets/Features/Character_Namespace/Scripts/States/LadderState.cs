@@ -40,7 +40,7 @@ namespace Features.Character_Namespace.Scripts.States
             {
                 Move();
 
-                if (_manager.IsGroundedToLayer(floorLayer))
+                if (_manager.IsGroundedToLayer(floorLayer, out Collider _))
                 {
                     _manager.EnterGroundedState();
                 }

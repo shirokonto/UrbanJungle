@@ -25,7 +25,7 @@ namespace Features.Character_Namespace.Scripts
 		[SerializeField] private AirState airState;
 		[SerializeField] private LadderState ladderAnimatorState;
 		[SerializeField] private SeekState seekAnimatorState;
-		
+
 		[Header("Character")]
 		[SerializeField] public Transform hipsRoot;
 		[Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
@@ -57,8 +57,6 @@ namespace Features.Character_Namespace.Scripts
 		public float TargetRotation { get; set; }
 		public float VerticalVelocity { get; set; }
 		public static float TerminalVelocity => 53.0f;
-		
-		private readonly int _animIDGrounded = Animator.StringToHash("Grounded");
 
 		private Collider[] _groundedColliders;
 		private StateMachine _stateMachine;
@@ -126,12 +124,6 @@ namespace Features.Character_Namespace.Scripts
 				QueryTriggerInteraction.Ignore);
 
 			grounded = _groundedColliders.Length != 0;
-
-			// update animator if using character
-			if (Animator != null)
-			{
-				Animator.SetBool(_animIDGrounded, grounded);
-			}
 		}
 		
 		private void OnDrawGizmosSelected()
@@ -143,12 +135,26 @@ namespace Features.Character_Namespace.Scripts
 			Gizmos.DrawSphere(new Vector3(position.x, position.y - groundedOffset, position.z), groundedRadius);
 		}
 
-		public bool IsGroundedToLayer(LayerMask layerMask)
+		public bool IsGrounded() => grounded;
+
+		public bool IsGroundedToLayer(LayerMask layerMask, out Collider floorCollider)
 		{
+			floorCollider = null;
 			if (_groundedColliders == null) return false;
 			
 			//converting from layer to layerMask: 1 << layer = layerMask
-			return grounded && _groundedColliders.Any(groundedCollider => 1 << groundedCollider.gameObject.layer == layerMask);
+			bool any = false;
+			foreach (Collider groundedCollider in _groundedColliders)
+			{
+				if (1 << groundedCollider.gameObject.layer == layerMask)
+				{
+					floorCollider = groundedCollider;
+					any = true;
+					break;
+				}
+			}
+
+			return grounded && any;
 		}
 		
 		public void RequestState(AnimatorState_SO stateAnimator)

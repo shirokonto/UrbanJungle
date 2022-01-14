@@ -39,6 +39,12 @@ namespace Features.Character_Namespace.Scripts.States
 			// reset based on current input
 			Input.jump = false;
 			ApplySpeed(false);
+			
+			// update animator if using character
+			if (Animator != null)
+			{
+				Animator.SetBool(_animIDGrounded, true);
+			}
 		}
 
 		public override void Execute()
@@ -73,6 +79,8 @@ namespace Features.Character_Namespace.Scripts.States
 				Animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
 		    
 				Animator.SetFloat(_animIDWalkType, AnimBlendThreshold_DefaultMovement);
+				
+				Animator.SetBool(_animIDGrounded, false);
 			}
 		}
 
@@ -81,10 +89,10 @@ namespace Features.Character_Namespace.Scripts.States
 			// set target speed based on inputs
 			float speed_targetAnimationBlend = Input.sprint ? AnimBlendThreshold_FastRun : AnimBlendThreshold_SlowRun;
 
-			bool isGroundedToCrouchLayer = _manager.IsGroundedToLayer(crouchLayer);
+			bool isGroundedToCrouchLayer = _manager.IsGroundedToLayer(crouchLayer, out Collider _);
 			float walkType_targetAnimationBlend = isGroundedToCrouchLayer ? AnimBlendThreshold_Crouch : AnimBlendThreshold_DefaultMovement;
 
-			if (_manager.IsGroundedToLayer(walkLayer) || forceWalk || isGroundedToCrouchLayer)
+			if (_manager.IsGroundedToLayer(walkLayer, out Collider _) || forceWalk || isGroundedToCrouchLayer)
 			{
 				speed_targetAnimationBlend = AnimBlendThreshold_Walk;
 			}

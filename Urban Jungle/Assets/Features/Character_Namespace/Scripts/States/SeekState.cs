@@ -32,6 +32,12 @@ namespace Features.Character_Namespace.Scripts.States
             base.Enter(gameObject);
 
             _seekStates = SeekStates.Move;
+            
+            // update animator if using character
+            if (Animator != null)
+            {
+                Animator.SetBool(_animIDGrounded, true);
+            }
         }
 
         public override void Execute()
@@ -71,6 +77,12 @@ namespace Features.Character_Namespace.Scripts.States
             base.Exit();
             
             nextState = null;
+            
+            // update animator if using character
+            if (Animator != null)
+            {
+                Animator.SetBool(_animIDGrounded, false);
+            }
         }
 
         private void RotateTowardsTarget(Quaternion targetRotation)
