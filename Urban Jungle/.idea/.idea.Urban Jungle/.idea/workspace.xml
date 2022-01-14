@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3276a363-4a9a-4a16-a4f6-fd9efda813d4" name="Default Changelist" comment="Merge main into branch">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/LowPolyBarriersPackFree/BarriersAssets/Materials/BarriersMain_M.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/LowPolyBarriersPackFree/BarriersAssets/Materials/BarriersMain_M.mat" afterDir="false" />
+    <list default="true" id="3276a363-4a9a-4a16-a4f6-fd9efda813d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Route_C.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Route_C.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642186710249</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add right texture to barriers">
+      <created>1642187103559</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1642187103559</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +177,7 @@
     <MESSAGE value="added seek state and movement on the ladder" />
     <MESSAGE value="added a speed field on the SeekTriggerBehaviour" />
     <MESSAGE value="Merge main into branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge main into branch" />
+    <MESSAGE value="Add right texture to barriers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add right texture to barriers" />
   </component>
 </project>
