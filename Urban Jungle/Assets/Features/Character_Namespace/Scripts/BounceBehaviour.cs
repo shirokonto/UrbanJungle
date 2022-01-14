@@ -31,6 +31,8 @@ namespace Features.Character_Namespace.Scripts
                     manager.JumpSpeed += jumpSpeedAddition;
                 }
             }
+
+            manager.JumpSpeed = Mathf.Clamp(Mathf.Round(manager.JumpSpeed), 0, 3);
         }
     }
 }
