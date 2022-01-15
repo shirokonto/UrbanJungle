@@ -169,7 +169,7 @@ namespace Features.Character_Namespace.Scripts
 		{
 			if (((AnimatorState_SO) _stateMachine.GetCurrentState()).IsValidStateShift(requestedState))
 			{
-				Debug.Log(requestedState.name);
+				//Debug.Log(requestedState.name);
 				_stateMachine.ChangeState(requestedState, gameObject);
 				currentState = requestedState;
 			}
