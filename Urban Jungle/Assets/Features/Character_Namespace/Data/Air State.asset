@@ -16,7 +16,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: aacdff07b1c71fe429eaaff7b90d9a59, type: 2}
   rotationSmoothTime: 0.12
   enableRotation: 1
-  bounceLayer:
-    serializedVersion: 2
-    m_Bits: 256
   fallTimeout: 0.3

@@ -23,6 +23,9 @@ namespace Features.Character_Namespace.Scripts.States
         protected override void Enter()
         {
             _fallTimeoutDelta = fallTimeout;
+            
+            Vector3 velocity = Controller.velocity;
+            _manager.JumpSpeed = new Vector3(velocity.x, 0f, velocity.z).magnitude;
         }
 
         public override void Execute()
