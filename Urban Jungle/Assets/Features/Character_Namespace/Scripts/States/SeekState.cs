@@ -27,10 +27,8 @@ namespace Features.Character_Namespace.Scripts.States
             seekSpeed = seekTriggerBehaviour.seekSpeed;
         }
 
-        public override void Enter(GameObject gameObject)
+        protected override void Enter()
         {
-            base.Enter(gameObject);
-
             _seekStates = SeekStates.Move;
             
             // update animator if using character

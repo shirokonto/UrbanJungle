@@ -17,10 +17,8 @@ namespace Features.Character_Namespace.Scripts.States
         private bool _isControllableClimb;
         private float _climbTimeoutDelta;
 
-        public override void Enter(GameObject gameObject)
+        protected override void Enter()
         {
-            base.Enter(gameObject);
-
             //reset
             _climbTimeoutDelta = climbTimeout;
             _isControllableClimb = true;
@@ -42,7 +40,7 @@ namespace Features.Character_Namespace.Scripts.States
 
                 if (_manager.IsGroundedToLayer(floorLayer, out Collider _))
                 {
-                    _manager.EnterGroundedState();
+                    _manager.RequestState(_manager.groundedState);
                 }
             }
             _climbTimeoutDelta -= Time.deltaTime;
