@@ -34,9 +34,10 @@ namespace Features.Character_Namespace.Scripts.States
         protected readonly int _animIDFreeFall = Animator.StringToHash("FreeFall");
         protected readonly int _animIDClimbLadder = Animator.StringToHash("ClimbLadder");
         protected readonly int _animIDClimbToLadderTop = Animator.StringToHash("ClimbToLadderTop");
+        protected readonly int _animIDGrounded = Animator.StringToHash("Grounded");
     
     
-        public bool IsValidStateShift(AnimatorState_SO requestedStateAnimator)
+        public virtual bool IsValidStateShift(AnimatorState_SO requestedStateAnimator)
         {
             if (!validStateShifts.Contains(requestedStateAnimator))
             {
