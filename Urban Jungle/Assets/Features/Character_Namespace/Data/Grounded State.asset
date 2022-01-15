@@ -25,4 +25,4 @@ MonoBehaviour:
     m_Bits: 128
   forceWalk: 0
   jumpHeight: 1.2
-  jumpTimeout: 0.2
+  jumpTimeout: 0
