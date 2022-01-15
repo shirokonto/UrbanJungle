@@ -90,7 +90,7 @@ MonoBehaviour:
   currentState: {fileID: 0}
   groundedState: {fileID: 11400000, guid: aacdff07b1c71fe429eaaff7b90d9a59, type: 2}
   airState: {fileID: 11400000, guid: 96d652a8f2516544a9680d783feeaeac, type: 2}
-  ladderAnimatorState: {fileID: 11400000, guid: dd659f4bcd6201641afdec9712198ef1, type: 2}
+  jumpState: {fileID: 11400000, guid: 7ec24b1c845580244bcca376f6cf8fff, type: 2}
   seekAnimatorState: {fileID: 11400000, guid: c8e03e230ebcb034984bd29cbdd5be6a, type: 2}
   hipsRoot: {fileID: 5695748246004990708}
   gravity: -15
@@ -100,6 +100,9 @@ MonoBehaviour:
   groundLayers:
     serializedVersion: 2
     m_Bits: 449
+  bounceLayer:
+    serializedVersion: 2
+    m_Bits: 256
   transparentGreen: {r: 0, g: 1, b: 0, a: 0.35}
   transparentRed: {r: 1, g: 0, b: 0, a: 0.35}
 --- !u!114 &7779074746749955574

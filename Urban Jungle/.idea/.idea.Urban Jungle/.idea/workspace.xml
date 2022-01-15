@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3276a363-4a9a-4a16-a4f6-fd9efda813d4" name="Default Changelist" comment="Change position of Wilma and updated C_Route" />
+    <list default="true" id="58fd8f7b-cbc9-49c9-b218-dc1bc195f974" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Climbing To Top.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Climbing To Top.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/SharaController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/SharaController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Air State.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Air State.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Grounded State.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Grounded State.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Ladder State.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Ladder State.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Wilma.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Wilma.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/AirState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/AirState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/AnimatorState_SO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/AnimatorState_SO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/GroundedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/GroundedState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/LadderState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/LadderState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/ThirdPersonManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/ThirdPersonManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PoligonCity/City.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PoligonCity/City.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="feature/#004_WilmaCrouch" />
+        <entry key="$PROJECT_DIR$/.." value="feature/#006_WilmaBounce" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -24,11 +40,12 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/Assets/Scenes/Character/Character.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/OneDrive/Dokumente/GitHub/GreatMeadow/GreatMeadow/Library/PackageCache/com.unity.render-pipelines.core@10.6.0/Runtime/Common/ObservableList.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/BounceBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/SeekTriggerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="22uSAQzwwyeJuEzXEeBo9HAGnUi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -72,7 +89,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3276a363-4a9a-4a16-a4f6-fd9efda813d4" name="Default Changelist" comment="" />
+      <changelist id="58fd8f7b-cbc9-49c9-b218-dc1bc195f974" name="Changes" comment="" />
       <created>1640685838544</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -88,8 +105,6 @@
       <workItem from="1641920682860" duration="2716000" />
       <workItem from="1641991120931" duration="14480000" />
       <workItem from="1642022400727" duration="12207000" />
-      <workItem from="1642203169961" duration="387000" />
-      <workItem from="1642244461570" duration="307000" />
     </task>
     <task id="LOCAL-00001" summary="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526">
       <created>1640900662969</created>
@@ -133,35 +148,7 @@
       <option name="project" value="LOCAL" />
       <updated>1642034984081</updated>
     </task>
-    <task id="LOCAL-00007" summary="Merge main into branch">
-      <created>1642186710249</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1642186710249</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Add right texture to barriers">
-      <created>1642187103559</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1642187103559</updated>
-    </task>
-    <task id="LOCAL-00009" summary="New City Version">
-      <created>1642203192274</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1642203192274</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Change position of Wilma and updated C_Route">
-      <created>1642244593850</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1642244593850</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,10 +177,6 @@
     <MESSAGE value="implemented climbing animation" />
     <MESSAGE value="added seek state and movement on the ladder" />
     <MESSAGE value="added a speed field on the SeekTriggerBehaviour" />
-    <MESSAGE value="Merge main into branch" />
-    <MESSAGE value="Add right texture to barriers" />
-    <MESSAGE value="New City Version" />
-    <MESSAGE value="Change position of Wilma and updated C_Route" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change position of Wilma and updated C_Route" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a speed field on the SeekTriggerBehaviour" />
   </component>
 </project>

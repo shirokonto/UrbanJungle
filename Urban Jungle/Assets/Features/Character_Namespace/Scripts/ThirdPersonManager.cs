@@ -21,9 +21,9 @@ namespace Features.Character_Namespace.Scripts
 		[SerializeField][ReadOnly] private AnimatorState_SO currentState;
 		
 		[Header("Available States")]
-		[SerializeField] private GroundedState groundedState;
-		[SerializeField] private AirState airState;
-		[SerializeField] private LadderState ladderAnimatorState;
+		[SerializeField] public GroundedState groundedState;
+		[SerializeField] public AirState airState;
+		[SerializeField] public JumpState jumpState;
 		[SerializeField] private SeekState seekAnimatorState;
 
 		[Header("Character")]
@@ -40,6 +40,7 @@ namespace Features.Character_Namespace.Scripts
 		[SerializeField] private float groundedRadius = 0.2f;
 		[Tooltip("What layers the character uses as ground")]
 		[SerializeField] private LayerMask groundLayers;
+		[SerializeField] public LayerMask bounceLayer;
 
 		[Header("Debug")]
 		public Color transparentGreen = new Color(0.0f, 1.0f, 0.0f, 0.35f);
@@ -91,9 +92,16 @@ namespace Features.Character_Namespace.Scripts
 			switch (grounded)
 			{
 				case true when _stateMachine.GetCurrentState() is AirState:
-					RequestState(groundedState);
+					if (IsGroundedToLayer(bounceLayer, out Collider floorCollider) && TryGetComponent(typeof(BounceBehaviour), out Component bounceBehaviour))
+					{
+						((BounceBehaviour) bounceBehaviour).ApplyBounce(this);
+					}
+					else
+					{
+						RequestState(groundedState);
+					}
 					break;
-				case false when _stateMachine.GetCurrentState() is GroundedState:
+				case false when _stateMachine.GetCurrentState() is GroundedState || _stateMachine.GetCurrentState() is JumpState:
 					RequestState(airState);
 					break;
 			}
@@ -157,18 +165,14 @@ namespace Features.Character_Namespace.Scripts
 			return grounded && any;
 		}
 		
-		public void RequestState(AnimatorState_SO stateAnimator)
+		public void RequestState(AnimatorState_SO requestedState)
 		{
-			if (((AnimatorState_SO) _stateMachine.GetCurrentState()).IsValidStateShift(stateAnimator))
+			if (((AnimatorState_SO) _stateMachine.GetCurrentState()).IsValidStateShift(requestedState))
 			{
-				_stateMachine.ChangeState(stateAnimator, gameObject);
-				currentState = stateAnimator;
+				//Debug.Log(requestedState.name);
+				_stateMachine.ChangeState(requestedState, gameObject);
+				currentState = requestedState;
 			}
-		}
-
-		public void EnterGroundedState()
-		{
-			RequestState(groundedState);
 		}
 	}
 }
