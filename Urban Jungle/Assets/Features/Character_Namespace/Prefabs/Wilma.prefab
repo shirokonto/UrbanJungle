@@ -90,13 +90,18 @@ MonoBehaviour:
   currentState: {fileID: 0}
   groundedState: {fileID: 11400000, guid: aacdff07b1c71fe429eaaff7b90d9a59, type: 2}
   airState: {fileID: 11400000, guid: 96d652a8f2516544a9680d783feeaeac, type: 2}
+  ladderAnimatorState: {fileID: 11400000, guid: dd659f4bcd6201641afdec9712198ef1, type: 2}
+  seekAnimatorState: {fileID: 11400000, guid: c8e03e230ebcb034984bd29cbdd5be6a, type: 2}
+  hipsRoot: {fileID: 5695748246004990708}
+  gravity: -15
   grounded: 1
-  groundedOffset: -0.1
-  groundedRadius: 0.2
+  groundedOffset: -0.105
+  groundedRadius: 0.21
   groundLayers:
     serializedVersion: 2
-    m_Bits: 193
-  gravity: -15
+    m_Bits: 449
+  transparentGreen: {r: 0, g: 1, b: 0, a: 0.35}
+  transparentRed: {r: 1, g: 0, b: 0, a: 0.35}
 --- !u!114 &7779074746749955574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,5 +309,10 @@ PrefabInstance:
 --- !u!4 &8775463998125279944 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f54966ac0d500a84eac778d050e0eab6, type: 3}
+  m_PrefabInstance: {fileID: 9097851233057762595}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5695748246004990708 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5671910290767253545, guid: f54966ac0d500a84eac778d050e0eab6, type: 3}
   m_PrefabInstance: {fileID: 9097851233057762595}
   m_PrefabAsset: {fileID: 0}
