@@ -3,20 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="58fd8f7b-cbc9-49c9-b218-dc1bc195f974" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Climbing To Top.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Climbing To Top.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/SharaController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/SharaController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Air State.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Air State.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Grounded State.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Grounded State.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Ladder State.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Data/Ladder State.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Wilma.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Wilma.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/AirState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/AirState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/AnimatorState_SO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/AnimatorState_SO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/GroundedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/GroundedState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/LadderState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/LadderState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/ThirdPersonManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/ThirdPersonManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectablePants.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectablePants.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectablePants.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectablePants.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableShirt.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableShirt.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableShirt.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableShirt.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectablePants.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectablePants.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectablePants.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectablePants.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableShirt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableShirt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableShirt.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableShirt.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PoligonCity/City.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PoligonCity/City.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RouteA.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RouteA.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +37,8 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/OneDrive/Dokumente/GitHub/GreatMeadow/GreatMeadow/Library/PackageCache/com.unity.render-pipelines.core@10.6.0/Runtime/Common/ObservableList.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/BounceBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Utils/GameEvent_Namespace/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/SeekTriggerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="22uSAQzwwyeJuEzXEeBo9HAGnUi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -54,6 +47,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
@@ -105,6 +99,7 @@
       <workItem from="1641920682860" duration="2716000" />
       <workItem from="1641991120931" duration="14480000" />
       <workItem from="1642022400727" duration="12207000" />
+      <workItem from="1642452812208" duration="3948000" />
     </task>
     <task id="LOCAL-00001" summary="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526">
       <created>1640900662969</created>
@@ -170,6 +165,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526" />
     <MESSAGE value="removed unused asset" />
