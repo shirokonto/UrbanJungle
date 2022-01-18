@@ -92,9 +92,16 @@ namespace Features.Character_Namespace.Scripts
 			switch (grounded)
 			{
 				case true when _stateMachine.GetCurrentState() is AirState:
-					if (IsGroundedToLayer(bounceLayer, out Collider floorCollider) && TryGetComponent(typeof(BounceBehaviour), out Component bounceBehaviour))
+					if (IsGroundedToLayer(bounceLayer, out Collider floorCollider))
 					{
-						((BounceBehaviour) bounceBehaviour).ApplyBounce(this);
+						if (floorCollider.TryGetComponent(out BounceBehaviour bounceBehaviour))
+						{
+							bounceBehaviour.ApplyBounce(this);
+						}
+						else
+						{
+							Debug.LogError($"You need to add the BounceBehaviour to {floorCollider.name}");
+						}
 					}
 					else
 					{

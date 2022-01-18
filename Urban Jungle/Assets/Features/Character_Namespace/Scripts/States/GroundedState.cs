@@ -1,3 +1,4 @@
+using Features.Character_Namespace.Scripts.CharacterBehaviours;
 using StarterAssets;
 using UnityEngine;
 
@@ -12,12 +13,8 @@ namespace Features.Character_Namespace.Scripts.States
 		[SerializeField] private float rotationSmoothTime = 0.12f;
 		[Tooltip("Acceleration and deceleration")]
 		[SerializeField] private float speedChangeRate = 10.0f;
-		[Tooltip("The Layer for crouching on objects")]
-		[SerializeField] private LayerMask crouchLayer;
-		[Tooltip("The Layer for force the character into a walk")]
-		[SerializeField] private LayerMask walkLayer;
-		[Tooltip("Whether the Character is forced to walk or not")]
-		[SerializeField] private bool forceWalk;
+		[Tooltip("Layer to control speed by floor")]
+		[SerializeField] private LayerMask forceSpeedLayer;
 
 		[Header("Jump")]
 		[Tooltip("Time required to pass before being able to jump again. Set to 0f to instantly jump again")]
@@ -72,22 +69,33 @@ namespace Features.Character_Namespace.Scripts.States
 
 		private void ApplySpeed(bool useBlend)
 		{
-			// set target speed based on inputs
-			float speed_targetAnimationBlend = Input.sprint ? AnimBlendThreshold_FastRun : AnimBlendThreshold_SlowRun;
-
-			bool isGroundedToCrouchLayer = _manager.IsGroundedToLayer(crouchLayer, out Collider _);
-			float walkType_targetAnimationBlend = isGroundedToCrouchLayer ? AnimBlendThreshold_Crouch : AnimBlendThreshold_DefaultMovement;
-
-			if (_manager.IsGroundedToLayer(walkLayer, out Collider _) || forceWalk || isGroundedToCrouchLayer)
-			{
-				speed_targetAnimationBlend = AnimBlendThreshold_Walk;
-			}
-
-			if (Input.move == Vector2.zero) speed_targetAnimationBlend = AnimBlendThreshold_StandIdle;
-	    
 			float inputMagnitude = Input.analogMovement ? Input.move.magnitude : 1f;
 			
-			//set blend
+			//Set target animation blend
+			float speed_targetAnimationBlend = 0f;
+			float walkType_targetAnimationBlend = 0f;
+			
+			if (_manager.IsGroundedToLayer(forceSpeedLayer, out Collider floorCollider))
+			{
+				if (floorCollider.TryGetComponent(out ForceSpeedBehaviour forceSpeedBehaviour))
+				{
+					speed_targetAnimationBlend = forceSpeedBehaviour.GetTargetSpeed(Input.sprint);
+					walkType_targetAnimationBlend = forceSpeedBehaviour.GetMovementType();
+				}
+				else
+				{
+					Debug.LogError($"You need to add the ForceSpeedBehaviour to {floorCollider.name}");
+				}
+			}
+			else
+			{
+				speed_targetAnimationBlend = ForceSpeedBehaviour.GetTargetSpeed(Input.sprint, MovementSpeed.SlowRun, MovementSpeed.FastRun);
+				walkType_targetAnimationBlend = (float) MovementType.Default;
+			}
+
+			if (Input.move == Vector2.zero) speed_targetAnimationBlend = (float) MovementSpeed.Stand;
+
+			//set current animation blend
 			_manager.Speed_AnimationBlend = useBlend ? Mathf.Lerp(_manager.Speed_AnimationBlend, speed_targetAnimationBlend, Time.deltaTime * speedChangeRate) : speed_targetAnimationBlend;
 			_animationBlend_walkType = useBlend ? Mathf.Lerp(_animationBlend_walkType, walkType_targetAnimationBlend, Time.deltaTime * speedChangeRate) : walkType_targetAnimationBlend;
 
