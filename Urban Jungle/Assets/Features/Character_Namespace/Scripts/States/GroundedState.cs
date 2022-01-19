@@ -1,3 +1,4 @@
+using Features.Character_Namespace.Scripts.CharacterBehaviours;
 using StarterAssets;
 using UnityEngine;
 
@@ -12,16 +13,10 @@ namespace Features.Character_Namespace.Scripts.States
 		[SerializeField] private float rotationSmoothTime = 0.12f;
 		[Tooltip("Acceleration and deceleration")]
 		[SerializeField] private float speedChangeRate = 10.0f;
-		[Tooltip("The Layer for crouching on objects")]
-		[SerializeField] private LayerMask crouchLayer;
-		[Tooltip("The Layer for force the character into a walk")]
-		[SerializeField] private LayerMask walkLayer;
-		[Tooltip("Whether the Character is forced to walk or not")]
-		[SerializeField] private bool forceWalk;
+		[Tooltip("Layer to control speed by floor")]
+		[SerializeField] private LayerMask forceSpeedLayer;
 
 		[Header("Jump")]
-		[Tooltip("The height the player can jump")]
-		[SerializeField] private float jumpHeight = 1.2f;
 		[Tooltip("Time required to pass before being able to jump again. Set to 0f to instantly jump again")]
 		[SerializeField] private float jumpTimeout = 0.2f;
     
@@ -29,10 +24,8 @@ namespace Features.Character_Namespace.Scripts.States
 		private float _animationBlend_walkType;
 		private float _rotationVelocity;
 
-		public override void Enter(GameObject gameObject)
+		protected override void Enter()
 		{
-			base.Enter(gameObject);
-	    
 			// reset our timeouts on start
 			_jumpTimeoutDelta = jumpTimeout;
         
@@ -67,41 +60,42 @@ namespace Features.Character_Namespace.Scripts.States
 		{
 			base.Exit();
 	    
-			// if we are not grounded, do not jump
-			Input.jump = false;
-	    
 			// update animator if using character
 			if (HasAnimator)
 			{
-				Animator.SetFloat(_animIDSpeed, AnimBlendThreshold_StandIdle);
-		    
-				float inputMagnitude = Input.analogMovement ? Input.move.magnitude : 1f;
-				Animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
-		    
-				Animator.SetFloat(_animIDWalkType, AnimBlendThreshold_DefaultMovement);
-				
 				Animator.SetBool(_animIDGrounded, false);
 			}
 		}
 
 		private void ApplySpeed(bool useBlend)
 		{
-			// set target speed based on inputs
-			float speed_targetAnimationBlend = Input.sprint ? AnimBlendThreshold_FastRun : AnimBlendThreshold_SlowRun;
-
-			bool isGroundedToCrouchLayer = _manager.IsGroundedToLayer(crouchLayer, out Collider _);
-			float walkType_targetAnimationBlend = isGroundedToCrouchLayer ? AnimBlendThreshold_Crouch : AnimBlendThreshold_DefaultMovement;
-
-			if (_manager.IsGroundedToLayer(walkLayer, out Collider _) || forceWalk || isGroundedToCrouchLayer)
+			float inputMagnitude = Input.analogMovement ? Input.move.magnitude : 1f;
+			
+			//Set target animation blend
+			float speed_targetAnimationBlend = 0f;
+			float walkType_targetAnimationBlend = 0f;
+			
+			if (_manager.IsGroundedToLayer(forceSpeedLayer, out Collider floorCollider))
 			{
-				speed_targetAnimationBlend = AnimBlendThreshold_Walk;
+				if (floorCollider.TryGetComponent(out ForceSpeedBehaviour forceSpeedBehaviour))
+				{
+					speed_targetAnimationBlend = forceSpeedBehaviour.GetTargetSpeed(Input.sprint);
+					walkType_targetAnimationBlend = forceSpeedBehaviour.GetMovementType();
+				}
+				else
+				{
+					Debug.LogError($"You need to add the ForceSpeedBehaviour to {floorCollider.name}");
+				}
+			}
+			else
+			{
+				speed_targetAnimationBlend = ForceSpeedBehaviour.GetTargetSpeed(Input.sprint, MovementSpeed.SlowRun, MovementSpeed.FastRun);
+				walkType_targetAnimationBlend = (float) MovementType.Default;
 			}
 
-			if (Input.move == Vector2.zero) speed_targetAnimationBlend = AnimBlendThreshold_StandIdle;
-	    
-			float inputMagnitude = Input.analogMovement ? Input.move.magnitude : 1f;
-	    
-			//set blend
+			if (Input.move == Vector2.zero) speed_targetAnimationBlend = (float) MovementSpeed.Stand;
+
+			//set current animation blend
 			_manager.Speed_AnimationBlend = useBlend ? Mathf.Lerp(_manager.Speed_AnimationBlend, speed_targetAnimationBlend, Time.deltaTime * speedChangeRate) : speed_targetAnimationBlend;
 			_animationBlend_walkType = useBlend ? Mathf.Lerp(_animationBlend_walkType, walkType_targetAnimationBlend, Time.deltaTime * speedChangeRate) : walkType_targetAnimationBlend;
 
@@ -136,7 +130,7 @@ namespace Features.Character_Namespace.Scripts.States
 			// stop our velocity dropping infinitely when grounded
 			if (_manager.VerticalVelocity < 0.0f)
 			{
-				_manager.VerticalVelocity = 0f;
+				_manager.VerticalVelocity = -2f;
 			}
 
 			// apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)
@@ -157,19 +151,7 @@ namespace Features.Character_Namespace.Scripts.States
 			// Jump
 			if (Input.jump && _jumpTimeoutDelta <= 0.0f)
 			{
-				// the square root of H * -2 * G = how much velocity needed to reach desired height
-				_manager.VerticalVelocity = Mathf.Sqrt(jumpHeight * -2f * _manager.gravity);
-				Vector3 velocity = Controller.velocity;
-				_manager.JumpSpeed = new Vector3(velocity.x, 0f, velocity.z).magnitude;
-
-				// update animator if using character
-				if (HasAnimator)
-				{
-					Animator.SetBool(_animIDJump, true);
-				}
-			
-				// prevent more jump iterations
-				Input.jump = false;
+				_manager.RequestState(_manager.jumpState);
 			}
 		}
 	}

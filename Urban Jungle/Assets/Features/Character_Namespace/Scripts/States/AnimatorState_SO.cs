@@ -5,6 +5,9 @@ using Utils.StateMachine_Namespace;
 
 namespace Features.Character_Namespace.Scripts.States
 {
+    public enum MovementType { Default = 0, Crouch = 1}
+    public enum MovementSpeed { Stand = 0, Walk = 1, SlowRun = 2, FastRun = 3}
+    
     public abstract class AnimatorState_SO : ScriptableObject, IStateAnimator
     {
         [field: SerializeField] protected List<AnimatorState_SO> validStateShifts;
@@ -15,14 +18,7 @@ namespace Features.Character_Namespace.Scripts.States
         protected CharacterController Controller => _manager.Controller;
         protected StarterAssetsInputs Input => _manager.Input;
         protected GameObject GameObject => _manager.MainCamera;
-    
-        protected static float AnimBlendThreshold_DefaultMovement => 0;
-        protected static float AnimBlendThreshold_Crouch => 1;
-        protected static float AnimBlendThreshold_StandIdle => 0;
-        protected static float AnimBlendThreshold_Walk => 1;
-        protected static float AnimBlendThreshold_SlowRun => 2;
-        protected static float AnimBlendThreshold_FastRun => 3;
-    
+
         //fields
         protected Transform _transform;
         protected ThirdPersonManager _manager;
@@ -37,20 +33,25 @@ namespace Features.Character_Namespace.Scripts.States
         protected readonly int _animIDGrounded = Animator.StringToHash("Grounded");
     
     
-        public virtual bool IsValidStateShift(AnimatorState_SO requestedStateAnimator)
+        public bool IsValidStateShift(AnimatorState_SO requestedStateAnimator)
         {
             if (!validStateShifts.Contains(requestedStateAnimator))
             {
-                Debug.LogWarning("The state shift was not possible because it is not contained in the validStateShift list");
+                Debug.LogWarning($"The state shift was not possible because {this.name} doesn't contain {requestedStateAnimator.name} in the validStateShift list");
                 return false;
             }
             return true;
         }
+        
+        protected virtual void Enter() { }
+        
 
-        public virtual void Enter(GameObject gameObject)
+        public void Enter(GameObject gameObject)
         {
             _manager = gameObject.GetComponent<ThirdPersonManager>();
             _transform = gameObject.transform;
+            
+            Enter();
         }
 
         public virtual void Execute() { }

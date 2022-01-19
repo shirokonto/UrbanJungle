@@ -13,20 +13,18 @@ namespace Features.Character_Namespace.Scripts.States
         [SerializeField] private float raycastPositionY = 1f;
         [SerializeField] private float raycastDistance = 0.6f;
         
-        private Collider _ladderCollider;
+        private Collider _currentLadderCollider;
         private bool _isControllableClimb;
         private float _climbTimeoutDelta;
 
-        public override void Enter(GameObject gameObject)
+        protected override void Enter()
         {
-            base.Enter(gameObject);
-
             //reset
             _climbTimeoutDelta = climbTimeout;
             _isControllableClimb = true;
 
             //cast a raycast for the ladder collider
-            _ladderCollider = GetRaycastHit().collider;
+            _currentLadderCollider = GetRaycastHit().collider;
 
             if (HasAnimator)
             {
@@ -42,7 +40,7 @@ namespace Features.Character_Namespace.Scripts.States
 
                 if (_manager.IsGroundedToLayer(floorLayer, out Collider _))
                 {
-                    _manager.EnterGroundedState();
+                    _manager.RequestState(_manager.groundedState);
                 }
             }
             _climbTimeoutDelta -= Time.deltaTime;
@@ -59,7 +57,7 @@ namespace Features.Character_Namespace.Scripts.States
         {
             base.Exit();
             
-            _ladderCollider.enabled = true;
+            _currentLadderCollider.enabled = true;
             if (HasAnimator)
             {
                 Animator.SetBool(_animIDClimbLadder, false);
@@ -84,9 +82,9 @@ namespace Features.Character_Namespace.Scripts.States
             var position = _manager.hipsRoot.position;
             Vector3 forwardAbove = new Vector3(position.x, position.y + raycastPositionY, position.z);
 
-            if (!Physics.Raycast(forwardAbove, forward, raycastDistance))
+            if (!Physics.Raycast(forwardAbove, forward, out RaycastHit newLadderCollider, raycastDistance))
             {
-                _ladderCollider.enabled = false;
+                _currentLadderCollider.enabled = false;
                 _isControllableClimb = false;
                 Animator.SetTrigger(_animIDClimbToLadderTop);
                 
@@ -97,6 +95,11 @@ namespace Features.Character_Namespace.Scripts.States
             }
             else
             {
+                if (_currentLadderCollider != null && _currentLadderCollider != newLadderCollider.collider)
+                {
+                    _currentLadderCollider = newLadderCollider.collider;
+                }
+                
                 if (drawDebugRay)
                 {
                     Debug.DrawRay(forwardAbove, forward, _manager.transparentGreen);

@@ -60,9 +60,9 @@ ModelImporter:
       curves: []
       events:
       - time: 0.9893617
-        functionName: EnterGroundedState
+        functionName: RequestState
         data: 
-        objectReferenceParameter: {instanceID: 0}
+        objectReferenceParameter: {fileID: 11400000, guid: aacdff07b1c71fe429eaaff7b90d9a59, type: 2}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
