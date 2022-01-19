@@ -9,7 +9,6 @@ public class PickableItem : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("Player"))
         {
-            print("Item picked up");
             item.SetActive(false);
             var datePreparation = collider.gameObject.GetComponent<DatePreparation>();
             if (pickableItems == PickableItems.NewHairstyle)

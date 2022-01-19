@@ -13,11 +13,11 @@ public enum PickableItems
 }
 public class DatePreparation : MonoBehaviour
 {
-    [SerializeField] private List<Collectables> _collectablesList;
+    [SerializeField] private List<Collectables> collectablesList;
 
     private void Start()
     {
-        foreach (var collectable in _collectablesList)
+        foreach (var collectable in collectablesList)
         {
             if (collectable.type != PickableItems.OldHairstyle)
             {
@@ -28,7 +28,7 @@ public class DatePreparation : MonoBehaviour
 
     public void PickUpItem(PickableItems items, bool equip)
     {
-        foreach (var collectable in _collectablesList.Where(collectable => collectable.type == items))
+        foreach (var collectable in collectablesList.Where(collectable => collectable.type == items))
         {
             collectable.item.SetActive(equip);
         }

@@ -155,19 +155,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b70e932a6c9fe5a4ba72157a7d2a7100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _collectablesList:
+  collectablesList:
   - item: {fileID: 615255849}
     type: 0
   - item: {fileID: 998858435}
     type: 1
   - item: {fileID: 1680920033}
     type: 2
-  - item: {fileID: 382215907}
-    type: 3
   - item: {fileID: 378499206}
     type: 4
   - item: {fileID: 370693132}
     type: 5
+  - item: {fileID: 382215907}
+    type: 3
 --- !u!1 &615255849 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4867521736595100897, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
