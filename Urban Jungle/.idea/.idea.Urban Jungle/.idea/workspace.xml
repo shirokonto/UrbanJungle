@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58fd8f7b-cbc9-49c9-b218-dc1bc195f974" name="Changes" comment="">
+    <list default="true" id="3276a363-4a9a-4a16-a4f6-fd9efda813d4" name="Default Changelist" comment="feat: implemented modular ladders">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DatePreparation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DatePreparation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Materials/Skin_Presets/Shara_Mat_Skin_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Materials/Skin_Presets/Shara_Mat_Skin_1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Scripts/PickableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Scripts/PickableItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CollectableItems.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CollectableItems.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RouteA.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RouteA.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CharacterBehaviours/BounceBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CharacterBehaviours/BounceBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Route_C.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Route_C.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/URP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/URP.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Utils.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +31,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DatePreparation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -106,6 +100,7 @@
       <workItem from="1642203169961" duration="387000" />
       <workItem from="1642244461570" duration="307000" />
       <workItem from="1642269858000" duration="8684000" />
+      <workItem from="1642704182284" duration="1112000" />
     </task>
     <task id="LOCAL-00001" summary="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526">
       <created>1640900662969</created>
