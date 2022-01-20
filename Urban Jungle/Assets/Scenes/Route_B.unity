@@ -9161,14 +9161,14 @@ Transform:
   - {fileID: 1162354853}
   - {fileID: 56639634}
   - {fileID: 564326148}
-  - {fileID: 1212271983}
   - {fileID: 1948524490}
   - {fileID: 258304201}
   - {fileID: 1057134309}
+  - {fileID: 1212271983}
   - {fileID: 1463262667}
   - {fileID: 1699655646}
-  - {fileID: 1718235837}
   - {fileID: 1580860357}
+  - {fileID: 1718235837}
   - {fileID: 900823957}
   - {fileID: 1454417596}
   - {fileID: 1986225006}
@@ -21633,8 +21633,8 @@ Transform:
   - {fileID: 971226633}
   - {fileID: 1742466261}
   - {fileID: 1686626105}
-  - {fileID: 206873742}
   - {fileID: 505607276}
+  - {fileID: 206873742}
   m_Father: {fileID: 769275175}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22126,8 +22126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocityAddition: 8
   maxVelocity: 40
-  jumpSpeedAddition: 1000
-  maxJumpSpeed: 1000
+  jumpSpeedAddition: 4
+  maxJumpSpeed: 8
 --- !u!1001 &1728757328
 PrefabInstance:
   m_ObjectHideFlags: 0
