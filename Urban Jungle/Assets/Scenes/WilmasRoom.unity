@@ -442,8 +442,8 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.5471698, g: 0.52334577, b: 0.41037735, a: 0.7882353}
+  m_Intensity: 0.03
   m_Range: 0.35
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -500,13 +500,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373163871}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.461998, y: 7.1269007, z: 62.146}
+  m_LocalRotation: {x: -0, y: 0.58270144, z: -0, w: 0.8126863}
+  m_LocalPosition: {x: 59.624, y: 6.799, z: 61.922}
   m_LocalScale: {x: 0.35785785, y: 0.35785785, z: 0.38501924}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 71.282, z: 0}
 --- !u!1 &385858089
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,6 +615,7 @@ GameObject:
   - component: {fileID: 393057774}
   - component: {fileID: 393057773}
   - component: {fileID: 393057772}
+  - component: {fileID: 393057776}
   m_Layer: 7
   m_Name: Floor
   m_TagString: Untagged
@@ -699,6 +700,21 @@ Transform:
   m_Father: {fileID: 984374002}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &393057776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393057771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f75508e86372e45987dc8413cc24a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementType: 0
+  normalSpeed: 1
+  sprintSpeed: 1
 --- !u!1001 &416174926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -780,6 +796,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 739781715}
     m_Modifications:
+    - target: {fileID: 1028670632454330, guid: eef8306c54f201a4e8cd536d25207e32, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1774811779915186, guid: eef8306c54f201a4e8cd536d25207e32, type: 3}
       propertyPath: m_Name
       value: Bed_Set
@@ -858,7 +878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4097251544599062, guid: eef8306c54f201a4e8cd536d25207e32, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.105
+      value: 0.749
       objectReference: {fileID: 0}
     - target: {fileID: 4301745775259608, guid: eef8306c54f201a4e8cd536d25207e32, type: 3}
       propertyPath: m_LocalScale.x

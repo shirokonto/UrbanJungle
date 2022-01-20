@@ -19,5 +19,5 @@ MonoBehaviour:
     m_Bits: 1
   climbTimeout: 0.4
   drawDebugRay: 1
-  raycastPositionY: 1
+  raycastPositionY: 1.3
   raycastDistance: 0.5
