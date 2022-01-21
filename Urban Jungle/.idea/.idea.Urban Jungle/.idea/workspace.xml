@@ -1,11 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3276a363-4a9a-4a16-a4f6-fd9efda813d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CloudFloor.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/CloudFloor_Namespace/CloudFloor.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/CloudFloor_Namespace/CloudFloor.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CloudFloor.unity.meta" afterDir="false" />
+    <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/DatePreparation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DatePreparation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Models/SM_Bld_Apartment_Stairs_Corner_Without Fences 1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Models/SM_Bld_Apartment_Stairs_Corner_Without Fences 1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Models/SM_Bld_Apartment_Stairs_Corner_Without Fences.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Models/SM_Bld_Apartment_Stairs_Corner_Without Fences.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableBrush.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableBrush.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableHairStyling.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableHairStyling.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableHairspray.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableHairspray.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableMoney.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableMoney.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectablePants.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectablePants.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableShirt.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableShirt.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableShoes.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableShoes.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/Halfsphere.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/Halfsphere.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableBrush.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableHairStyling.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableHairStyling.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableHairspray.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableHairspray.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableMoney.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableMoney.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectablePants.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectablePants.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableShirt.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableShirt.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableShoes.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableShoes.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/Halfsphere.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/Halfsphere.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Scripts/PickableItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Scripts/PickableItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Shaders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Shaders/IlluminatedField.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Shaders/IlluminatedField.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Shaders/IlluminatedFieldShaderGraph.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Shaders/IlluminatedFieldShaderGraph.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures/Basket_Texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures/Basket_Texture.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures/Hairspray_texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures/Hairspray_texture.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures/Money_Texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures/Money_Texture.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures/hexagonTextures.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures/hexagonTextures.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/UI_Namespace.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/UI_Namespace/CountdownController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/UI_Namespace/CountdownController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CollectableItems.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CollectableItems.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/UI.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/UI.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Shara.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Shara.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableBrush.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CharacterBehaviours/BounceBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CharacterBehaviours/BounceBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RouteA.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RouteA.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Route_B.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Route_B.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Route_C.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Route_C.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/URP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/URP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +85,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="feature/#006_WilmaBounce" />
+        <entry key="$PROJECT_DIR$/.." value="feature/#004_WilmaCrouch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -30,16 +100,42 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da6ab58261ca4bf88d2245fa0b5e29ff18000/74/5b1f66f1/Physics.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca496b8c93454b2f9b9924292c19379f13b800/de/03dc34b7/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da6ab58261ca4bf88d2245fa0b5e29ff18000/d2/8ba25403/PhysicsScene.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/OneDrive/Dokumente/GitHub/GreatMeadow/GreatMeadow/Library/PackageCache/com.unity.render-pipelines.core@10.6.0/Runtime/Common/ObservableList.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/EventSystem/RaycastSortingTests.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../Local/ProceduralClimbing/Assets/StarterAssets/ThirdPersonController/Scripts/ThirdPersonManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_B.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca496b8c93454b2f9b9924292c19379f13b800/3f/93e88f97/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Local/ProceduralClimbing/Assets/StarterAssets/ThirdPersonController/Scripts/WallRunState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Character/Character.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da6ab58261ca4bf88d2245fa0b5e29ff18000/74/5b1f66f1/Physics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Character/Character.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/WilmasRoom.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/WilmasRoom.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/WilmasRoom.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/OneDrive/Dokumente/GitHub/GreatMeadow/GreatMeadow/Library/PackageCache/com.unity.render-pipelines.core@10.6.0/Runtime/Common/ObservableList.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Character/Character.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Local/ProceduralClimbing/Assets/StarterAssets/ThirdPersonController/Scripts/ThirdPersonManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/WilmasRoom.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/WilmasRoom.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Character/Character.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_B.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da6ab58261ca4bf88d2245fa0b5e29ff18000/d2/8ba25403/PhysicsScene.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_B.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Character/Character.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/EventSystem/RaycastSortingTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_B.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_B.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="22uSAQzwwyeJuEzXEeBo9HAGnUi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,6 +144,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
@@ -55,6 +152,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="rider.run.widget.enabled.cache" value="false" />
     <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -83,7 +181,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6a1d36ed-0a4f-4617-8e8c-e9d24975024f" name="Changes" comment="" />
+      <changelist id="3276a363-4a9a-4a16-a4f6-fd9efda813d4" name="Default Changelist" comment="" />
       <created>1640685838544</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -99,11 +197,10 @@
       <workItem from="1641920682860" duration="2716000" />
       <workItem from="1641991120931" duration="14480000" />
       <workItem from="1642022400727" duration="12207000" />
-      <workItem from="1642689883549" duration="670000" />
-      <workItem from="1642704147659" duration="884000" />
-      <workItem from="1642724614396" duration="50000" />
-      <workItem from="1642727483533" duration="691000" />
-      <workItem from="1642762768786" duration="1343000" />
+      <workItem from="1642203169961" duration="387000" />
+      <workItem from="1642244461570" duration="307000" />
+      <workItem from="1642269858000" duration="8684000" />
+      <workItem from="1642704182284" duration="1112000" />
     </task>
     <task id="LOCAL-00001" summary="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526">
       <created>1640900662969</created>
@@ -147,7 +244,56 @@
       <option name="project" value="LOCAL" />
       <updated>1642034984081</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Merge main into branch">
+      <created>1642186710249</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1642186710249</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add right texture to barriers">
+      <created>1642187103559</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1642187103559</updated>
+    </task>
+    <task id="LOCAL-00009" summary="New City Version">
+      <created>1642203192274</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1642203192274</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Change position of Wilma and updated C_Route">
+      <created>1642244593850</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1642244593850</updated>
+    </task>
+    <task id="LOCAL-00011" summary="CI:merged with main">
+      <created>1642247627393</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1642247627393</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix: bugs found during route testing">
+      <created>1642248829495</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1642248829495</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: implemented modular ladders">
+      <created>1642273366955</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1642273366955</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +315,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526" />
     <MESSAGE value="removed unused asset" />
@@ -176,6 +323,13 @@
     <MESSAGE value="implemented climbing animation" />
     <MESSAGE value="added seek state and movement on the ladder" />
     <MESSAGE value="added a speed field on the SeekTriggerBehaviour" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a speed field on the SeekTriggerBehaviour" />
+    <MESSAGE value="Merge main into branch" />
+    <MESSAGE value="Add right texture to barriers" />
+    <MESSAGE value="New City Version" />
+    <MESSAGE value="Change position of Wilma and updated C_Route" />
+    <MESSAGE value="CI:merged with main" />
+    <MESSAGE value="fix: bugs found during route testing" />
+    <MESSAGE value="feat: implemented modular ladders" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented modular ladders" />
   </component>
 </project>

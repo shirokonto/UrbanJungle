@@ -35,7 +35,7 @@ namespace Features.Character_Namespace.Scripts
                 }
             }
 
-            manager.JumpSpeed = Mathf.Clamp(Mathf.Round(manager.JumpSpeed), StandIdleSpeed, FastRunSpeed);
+            manager.JumpSpeed = Mathf.Clamp(Mathf.Round(manager.JumpSpeed), StandIdleSpeed, maxJumpSpeed);
         }
     }
 }
