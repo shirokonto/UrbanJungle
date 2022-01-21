@@ -32,7 +32,7 @@ public class CountdownController : MonoBehaviour
     {
         currentTime -= 1 * Time.deltaTime;
 
-        countdownTime.text = Math.Floor(currentTime / 60).ToString("0") + ":" + Math.Floor(currentTime % 60).ToString("0");
+        countdownTime.text = Math.Floor(currentTime / 60).ToString("0") + ":" + Math.Floor(currentTime % 60).ToString("00");
         
         if (currentTime <= 300f)
         {
@@ -46,9 +46,9 @@ public class CountdownController : MonoBehaviour
             
             if (currentTime <= 60f)
             {
-                timeGrade = "F**!! GO GIRL GO!!!";
+                timeGrade = "F************!";
                 
-                countdownInfo.text = "Timing Level: " + timeGrade;
+                countdownInfo.text = timeGrade;
 
                 countdownInfo.fontStyle = FontStyle.BoldAndItalic;
 
@@ -58,7 +58,8 @@ public class CountdownController : MonoBehaviour
                 
                 if (currentTime <= 0)
                 {
-                    countdownTime.text = "Too late!";
+                    countdownTime.text = "";
+                    countdownInfo.text = "You are too late!";
                     // player looses?
                 }
             }
