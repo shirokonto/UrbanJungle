@@ -25,8 +25,8 @@ namespace Features.Character_Namespace.Scripts.States
             _fallTimeoutDelta = fallTimeout;
             
             Vector3 velocity = Controller.velocity;
-            float magnitude = new Vector3(velocity.x, 0f, velocity.z).magnitude;
-            _manager.JumpSpeed = Mathf.Clamp(magnitude, (float) MovementSpeed.Stand, (float) MovementSpeed.FastRun);
+            _manager.JumpSpeed = new Vector3(velocity.x, 0f, velocity.z).magnitude;
+            //Mathf.Clamp(magnitude, (float) MovementSpeed.Stand, (float) MovementSpeed.FastRun);
         }
 
         public override void Execute()
