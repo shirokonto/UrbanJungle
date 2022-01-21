@@ -392,8 +392,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2560047, y: 0.3868452, z: 1.0002491}
-  m_Center: {x: 0.13762084, y: 0.11266283, z: -0.06886759}
+  m_Size: {x: 1.3946888, y: 0.78346235, z: 1.2982174}
+  m_Center: {x: 0.20696309, y: 0.3109715, z: -0.054955937}
 --- !u!4 &698576107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5430397282089899438, guid: 4ea9b4fa8b8ac3f4593ce84324310d7e, type: 3}
@@ -604,6 +604,30 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5036980812802123293, guid: 6aa33b526f2ca9b40b40d05b5bdd5469, type: 3}
+      propertyPath: m_Size.x
+      value: 0.13298975
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036980812802123293, guid: 6aa33b526f2ca9b40b40d05b5bdd5469, type: 3}
+      propertyPath: m_Size.y
+      value: 0.15389238
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036980812802123293, guid: 6aa33b526f2ca9b40b40d05b5bdd5469, type: 3}
+      propertyPath: m_Size.z
+      value: 0.1592242
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036980812802123293, guid: 6aa33b526f2ca9b40b40d05b5bdd5469, type: 3}
+      propertyPath: m_Center.x
+      value: 0.00034189757
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036980812802123293, guid: 6aa33b526f2ca9b40b40d05b5bdd5469, type: 3}
+      propertyPath: m_Center.y
+      value: 0.004409255
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036980812802123293, guid: 6aa33b526f2ca9b40b40d05b5bdd5469, type: 3}
+      propertyPath: m_Center.z
+      value: -0.035865624
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036980812802123293, guid: 6aa33b526f2ca9b40b40d05b5bdd5469, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
@@ -730,8 +754,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.049172763, y: 0.04653059, z: 0.021582348}
-  m_Center: {x: 0.0012982255, y: -0.00033936044, z: -0.000116851406}
+  m_Size: {x: 0.049172763, y: 0.04653059, z: 0.027934082}
+  m_Center: {x: 0.0012982255, y: -0.0003393604, z: 0.0030590205}
 --- !u!114 &5009610958971212160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -821,6 +845,22 @@ PrefabInstance:
     - target: {fileID: 946063716551408900, guid: 000ec1a8aa0f5764cb9ed8e0026d8e75, type: 3}
       propertyPath: m_Name
       value: CollectableMoney
+      objectReference: {fileID: 0}
+    - target: {fileID: 946063716551408901, guid: 000ec1a8aa0f5764cb9ed8e0026d8e75, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9739456
+      objectReference: {fileID: 0}
+    - target: {fileID: 946063716551408901, guid: 000ec1a8aa0f5764cb9ed8e0026d8e75, type: 3}
+      propertyPath: m_Size.z
+      value: 0.8680191
+      objectReference: {fileID: 0}
+    - target: {fileID: 946063716551408901, guid: 000ec1a8aa0f5764cb9ed8e0026d8e75, type: 3}
+      propertyPath: m_Center.x
+      value: -0.013027191
+      objectReference: {fileID: 0}
+    - target: {fileID: 946063716551408901, guid: 000ec1a8aa0f5764cb9ed8e0026d8e75, type: 3}
+      propertyPath: m_Center.z
+      value: -0.08071518
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 000ec1a8aa0f5764cb9ed8e0026d8e75, type: 3}
