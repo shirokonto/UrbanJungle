@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTime: 0
-  countdownInfo: {fileID: 0}
+  countdownInfo: {fileID: 1023272720}
   countdownTime: {fileID: 1011195780}
 --- !u!1 &1011195778
 GameObject:
@@ -389,7 +389,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Ezzzz!
+  m_Text: 'Timing Level: Ezzzz!'
 --- !u!222 &1023272721
 CanvasRenderer:
   m_ObjectHideFlags: 0
