@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3276a363-4a9a-4a16-a4f6-fd9efda813d4" name="Default Changelist" comment="feat: implemented modular ladders">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CharacterBehaviours/BounceBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CharacterBehaviours/BounceBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Route_C.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Route_C.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" afterDir="false" />
-    </list>
+    <list default="true" id="3276a363-4a9a-4a16-a4f6-fd9efda813d4" name="Default Changelist" comment="feat: implemented modular ladders" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,9 +24,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -211,7 +205,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
