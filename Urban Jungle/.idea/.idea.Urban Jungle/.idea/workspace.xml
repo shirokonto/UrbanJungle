@@ -1,12 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3276a363-4a9a-4a16-a4f6-fd9efda813d4" name="Default Changelist" comment="feat: implemented modular ladders">
+    <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/DatePreparation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DatePreparation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Models/SM_Bld_Apartment_Stairs_Corner_Without Fences 1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Models/SM_Bld_Apartment_Stairs_Corner_Without Fences 1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Models/SM_Bld_Apartment_Stairs_Corner_Without Fences.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Models/SM_Bld_Apartment_Stairs_Corner_Without Fences.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableBrush.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableBrush.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableHairStyling.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableHairStyling.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableHairspray.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableHairspray.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableMoney.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableMoney.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectablePants.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectablePants.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableShirt.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableShirt.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableShoes.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/CollectableShoes.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/Halfsphere.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Models/Halfsphere.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableBrush.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableHairStyling.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableHairStyling.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableHairspray.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableHairspray.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableMoney.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableMoney.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectablePants.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectablePants.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableShirt.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableShirt.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableShoes.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableShoes.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/Halfsphere.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/Halfsphere.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Scripts/PickableItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Scripts/PickableItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Shaders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Shaders/IlluminatedField.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Shaders/IlluminatedField.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Shaders/IlluminatedFieldShaderGraph.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Shaders/IlluminatedFieldShaderGraph.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures/Basket_Texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures/Basket_Texture.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures/Hairspray_texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures/Hairspray_texture.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures/Money_Texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures/Money_Texture.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures/hexagonTextures.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Textures/hexagonTextures.jpg.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Features/UI_Namespace.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/UI_Namespace/CountdownController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/UI_Namespace/CountdownController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CollectableItems.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/CollectableItems.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/UI.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/UI.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CountdownController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/UI_Namespace/CountdownController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CountdownController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Shara.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Shara.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Prefabs/CollectableBrush.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CharacterBehaviours/BounceBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CharacterBehaviours/BounceBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RouteA.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RouteA.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Route_B.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Route_B.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Route_C.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Route_C.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/URP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/URP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +100,39 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca496b8c93454b2f9b9924292c19379f13b800/de/03dc34b7/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_B.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca496b8c93454b2f9b9924292c19379f13b800/3f/93e88f97/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Local/ProceduralClimbing/Assets/StarterAssets/ThirdPersonController/Scripts/WallRunState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Character/Character.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da6ab58261ca4bf88d2245fa0b5e29ff18000/74/5b1f66f1/Physics.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Character/Character.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/WilmasRoom.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/WilmasRoom.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/WilmasRoom.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/OneDrive/Dokumente/GitHub/GreatMeadow/GreatMeadow/Library/PackageCache/com.unity.render-pipelines.core@10.6.0/Runtime/Common/ObservableList.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Character/Character.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Local/ProceduralClimbing/Assets/StarterAssets/ThirdPersonController/Scripts/ThirdPersonManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/WilmasRoom.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/WilmasRoom.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Character/Character.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_B.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da6ab58261ca4bf88d2245fa0b5e29ff18000/d2/8ba25403/PhysicsScene.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_B.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Character/Character.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/EventSystem/RaycastSortingTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_B.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_B.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/Scenes/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -212,6 +312,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

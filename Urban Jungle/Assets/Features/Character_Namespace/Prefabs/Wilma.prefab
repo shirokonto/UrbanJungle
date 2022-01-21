@@ -95,8 +95,8 @@ MonoBehaviour:
   hipsRoot: {fileID: 5695748246004990708}
   gravity: -15
   grounded: 1
-  groundedOffset: -0.105
-  groundedRadius: 0.21
+  groundedOffset: -0.1
+  groundedRadius: 0.2
   groundLayers:
     serializedVersion: 2
     m_Bits: 449
