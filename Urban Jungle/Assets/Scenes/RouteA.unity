@@ -7517,6 +7517,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64925656970162654, guid: 9384e4f7925dd0d47a003b910f826bf8, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 7e4c9c6a708282549adc005136e459f2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9384e4f7925dd0d47a003b910f826bf8, type: 3}
 --- !u!4 &566791752 stripped
@@ -11241,6 +11245,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64925656970162654, guid: 9384e4f7925dd0d47a003b910f826bf8, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 7e4c9c6a708282549adc005136e459f2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9384e4f7925dd0d47a003b910f826bf8, type: 3}
 --- !u!4 &846238486 stripped
@@ -12725,7 +12733,7 @@ PrefabInstance:
     - target: {fileID: 64240115493913262, guid: 045266ddc5d5afd4bbceaaeda75189da, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: -5586935656912021771, guid: 62fd807d116ba504b80a787843dd49ac, type: 3}
+      objectReference: {fileID: 4300000, guid: 7e4c9c6a708282549adc005136e459f2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 045266ddc5d5afd4bbceaaeda75189da, type: 3}
 --- !u!4 &1007929504 stripped
@@ -14043,7 +14051,7 @@ PrefabInstance:
     - target: {fileID: 64240115493913262, guid: 045266ddc5d5afd4bbceaaeda75189da, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: -5586935656912021771, guid: 62fd807d116ba504b80a787843dd49ac, type: 3}
+      objectReference: {fileID: 4300000, guid: 7e4c9c6a708282549adc005136e459f2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 045266ddc5d5afd4bbceaaeda75189da, type: 3}
 --- !u!4 &1178652888 stripped
