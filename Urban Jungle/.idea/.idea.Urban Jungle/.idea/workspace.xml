@@ -1,31 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Models/SM_Env_Cloud_04.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Models/SM_Env_Cloud_04.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Models/SM_Env_WaterEdge_Corner_03.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Models/SM_Env_WaterEdge_Corner_03.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Environments/SM_Env_Cloud_04.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Environments/SM_Env_Cloud_04.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Environments/SM_Env_WaterEdge_Corner_03.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Environments/SM_Env_WaterEdge_Corner_03.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Features/CloudFloor_Namespace/Shader Graphs_SkyDisk.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Features/CloudFloor_Namespace/Shader Graphs_SkyDisk.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Features/CloudFloor_Namespace/Shader Graphs_TransparentClouds.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Features/CloudFloor_Namespace/Shader Graphs_TransparentClouds.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Features/CloudFloor_Namespace/Transparent.shadergraph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Features/CloudFloor_Namespace/Transparent.shadergraph.meta" afterDir="false" />
+    <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="adjusted route c to fit to cloud floor">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Materials/FX_Materials/Cloud_Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Materials/FX_Materials/Cloud_Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/CloudFloor_Namespace/Shader Graphs_SkyDisk_CityScale.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/CloudFloor_Namespace/Shader Graphs_SkyDisk_CityScale.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/CloudFloor_Namespace/Shader Graphs_SkyDisk_LargeScale.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/CloudFloor_Namespace/Shader Graphs_SkyDisk_LargeScale.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CloudFloor.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CloudFloor.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/CollectableItems.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CollectableItems.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RouteA.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RouteA.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Route_C.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Route_C.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +109,7 @@
       <workItem from="1642244461570" duration="307000" />
       <workItem from="1642269858000" duration="8684000" />
       <workItem from="1642704182284" duration="1112000" />
-      <workItem from="1642948149019" duration="632000" />
+      <workItem from="1642948149019" duration="1802000" />
     </task>
     <task id="LOCAL-00001" summary="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526">
       <created>1640900662969</created>
@@ -223,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642273366955</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="adjusted route c to fit to cloud floor">
+      <created>1642951647449</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1642951647449</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +246,7 @@
     <MESSAGE value="CI:merged with main" />
     <MESSAGE value="fix: bugs found during route testing" />
     <MESSAGE value="feat: implemented modular ladders" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented modular ladders" />
+    <MESSAGE value="adjusted route c to fit to cloud floor" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted route c to fit to cloud floor" />
   </component>
 </project>
