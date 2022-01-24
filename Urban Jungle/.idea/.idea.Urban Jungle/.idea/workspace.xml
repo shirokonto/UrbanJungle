@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3276a363-4a9a-4a16-a4f6-fd9efda813d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CameraZoom.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CameraZoom.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Smartphone.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Smartphone.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ZoomInCamera.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ZoomInCamera.controller" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +29,10 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/Assets/Scenes/Smartphone.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/Assets/Scenes/Smartphone.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/Assets/Scenes/WilmasRoom.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/Assets/Scenes/Character/Character.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -109,6 +100,7 @@
       <workItem from="1642244461570" duration="307000" />
       <workItem from="1642269858000" duration="8684000" />
       <workItem from="1642704182284" duration="1112000" />
+      <workItem from="1642809873891" duration="1282000" />
     </task>
     <task id="LOCAL-00001" summary="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526">
       <created>1640900662969</created>
@@ -201,7 +193,21 @@
       <option name="project" value="LOCAL" />
       <updated>1642273366955</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Updated Smartphone screen and animation">
+      <created>1642809934910</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1642809934910</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update animation of camera into smartphone">
+      <created>1642811871031</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1642811871031</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +243,8 @@
     <MESSAGE value="CI:merged with main" />
     <MESSAGE value="fix: bugs found during route testing" />
     <MESSAGE value="feat: implemented modular ladders" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented modular ladders" />
+    <MESSAGE value="Updated Smartphone screen and animation" />
+    <MESSAGE value="Update animation of camera into smartphone" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update animation of camera into smartphone" />
   </component>
 </project>
