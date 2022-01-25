@@ -32,6 +32,11 @@ namespace Utils.StateMachine_Namespace
         {
             return currentStateAnimator;
         }
+        
+        public IStateAnimator GetPreviousState()
+        {
+            return previousStateAnimator;
+        }
 
         public void Update()
         {

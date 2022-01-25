@@ -56,8 +56,12 @@ namespace Features.Character_Namespace.Scripts.States
         public override void Exit()
         {
             base.Exit();
+
+            if (_currentLadderCollider != null)
+            {
+                _currentLadderCollider.enabled = true;
+            }
             
-            _currentLadderCollider.enabled = true;
             if (HasAnimator)
             {
                 Animator.SetBool(_animIDClimbLadder, false);
@@ -84,6 +88,13 @@ namespace Features.Character_Namespace.Scripts.States
 
             if (!Physics.Raycast(forwardAbove, forward, out RaycastHit newLadderCollider, raycastDistance))
             {
+                //force the character out of climbing if the currentLadderCollider == null
+                if (_currentLadderCollider == null)
+                {
+                    _manager.RequestState(_manager.groundedState);
+                    return;
+                }
+                
                 _currentLadderCollider.enabled = false;
                 _isControllableClimb = false;
                 Animator.SetTrigger(_animIDClimbToLadderTop);
