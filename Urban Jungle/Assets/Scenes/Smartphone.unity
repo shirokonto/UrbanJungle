@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 89224010}
   - component: {fileID: 89224009}
   m_Layer: 5
-  m_Name: WG-Andy
+  m_Name: AndyText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -287,7 +287,7 @@ RectTransform:
   m_LocalScale: {x: 1.1796007, y: 1.1932162, z: 1}
   m_Children: []
   m_Father: {fileID: 1198228172}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0.06, y: 180, z: -0.013}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -760,7 +760,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0.06, y: 180, z: -0.013}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11, y: -40}
+  m_AnchoredPosition: {x: -13, y: -39}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &709000562
@@ -783,7 +783,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '         Good morning Wilma. Im really looking forward to our date later.
+  m_text: '           Good morning Wilma. Im really looking forward to our date later.
     :)
 
 
@@ -1161,8 +1161,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 89224008}
   - {fileID: 1674076384}
+  - {fileID: 89224008}
   m_Father: {fileID: 111392608}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1184,7 +1184,7 @@ GameObject:
   - component: {fileID: 1256723724}
   - component: {fileID: 1256723723}
   m_Layer: 5
-  m_Name: Funny_Text
+  m_Name: Discord
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1427,7 +1427,7 @@ GameObject:
   - component: {fileID: 1336294237}
   - component: {fileID: 1336294236}
   m_Layer: 5
-  m_Name: ReminderText (1)
+  m_Name: Informations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1472,7 +1472,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "                   Date with XXX! \nWhen: 12:00 p.m.  \nWhere: @ Pizza
+  m_text: "                   Date with Alex! \nWhen: 12:00 p.m.  \nWhere: @ Pizza
     Plaza. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -1951,7 +1951,7 @@ GameObject:
   - component: {fileID: 1546762821}
   - component: {fileID: 1546762820}
   m_Layer: 5
-  m_Name: XXX
+  m_Name: Alex
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1996,7 +1996,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'XXX:
+  m_text: 'Alex:
 
 
 '
@@ -2228,7 +2228,7 @@ GameObject:
   - component: {fileID: 1674076386}
   - component: {fileID: 1674076385}
   m_Layer: 5
-  m_Name: 'MessageText '
+  m_Name: WG-Andy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2246,7 +2246,7 @@ RectTransform:
   m_LocalScale: {x: 1.1225739, y: 1.2753212, z: 1}
   m_Children: []
   m_Father: {fileID: 1198228172}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0.06, y: 180, z: -0.013}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

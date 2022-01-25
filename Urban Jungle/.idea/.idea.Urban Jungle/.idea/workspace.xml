@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3276a363-4a9a-4a16-a4f6-fd9efda813d4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/CameraZoom.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/CameraZoom.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/CameraZoom2.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/CameraZoom2.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/CameraZoom3.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/CameraZoom3.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/TestAnimation.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/TestAnimation.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/ZoomCamera.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/ZoomCamera.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/ZoomInCamera.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/ZoomInCamera.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraZoom4.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CameraZoom4.anim.meta" beforeDir="false" />
+    <list default="true" id="3276a363-4a9a-4a16-a4f6-fd9efda813d4" name="Default Changelist" comment="Change font and text on smartphone">
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Smartphone.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Smartphone.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +31,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -218,7 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643129217618</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Create and replace old camera animation with new">
+      <created>1643141895593</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1643141895594</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Change font and text on smartphone">
+      <created>1643144559964</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1643144559964</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +267,8 @@
     <MESSAGE value="feat: Scenery, Lighting, Post Processing&#10;&#10;Light Baking, Overall Route adjustments to fit to scenery, improved post processing, shadow troubleshooting, when jumping now there is always a jump speed of at least 1 (smoother jumping on objects when standing directly before)" />
     <MESSAGE value="feat: Scenery, Lighting, Post Processing&#10;&#10;Light Baking, Overall Route adjustments to fit to scenery, improved post processing, shadow troubleshooting, when jumping now there is always a jump speed of at least 1 (smoother jumping on objects when standing directly before), made objects from route a, b, c and some inside the cloud floor static, enabled &quot;Generate Lightmap UV's&quot; for all static models (light backing)" />
     <MESSAGE value="adjusted ladder seek trigger size" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted ladder seek trigger size" />
+    <MESSAGE value="Create and replace old camera animation with new" />
+    <MESSAGE value="Change font and text on smartphone" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change font and text on smartphone" />
   </component>
 </project>
