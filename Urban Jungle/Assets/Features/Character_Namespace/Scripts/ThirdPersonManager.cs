@@ -62,6 +62,8 @@ namespace Features.Character_Namespace.Scripts
 		private Collider[] _groundedColliders;
 		private StateMachine _stateMachine;
 
+		public IStateAnimator PreviousState => _stateMachine.GetPreviousState();
+
 		private void Awake()
 		{
 			// get a reference to our main camera

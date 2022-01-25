@@ -8,6 +8,8 @@ namespace Features.Character_Namespace.Scripts.States
     {
         [Tooltip("The height the player can jump")]
         [SerializeField] private float jumpHeight = 1.2f;
+
+        [SerializeField] private float MaxAirSpeed = 10f;
         
         protected override void Enter()
         {
@@ -16,7 +18,7 @@ namespace Features.Character_Namespace.Scripts.States
 
             Vector3 velocity = Controller.velocity;
             float magnitude = new Vector3(velocity.x, 0f, velocity.z).magnitude;
-            _manager.JumpSpeed = Mathf.Clamp(magnitude, (float) MovementSpeed.Stand, (float) MovementSpeed.FastRun);
+            _manager.JumpSpeed = Mathf.Clamp(magnitude, 1f, MaxAirSpeed);
 
             // update animator if using character
             if (HasAnimator)
