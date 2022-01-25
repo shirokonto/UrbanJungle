@@ -133,11 +133,8 @@ namespace Features.Character_Namespace.Scripts.States
 				_manager.VerticalVelocity = -2f;
 			}
 
-			// apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)
-			if (_manager.VerticalVelocity < ThirdPersonManager.TerminalVelocity)
-			{
-				_manager.VerticalVelocity += _manager.gravity * Time.deltaTime;
-			}
+			// apply gravity over time (multiply by delta time twice to linearly speed up over time)
+			_manager.VerticalVelocity += _manager.gravity * Time.deltaTime;
 		}
 
 		private void Jump()
