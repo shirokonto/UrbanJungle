@@ -1553,8 +1553,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocityAddition: 3
   maxVelocity: 9
-  jumpSpeedAddition: 100
-  maxJumpSpeed: 100
+  jumpSpeedAddition: 3
+  maxJumpSpeed: 6
 --- !u!1001 &56985183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3141,7 +3141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 495452, guid: f7538ab1dc37c8e49b7d76fd462c53eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.4045105
+      value: -7.200989
       objectReference: {fileID: 0}
     - target: {fileID: 495452, guid: f7538ab1dc37c8e49b7d76fd462c53eb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4627,8 +4627,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocityAddition: 3
   maxVelocity: 9
-  jumpSpeedAddition: 100
-  maxJumpSpeed: 100
+  jumpSpeedAddition: 3
+  maxJumpSpeed: 6
 --- !u!4 &268088895 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 494636, guid: 87c2df8e665f8664e932718fcf85c0b2, type: 3}
@@ -11368,8 +11368,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocityAddition: 3
   maxVelocity: 9
-  jumpSpeedAddition: 100
-  maxJumpSpeed: 100
+  jumpSpeedAddition: 3
+  maxJumpSpeed: 6
 --- !u!1001 &566027300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21926,8 +21926,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocityAddition: 3
   maxVelocity: 9
-  jumpSpeedAddition: 100
-  maxJumpSpeed: 100
+  jumpSpeedAddition: 3
+  maxJumpSpeed: 6
 --- !u!1001 &1167831501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22878,8 +22878,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocityAddition: 3
   maxVelocity: 9
-  jumpSpeedAddition: 100
-  maxJumpSpeed: 100
+  jumpSpeedAddition: 3
+  maxJumpSpeed: 6
 --- !u!4 &1217625141 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 464886, guid: 4290c366a38253b4f87a53b8a3654483, type: 3}
@@ -28435,8 +28435,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocityAddition: 3
   maxVelocity: 9
-  jumpSpeedAddition: 100
-  maxJumpSpeed: 100
+  jumpSpeedAddition: 3
+  maxJumpSpeed: 6
 --- !u!1 &1463792131
 GameObject:
   m_ObjectHideFlags: 0
@@ -31251,7 +31251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 437978, guid: cba063d2715f7a345b1c64609f0e864e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.444519
+      value: -7.241
       objectReference: {fileID: 0}
     - target: {fileID: 437978, guid: cba063d2715f7a345b1c64609f0e864e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -34195,8 +34195,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocityAddition: 3
   maxVelocity: 9
-  jumpSpeedAddition: 100
-  maxJumpSpeed: 100
+  jumpSpeedAddition: 3
+  maxJumpSpeed: 6
 --- !u!1001 &1700394729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38492,8 +38492,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocityAddition: 3
   maxVelocity: 9
-  jumpSpeedAddition: 100
-  maxJumpSpeed: 100
+  jumpSpeedAddition: 3
+  maxJumpSpeed: 6
 --- !u!1001 &1950443275
 PrefabInstance:
   m_ObjectHideFlags: 0

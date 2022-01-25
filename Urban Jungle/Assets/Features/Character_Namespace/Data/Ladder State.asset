@@ -20,4 +20,4 @@ MonoBehaviour:
   climbTimeout: 0.4
   drawDebugRay: 1
   raycastPositionY: 1.3
-  raycastDistance: 0.5
+  raycastDistance: 0.55
