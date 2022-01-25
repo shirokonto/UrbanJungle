@@ -53,10 +53,7 @@ namespace Features.Character_Namespace.Scripts.States
 
         private void ApplyGravity()
         {
-            if (_manager.VerticalVelocity < ThirdPersonManager.TerminalVelocity)
-            {
-                _manager.VerticalVelocity += _manager.gravity * Time.deltaTime;
-            }
+            _manager.VerticalVelocity += _manager.gravity * Time.deltaTime;
         }
     }
 }

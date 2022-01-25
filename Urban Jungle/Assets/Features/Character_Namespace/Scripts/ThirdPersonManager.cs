@@ -57,7 +57,6 @@ namespace Features.Character_Namespace.Scripts
 		public float Speed_AnimationBlend { get; set; }
 		public float TargetRotation { get; set; }
 		public float VerticalVelocity { get; set; }
-		public static float TerminalVelocity => 53.0f;
 
 		private Collider[] _groundedColliders;
 		private StateMachine _stateMachine;
@@ -90,7 +89,6 @@ namespace Features.Character_Namespace.Scripts
 			GroundedCheck();
 			
 			_stateMachine.Update();
-			
 			switch (grounded)
 			{
 				case true when _stateMachine.GetCurrentState() is AirState:
@@ -178,7 +176,7 @@ namespace Features.Character_Namespace.Scripts
 		{
 			if (((AnimatorState_SO) _stateMachine.GetCurrentState()).IsValidStateShift(requestedState))
 			{
-				//Debug.Log(requestedState.name);
+				Debug.Log(requestedState.name);
 				_stateMachine.ChangeState(requestedState, gameObject);
 				currentState = requestedState;
 			}

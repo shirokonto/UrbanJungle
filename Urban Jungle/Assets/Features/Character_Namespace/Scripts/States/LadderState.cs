@@ -60,6 +60,7 @@ namespace Features.Character_Namespace.Scripts.States
             if (_currentLadderCollider != null)
             {
                 _currentLadderCollider.enabled = true;
+                _currentLadderCollider = null;
             }
             
             if (HasAnimator)

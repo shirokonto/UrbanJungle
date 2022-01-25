@@ -49977,8 +49977,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fd9c797692644f41a9e39168d9070b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocityAddition: 20
-  maxVelocity: 40
+  velocityAddition: 10
+  maxVelocity: 30
   jumpSpeedAddition: 2
   maxJumpSpeed: 6
 --- !u!1001 &1185509935
@@ -88637,8 +88637,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fd9c797692644f41a9e39168d9070b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocityAddition: 1
-  maxVelocity: 12
+  velocityAddition: 4
+  maxVelocity: 16
   jumpSpeedAddition: 1
   maxJumpSpeed: 3
 --- !u!1001 &2093889505
