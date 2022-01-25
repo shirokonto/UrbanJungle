@@ -92,10 +92,7 @@ namespace Features.Character_Namespace.Scripts.States
                 }
             }
         
-            if (_manager.VerticalVelocity < ThirdPersonManager.TerminalVelocity)
-            {
-                _manager.VerticalVelocity += _manager.gravity * Time.deltaTime;
-            }
+            _manager.VerticalVelocity += _manager.gravity * Time.deltaTime;
         }
     }
 }
