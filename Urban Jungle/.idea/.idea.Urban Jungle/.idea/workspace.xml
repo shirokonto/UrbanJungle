@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d75b8462-06c9-424e-9cc5-8a40d39c97c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d75b8462-06c9-424e-9cc5-8a40d39c97c9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +97,7 @@
       <workItem from="1642704182284" duration="1112000" />
       <workItem from="1643071633856" duration="2499000" />
       <workItem from="1643118560065" duration="2217000" />
-      <workItem from="1643203637152" duration="21000000" />
+      <workItem from="1643203637152" duration="21838000" />
     </task>
     <task id="LOCAL-00001" summary="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526">
       <created>1640900662969</created>
