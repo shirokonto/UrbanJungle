@@ -15,6 +15,8 @@ public class DatePreparation : MonoBehaviour
 {
     [SerializeField] private List<Collectables> collectablesList;
 
+    [SerializeField] private AudioSource pickUpSound;
+
     private void Start()
     {
         foreach (var collectable in collectablesList)
@@ -30,12 +32,14 @@ public class DatePreparation : MonoBehaviour
     {
         foreach (var collectable in collectablesList.Where(collectable => collectable.type == items))
         {
+            pickUpSound.Play();
             collectable.item.SetActive(equip);
         }
     }
 
     public void SwapHairStyle()
     {
+        pickUpSound.Play();
         PickUpItem(PickableItems.OldHairstyle, false);
         PickUpItem(PickableItems.NewHairstyle, true);
     }
