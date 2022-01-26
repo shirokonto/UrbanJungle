@@ -646,7 +646,7 @@ GameObject:
   - component: {fileID: 393057776}
   m_Layer: 7
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: BarefootWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

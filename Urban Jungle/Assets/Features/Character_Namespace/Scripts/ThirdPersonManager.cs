@@ -181,5 +181,14 @@ namespace Features.Character_Namespace.Scripts
 				currentState = requestedState;
 			}
 		}
+		
+		public bool TryGetGroundedColliders(out Collider[] floorColliders)
+		{
+			floorColliders = null;
+			if (_groundedColliders == null) return false;
+
+			floorColliders = _groundedColliders;
+			return true;
+		}
 	}
 }
