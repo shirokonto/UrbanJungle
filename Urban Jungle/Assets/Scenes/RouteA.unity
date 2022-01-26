@@ -7250,7 +7250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 127504, guid: 21dcc5f62e503f0438b4e490cdd00d44, type: 3}
       propertyPath: m_TagString
-      value: Metal
+      value: Wood
       objectReference: {fileID: 0}
     - target: {fileID: 127504, guid: 21dcc5f62e503f0438b4e490cdd00d44, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12347,6 +12347,10 @@ PrefabInstance:
     - target: {fileID: 127504, guid: 21dcc5f62e503f0438b4e490cdd00d44, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Pallet_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 127504, guid: 21dcc5f62e503f0438b4e490cdd00d44, type: 3}
+      propertyPath: m_TagString
+      value: Wood
       objectReference: {fileID: 0}
     - target: {fileID: 127504, guid: 21dcc5f62e503f0438b4e490cdd00d44, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -31088,7 +31092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4449385421821500915, guid: ca26373879853fe4b9eacb4dd04b711d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Metal
       objectReference: {fileID: 0}
     - target: {fileID: 4449385421821500915, guid: ca26373879853fe4b9eacb4dd04b711d, type: 3}
       propertyPath: m_StaticEditorFlags

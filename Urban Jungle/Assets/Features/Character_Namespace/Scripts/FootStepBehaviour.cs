@@ -42,6 +42,14 @@ public class FootStepBehaviour : MonoBehaviour
          _audioSource.PlayOneShot(clip);
       }
    }
+   
+   //Animations Event for Ladder
+   private void LadderStep()
+   {
+      AudioClip clip = GetRandomClip(GetCorrectGroundAudio("Metal"));
+      _audioSource.volume = 0.013f;
+      _audioSource.PlayOneShot(clip);
+   }
    private AudioClip GetRandomClip(AudioClip[] audioClips)
    {
       int index = Random.Range(0, audioClips.Length - 1);

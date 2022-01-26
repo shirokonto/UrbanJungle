@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d75b8462-06c9-424e-9cc5-8a40d39c97c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DatePreparation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DatePreparation.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Climbing Ladder.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Climbing Ladder.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Climbing To Top.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Climbing To Top.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Crouched Walking.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Crouched Walking.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Fast Run.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Fast Run.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Slow Run.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Slow Run.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Walk.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Walk.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Wilma.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Wilma.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/GroundedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/GroundedState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/ThirdPersonManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/ThirdPersonManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RouteA.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RouteA.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/FootStepBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/FootStepBehaviour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +101,7 @@
       <workItem from="1642704182284" duration="1112000" />
       <workItem from="1643071633856" duration="2499000" />
       <workItem from="1643118560065" duration="2217000" />
-      <workItem from="1643203637152" duration="19788000" />
+      <workItem from="1643203637152" duration="20209000" />
     </task>
     <task id="LOCAL-00001" summary="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526">
       <created>1640900662969</created>

@@ -60,14 +60,14 @@ ModelImporter:
       curves: []
       events:
       - time: 0.32105264
-        functionName: Step
+        functionName: LadderStep
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.8210527
-        functionName: Step
+        functionName: LadderStep
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
