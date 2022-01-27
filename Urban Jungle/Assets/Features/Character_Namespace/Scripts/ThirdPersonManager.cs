@@ -59,9 +59,9 @@ namespace Features.Character_Namespace.Scripts
 		public float VerticalVelocity { get; set; }
 
 		private Collider[] _groundedColliders;
-		private StateMachine _stateMachine;
+		private AnimatorStateMachine _animatorStateMachine;
 
-		public IStateAnimator PreviousState => _stateMachine.GetPreviousState();
+		public IStateAnimator PreviousState => _animatorStateMachine.GetPreviousState();
 
 		private void Awake()
 		{
@@ -78,8 +78,8 @@ namespace Features.Character_Namespace.Scripts
 			Controller = GetComponent<CharacterController>();
 			Input = GetComponent<StarterAssetsInputs>();
 
-			_stateMachine = new StateMachine();
-			_stateMachine.Initialize(groundedState, gameObject);
+			_animatorStateMachine = new AnimatorStateMachine();
+			_animatorStateMachine.Initialize(groundedState, gameObject);
 			currentState = groundedState;
 		}
 
@@ -88,10 +88,10 @@ namespace Features.Character_Namespace.Scripts
 			Animator = GetComponent<Animator>();
 			GroundedCheck();
 			
-			_stateMachine.Update();
+			_animatorStateMachine.Update();
 			switch (grounded)
 			{
-				case true when _stateMachine.GetCurrentState() is AirState:
+				case true when _animatorStateMachine.GetCurrentState() is AirState:
 					if (IsGroundedToLayer(bounceLayer, out Collider floorCollider))
 					{
 						if (floorCollider.TryGetComponent(out BounceBehaviour bounceBehaviour))
@@ -108,7 +108,7 @@ namespace Features.Character_Namespace.Scripts
 						RequestState(groundedState);
 					}
 					break;
-				case false when _stateMachine.GetCurrentState() is GroundedState || _stateMachine.GetCurrentState() is JumpState:
+				case false when _animatorStateMachine.GetCurrentState() is GroundedState || _animatorStateMachine.GetCurrentState() is JumpState:
 					RequestState(airState);
 					break;
 			}
@@ -116,7 +116,7 @@ namespace Features.Character_Namespace.Scripts
 
 		private void OnAnimatorMove()
 		{
-			_stateMachine.OnAnimatorMove();
+			_animatorStateMachine.OnAnimatorMove();
 		}
 		
 		private void OnTriggerEnter(Collider trigger)
@@ -174,10 +174,10 @@ namespace Features.Character_Namespace.Scripts
 		
 		public void RequestState(AnimatorState_SO requestedState)
 		{
-			if (((AnimatorState_SO) _stateMachine.GetCurrentState()).IsValidStateShift(requestedState))
+			if (((AnimatorState_SO) _animatorStateMachine.GetCurrentState()).IsValidStateShift(requestedState))
 			{
 				Debug.Log(requestedState.name);
-				_stateMachine.ChangeState(requestedState, gameObject);
+				_animatorStateMachine.ChangeState(requestedState, gameObject);
 				currentState = requestedState;
 			}
 		}
