@@ -417,6 +417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d733fa87c365340bb0017e31287bd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundTimeout: 0.1
   groundAudioList:
   - audioClips:
     - {fileID: 8300000, guid: 88f881357fe0a544cb005c9f9ae50005, type: 3}
