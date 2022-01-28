@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 1679353494092316316}
   - component: {fileID: 2134437460783636511}
   - component: {fileID: 537246899}
-  - component: {fileID: 5225108673629748105}
   m_Layer: 3
   m_Name: Wilma
   m_TagString: Player
@@ -174,31 +173,6 @@ MonoBehaviour:
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &537246899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4810378045186561563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b70e932a6c9fe5a4ba72157a7d2a7100, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectablesList:
-  - item: {fileID: 4867521736595100897}
-    type: 0
-  - item: {fileID: 2525937701957465249}
-    type: 1
-  - item: {fileID: 8431981415238960153}
-    type: 2
-  - item: {fileID: 3529454899803407662}
-    type: 4
-  - item: {fileID: 501858000878148751}
-    type: 5
-  - item: {fileID: 6141696680482423633}
-    type: 3
---- !u!114 &5225108673629748105
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
