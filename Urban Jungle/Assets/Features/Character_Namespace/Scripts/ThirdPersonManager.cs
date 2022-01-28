@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using System.Linq;
+using System.Collections.Generic;
 using Features.Character_Namespace.Scripts.States;
 using StarterAssets;
 using UnityEngine;
@@ -45,6 +45,10 @@ namespace Features.Character_Namespace.Scripts
 		[Header("Debug")]
 		public Color transparentGreen = new Color(0.0f, 1.0f, 0.0f, 0.35f);
 		public Color transparentRed = new Color(1.0f, 0.0f, 0.0f, 0.35f);
+		
+		[Header("Sound")]
+		[SerializeField] private List<AudioClip> bounceSound;
+		[SerializeField] private AudioSource bounceAudio;
 
 		//References getter and setter
 		public Animator Animator { get; private set; }
@@ -96,6 +100,8 @@ namespace Features.Character_Namespace.Scripts
 					{
 						if (floorCollider.TryGetComponent(out BounceBehaviour bounceBehaviour))
 						{
+							AudioClip clip = GetRandomClip(bounceSound);
+							bounceAudio.PlayOneShot(clip);
 							bounceBehaviour.ApplyBounce(this);
 						}
 						else
@@ -112,6 +118,12 @@ namespace Features.Character_Namespace.Scripts
 					RequestState(airState);
 					break;
 			}
+		}
+		
+		private AudioClip GetRandomClip(List<AudioClip> audioClips)
+		{
+			int index = Random.Range(0, audioClips.Count - 1);
+			return audioClips[index];
 		}
 
 		private void OnAnimatorMove()
