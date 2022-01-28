@@ -7405,7 +7405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f2e7a0e7da5a4594a84889f01d2fd2ba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.018999577
+      value: 0.041
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f2e7a0e7da5a4594a84889f01d2fd2ba, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24204,6 +24204,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Billboard_01
       objectReference: {fileID: 0}
+    - target: {fileID: 176082, guid: cba063d2715f7a345b1c64609f0e864e, type: 3}
+      propertyPath: m_TagString
+      value: Metal
+      objectReference: {fileID: 0}
     - target: {fileID: 437978, guid: cba063d2715f7a345b1c64609f0e864e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -31855,6 +31859,10 @@ PrefabInstance:
     - target: {fileID: 6244224010953966961, guid: cc63051a86d7809439fa2c77c482e68d, type: 3}
       propertyPath: m_Name
       value: SingleSmallLog_12_v2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6244224010953966961, guid: cc63051a86d7809439fa2c77c482e68d, type: 3}
+      propertyPath: m_TagString
+      value: Wood
       objectReference: {fileID: 0}
     - target: {fileID: 6244224010953966961, guid: cc63051a86d7809439fa2c77c482e68d, type: 3}
       propertyPath: m_StaticEditorFlags
