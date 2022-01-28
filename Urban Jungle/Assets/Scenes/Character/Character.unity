@@ -455,6 +455,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 25c4e46407938da499183f5e19ac01f1, type: 3}
     - {fileID: 8300000, guid: 7bdb43f77aacca547a4104ccd378e107, type: 3}
     - {fileID: 8300000, guid: 890d2b761ced02d4399f04fa9492f9e4, type: 3}
+    - {fileID: 8300000, guid: 27a93700472773944aacb46fc49f8fca, type: 3}
+    - {fileID: 8300000, guid: eff2cc8b2c623f047b132cb2ff8bd4cc, type: 3}
     type: 6
   thirdPersonManager: {fileID: 1769775300}
 --- !u!82 &1769775295
