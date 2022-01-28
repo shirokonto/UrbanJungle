@@ -101,14 +101,14 @@ namespace Features.Character_Namespace.Scripts.States
 			//set current animation blend
 			_manager.Speed_AnimationBlend = useBlend ? Mathf.Lerp(_manager.Speed_AnimationBlend, speed_targetAnimationBlend, Time.deltaTime * speedChangeRate) : speed_targetAnimationBlend;
 			_animationBlend_walkType = useBlend ? Mathf.Lerp(_animationBlend_walkType, walkType_targetAnimationBlend, Time.deltaTime * speedChangeRate) : walkType_targetAnimationBlend;
-			
+
 			// update animator if using character
 			if (HasAnimator)
 			{
-				Animator.SetFloat(_animIDSpeed, _manager.Speed_AnimationBlend);
+				Animator.SetFloat(_animIDSpeed, _manager.Speed_AnimationBlend < 0.1 ? 0 : Mathf.Round(_manager.Speed_AnimationBlend * 100f) / 100f);
 				Animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
 		    
-				Animator.SetFloat(_animIDWalkType, _animationBlend_walkType);
+				Animator.SetFloat(_animIDWalkType, _animationBlend_walkType < 0.1 ? 0 : Mathf.Round(_animationBlend_walkType * 100) / 100);
 			}
 		}
     

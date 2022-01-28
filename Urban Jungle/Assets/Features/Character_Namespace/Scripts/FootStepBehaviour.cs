@@ -17,19 +17,28 @@ public enum Grounds
 [RequireComponent(typeof(AudioSource))]
 public class FootStepBehaviour : MonoBehaviour
 {
+   [SerializeField] private float soundTimeout = 0.1f;
    [SerializeField] private List<GroundAudio> groundAudioList;
    [SerializeField] private ThirdPersonManager thirdPersonManager;
    private AudioSource _audioSource;
+   private float soundTimeoutDelta;
 
    private void Awake()
    {
       _audioSource = GetComponent<AudioSource>();
+
+      soundTimeoutDelta = soundTimeout;
+   }
+
+   private void Update()
+   {
+      soundTimeoutDelta -= Time.deltaTime;
    }
 
    //Animations Event
    private void Step()
    {
-      if(thirdPersonManager.TryGetGroundedColliders(out Collider[] floorColliders) && floorColliders.Length != 0)
+      if(thirdPersonManager.TryGetGroundedColliders(out Collider[] floorColliders) && floorColliders.Length != 0 && soundTimeoutDelta <= 0)
       {
          print(floorColliders[0].tag);
 
@@ -40,6 +49,8 @@ public class FootStepBehaviour : MonoBehaviour
             _audioSource.volume = 0.1f;         
          }
          _audioSource.PlayOneShot(clip);
+         
+         soundTimeoutDelta = soundTimeout;
       }
    }
    
