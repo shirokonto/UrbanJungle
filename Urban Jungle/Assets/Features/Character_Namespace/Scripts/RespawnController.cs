@@ -14,30 +14,34 @@ public class RespawnController : MonoBehaviour
 
     [SerializeField] private GameObject[] spawnPoint;
 
-    private int currentSpawnPoint = 0;
+    private int _currentSpawnPoint;
     
-    void Update()
+    public void Update()
     {
-        if (currentSpawnPoint == 0 && player.position.z <= -15)
-            currentSpawnPoint = 1;
-        if (currentSpawnPoint == 1 && player.position.z <= -102 && player.position.y >= 55)
-            currentSpawnPoint = 2;
-        if (currentSpawnPoint == 2 && player.position.x <= -22 && player.position.z <= -160)
-            currentSpawnPoint = 3;
-        if (currentSpawnPoint == 3 && (player.position.x <= -64 || player.position.z <= -195))
-            currentSpawnPoint = 4;
-        if (currentSpawnPoint == 4 && player.position.z >= -110)
-            currentSpawnPoint = 5;
+        if (_currentSpawnPoint == 0 && player.position.z <= -15)
+            _currentSpawnPoint = 1;
+        if (_currentSpawnPoint == 1 && player.position.z <= -102 && player.position.y >= 55)
+            _currentSpawnPoint = 2;
+        if (_currentSpawnPoint == 2 && player.position.x <= -22 && player.position.z <= -160)
+            _currentSpawnPoint = 3;
+        if (_currentSpawnPoint == 3 && (player.position.x <= -64 || player.position.z <= -195))
+            _currentSpawnPoint = 4;
+        if (_currentSpawnPoint == 4 && player.position.z >= -110)
+            _currentSpawnPoint = 5;
         if (player.position.y >= 0) return;
-        charControl.Move(new Vector3(0, 1000,0));
-        charControl.Move(spawnPoint[currentSpawnPoint].transform.position - player.position);
-        
-        //charControl.detectCollisions = false;
-        /*
-        charControl.Move(new Vector3(0, spawnPoint[0].transform.position.y - (playerPos.position.y+300f), 0));
-        charControl.Move(new Vector3(spawnPoint[0].transform.position.x - playerPos.position.x, 0, spawnPoint[0].transform.position.z-playerPos.position.z));
-        charControl.Move(new Vector3(0, 300, 0));
-        */
-        //if (playerPos.position == spawnPoint[0].transform.position)charControl.detectCollisions = true;
+
+        Respawn();
     }
+
+    public void RespawnTo(int repawnPosition)
+    {
+        charControl.enabled = false;
+        charControl.transform.position = spawnPoint[repawnPosition].transform.position;
+        charControl.enabled = true;
     }
+
+    public void Respawn()
+    {
+        RespawnTo(_currentSpawnPoint);
+    }
+}
