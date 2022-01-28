@@ -1,11 +1,11 @@
-fileFormatVersion: 2
-guid: 403175678c7cfcf498181a8891e9ba65
+﻿fileFormatVersion: 2
+guid: 82d412311bb9f5440b68616797cb0bfa
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Crouched Walking Pose
+    second: Crouched Idle
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -26,7 +26,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.05
     animationPositionError: 0.05
     animationScaleError: 0.25
@@ -35,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Crouched Walking Pose
+      name: Crouched Idle
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 1
+      lastFrame: 400
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
