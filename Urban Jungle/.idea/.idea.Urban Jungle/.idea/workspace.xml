@@ -2,12 +2,212 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d75b8462-06c9-424e-9cc5-8a40d39c97c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Models/ApartmentFrontWall.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Models/ApartmentFrontWall.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Models/ThreeOuterWalls.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Models/ThreeOuterWalls.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CharacterBehaviours/BounceBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CharacterBehaviours/BounceBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/ThirdPersonManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/ThirdPersonManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot/barefoot_concrete_walk1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot/barefoot_concrete_walk1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot/barefoot_concrete_walk2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot/barefoot_concrete_walk2.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot/barefoot_concrete_walk3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot/barefoot_concrete_walk3.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot/barefoot_concrete_walk4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot/barefoot_concrete_walk4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot/barefoot_concrete_walk5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot/barefoot_concrete_walk5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot/barefoot_concrete_walk6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot/barefoot_concrete_walk6.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot/barefoot_wood_walk1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot/barefoot_wood_walk1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot/barefoot_wood_walk2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Barefoot/barefoot_wood_walk2.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run10.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run11.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run2.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run3.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run6.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run7.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run8.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_run9.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk10.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk11.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk2.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk3.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk6.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk7.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk8.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_walk9.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_wander1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_wander1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_wander2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_wander2.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_wander3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_wander3.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_wander4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_wander4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_wander5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Concrete/concrete_wander5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Glass.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Glass/glass_hard1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Glass/glass_hard1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Glass/glass_hit1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Glass/glass_hit1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Glass/glass_hit2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Glass/glass_hit2.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_run1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_run1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_run2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_run2.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_run3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_run3.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_run4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_run4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk10.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk2.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk3.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk6.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk7.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk8.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_walk9.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_wander1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_wander1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_wander2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_wander2.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_wander3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_wander3.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_wander4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_wander4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_wander5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_wander5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_wander6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Grass/grass_wander6.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_land1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_land1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run10.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run11.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run2.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run3.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run6.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run7.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run8.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_run9.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk10.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk11.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk2.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk3.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk6.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk7.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk8.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_walk9.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_wander1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_wander1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_wander2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_wander2.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_wander3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_wander3.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_wander4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_wander4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_wander5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_wander5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_wander6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Metalbox/metalbar_wander6.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk1.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk10.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk11.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk2.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk3.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk4.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk5.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk6.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk7.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk8.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk9.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Wood/wood_walk9.wav.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +282,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5d17f024-20fe-4bc2-ba08-c57ccd929d1a" name="Changes" comment="" />
+      <changelist id="d75b8462-06c9-424e-9cc5-8a40d39c97c9" name="Changes" comment="" />
       <created>1640685838544</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -104,6 +304,9 @@
       <workItem from="1642704182284" duration="1112000" />
       <workItem from="1643071633856" duration="2499000" />
       <workItem from="1643118560065" duration="2217000" />
+      <workItem from="1643203637152" duration="21838000" />
+      <workItem from="1643370277977" duration="608000" />
+      <workItem from="1643377096999" duration="2837000" />
     </task>
     <task id="LOCAL-00001" summary="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526">
       <created>1640900662969</created>

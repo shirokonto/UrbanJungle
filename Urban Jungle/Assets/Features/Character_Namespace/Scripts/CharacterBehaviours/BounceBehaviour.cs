@@ -8,7 +8,7 @@ namespace Features.Character_Namespace.Scripts
         [SerializeField] private float maxVelocity = 12;
         [SerializeField] private float jumpSpeedAddition = 1;
         [SerializeField] private float maxJumpSpeed = 3;
-        
+
         private static float StandIdleSpeed => 0;
         private static float FastRunSpeed => 3;
 

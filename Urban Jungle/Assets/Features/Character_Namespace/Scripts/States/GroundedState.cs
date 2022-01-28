@@ -23,6 +23,7 @@ namespace Features.Character_Namespace.Scripts.States
 		private float _jumpTimeoutDelta;
 		private float _animationBlend_walkType;
 		private float _rotationVelocity;
+		private RaycastHit hit;
 
 		protected override void Enter()
 		{
@@ -32,6 +33,8 @@ namespace Features.Character_Namespace.Scripts.States
 			// reset based on current input
 			Input.jump = false;
 			ApplySpeed(false);
+			
+			//start sound loop
 			
 			// update animator if using character
 			if (Animator != null)
@@ -102,10 +105,10 @@ namespace Features.Character_Namespace.Scripts.States
 			// update animator if using character
 			if (HasAnimator)
 			{
-				Animator.SetFloat(_animIDSpeed, _manager.Speed_AnimationBlend);
+				Animator.SetFloat(_animIDSpeed, _manager.Speed_AnimationBlend < 0.1 ? 0 : Mathf.Round(_manager.Speed_AnimationBlend * 100f) / 100f);
 				Animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
 		    
-				Animator.SetFloat(_animIDWalkType, _animationBlend_walkType);
+				Animator.SetFloat(_animIDWalkType, _animationBlend_walkType < 0.1 ? 0 : Mathf.Round(_animationBlend_walkType * 100) / 100);
 			}
 		}
     
@@ -149,6 +152,16 @@ namespace Features.Character_Namespace.Scripts.States
 			if (Input.jump && _jumpTimeoutDelta <= 0.0f)
 			{
 				_manager.RequestState(_manager.jumpState);
+			}
+		}
+
+		bool CheckOnTerrain()
+		{
+			if (hit.collider != null && hit.collider.CompareTag("Terrain"))
+			{
+				return true;
+			} else {
+				return false;
 			}
 		}
 	}
