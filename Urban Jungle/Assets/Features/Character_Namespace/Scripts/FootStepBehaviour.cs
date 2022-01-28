@@ -40,7 +40,7 @@ public class FootStepBehaviour : MonoBehaviour
    {
       if(thirdPersonManager.TryGetGroundedColliders(out Collider[] floorColliders) && floorColliders.Length != 0 && soundTimeoutDelta <= 0)
       {
-         print(floorColliders[0].tag);
+         Debug.Log(floorColliders[0].tag);
 
          AudioClip clip = GetRandomClip(GetCorrectGroundAudio(floorColliders[0].tag));
          if(!floorColliders[0].CompareTag("BarefootWood")){

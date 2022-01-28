@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public enum PickableItems
 {
@@ -34,6 +35,7 @@ public class DatePreparation : MonoBehaviour
         {
             pickUpSound.Play();
             collectable.item.SetActive(equip);
+            ScoreManager.instance.AddPoints(collectable.item.tag);
         }
     }
 
