@@ -2,10 +2,123 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d75b8462-06c9-424e-9cc5-8a40d39c97c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Crouched Idle.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/FootStepBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/FootStepBehaviour.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Sounds/ShootingSound/ReadMe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Sounds/ShootingSound/ReadMe.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Sounds/ShootingSound/magic_01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Sounds/ShootingSound/magic_01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Models/Instruction_Board.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Models/Jump_Instruction_Poster.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Models/Move_Instruction_Poster.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Models/Move_Instruction_Poster.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Prefabs/Move_Instruction_Poster.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Prefabs/Move_Instruction_Poster.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Textures/Instruction_Posters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Textures/Instruction_Posters.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/BounceSounds.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/BounceSounds/sfx-boing10.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/BounceSounds/sfx-boing10.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/BounceSounds/sfx-boing11.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/BounceSounds/sfx-boing11.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/BounceSounds/sfx-boing8.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/BounceSounds/sfx-boing8.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot/barefoot_concrete_walk1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot/barefoot_concrete_walk1.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot/barefoot_concrete_walk2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot/barefoot_concrete_walk2.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot/barefoot_concrete_walk3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot/barefoot_concrete_walk3.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot/barefoot_concrete_walk4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot/barefoot_concrete_walk4.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot/barefoot_concrete_walk5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot/barefoot_concrete_walk5.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot/barefoot_concrete_walk6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot/barefoot_concrete_walk6.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot/barefoot_wood_walk1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot/barefoot_wood_walk1.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot/barefoot_wood_walk2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Barefoot/barefoot_wood_walk2.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Concrete.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Concrete/concrete_walk1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Concrete/concrete_walk1.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Concrete/concrete_walk2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Concrete/concrete_walk2.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Concrete/concrete_walk3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Concrete/concrete_walk3.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Concrete/concrete_walk4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Concrete/concrete_walk4.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Glass.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Glass/glass_hit1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Glass/glass_hit1.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Glass/glass_hit2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Glass/glass_hit2.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Grass.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Grass/grass_walk1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Grass/grass_walk1.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Grass/grass_walk2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Grass/grass_walk2.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Grass/grass_walk3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Grass/grass_walk3.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Grass/grass_walk5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Grass/grass_walk5.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Metalbox.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Metalbox/metalbar_walk1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Metalbox/metalbar_walk1.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Metalbox/metalbar_walk3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Metalbox/metalbar_walk3.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Metalbox/metalbar_walk4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Metalbox/metalbar_walk4.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Metalbox/metalbar_walk5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Metalbox/metalbar_walk5.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Wood.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Wood/wood_walk1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Wood/wood_walk1.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Wood/wood_walk2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Wood/wood_walk2.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Wood/wood_walk3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Wood/wood_walk3.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Wood/wood_walk4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/SoundEffects_Namespace/Footsteps/Wood/wood_walk4.wav.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/DatePreparation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/DatePreparation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/UI_Namespace/ScoreManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/UI_Namespace/ScoreManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Jsons.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DatePreparation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/DatePreparation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DatePreparation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/DatePreparation.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Climbing Ladder.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Climbing Ladder.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Climbing To Top.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Climbing To Top.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Crouched Walking Pose.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Crouched Walking Pose.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Crouched Idle.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Crouched Walking.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Crouched Walking.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Fast Run.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Fast Run.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Slow Run.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Slow Run.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Stand Pose.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Stand Pose.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Walk.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/Shara@Walk.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/SharaController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Animations/SharaController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Wilma.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Wilma.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CharacterBehaviours/BounceBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CharacterBehaviours/BounceBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/GroundedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/GroundedState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/ThirdPersonManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/ThirdPersonManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/City_Namespace/Prefabs/Buildings/SM_Bld_Apartment_01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Shaders/IlluminatedField.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Shaders/IlluminatedField.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Room_Namespace/BlenderFiles.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Sounds.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Room_Namespace/BlenderFiles/apartmentinside.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Room_Namespace/BlenderFiles/apartmentinside.blend.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Models/Instruction_Board.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Room_Namespace/BlenderFiles/openwindow.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Room_Namespace/BlenderFiles/openwindow.blend.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Models/Jump_Instruction_Poster.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Room_Namespace/BlenderFiles/openwindow.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Room_Namespace/BlenderFiles/openwindow.blend1.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Interactable_Namespace/Sounds/ShootingSound.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Materials/Painting01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Materials/Painting01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Materials/TapeteCremeWhite.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Materials/TapeteCremeWhite.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Materials/cityTV.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Room_Namespace/Materials/cityTV.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Markus Art/Characters/JHOW/Materials/Skin_Presets/Jhow_Vareation_Skin_Mat_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Markus Art/Characters/JHOW/Materials/Skin_Presets/Jhow_Vareation_Skin_Mat_1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CollectableItems.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CollectableItems.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RouteA.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RouteA.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +142,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/UI_Namespace/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -231,7 +343,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

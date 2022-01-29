@@ -12,7 +12,8 @@ public enum Grounds
    Untagged,
    Grass,
    Glass,
-   BarefootWood
+   BarefootWood,
+   BarefootUntagged
 }
 [RequireComponent(typeof(AudioSource))]
 public class FootStepBehaviour : MonoBehaviour
@@ -21,36 +22,37 @@ public class FootStepBehaviour : MonoBehaviour
    [SerializeField] private List<GroundAudio> groundAudioList;
    [SerializeField] private ThirdPersonManager thirdPersonManager;
    private AudioSource _audioSource;
-   private float soundTimeoutDelta;
+   private float _soundTimeoutDelta;
+   private bool _barefoot;
 
    private void Awake()
    {
       _audioSource = GetComponent<AudioSource>();
-
-      soundTimeoutDelta = soundTimeout;
+      _barefoot = true;
+      _soundTimeoutDelta = soundTimeout;
    }
 
    private void Update()
    {
-      soundTimeoutDelta -= Time.deltaTime;
+      _soundTimeoutDelta -= Time.deltaTime;
    }
 
    //Animations Event
    private void Step()
    {
-      if(thirdPersonManager.TryGetGroundedColliders(out Collider[] floorColliders) && floorColliders.Length != 0 && soundTimeoutDelta <= 0)
+      if(thirdPersonManager.TryGetGroundedColliders(out Collider[] floorColliders) && floorColliders.Length != 0 && _soundTimeoutDelta <= 0)
       {
-         Debug.Log(floorColliders[0].tag);
+         string groundTag = floorColliders[0].tag;
+         Debug.Log(groundTag);
 
-         AudioClip clip = GetRandomClip(GetCorrectGroundAudio(floorColliders[0].tag));
-         if(!floorColliders[0].CompareTag("BarefootWood")){
-            _audioSource.volume = 0.013f;
-         } else {
-            _audioSource.volume = 0.1f;         
+         if (_barefoot && floorColliders[0].tag.Equals("Untagged"))
+         {
+            groundTag = Grounds.BarefootUntagged.ToString();
          }
+         SetAudioVolume(groundTag);
+         AudioClip clip = GetRandomClip(GetCorrectGroundAudio(groundTag));
          _audioSource.PlayOneShot(clip);
-         
-         soundTimeoutDelta = soundTimeout;
+         _soundTimeoutDelta = soundTimeout;
       }
    }
    
@@ -73,8 +75,24 @@ public class FootStepBehaviour : MonoBehaviour
    {
       return groundAudioList.Where(audio => audio.type.ToString().Equals(tagName)).Select(audio => audio.audioClips).FirstOrDefault();
    }
+
+   public void PutOnShoes()
+   {
+      _barefoot = false;
+   }
+
+   private void SetAudioVolume(String groundTag)
+   {
+      if (String.Equals(groundTag, Grounds.BarefootUntagged.ToString()) || String.Equals(groundTag, Grounds.BarefootWood.ToString()))
+      {
+         _audioSource.volume = 0.1f;
+      }else
+      {
+         _audioSource.volume = 0.013f;
+      }
+   }
    
-   [System.Serializable]
+   [Serializable]
    public class GroundAudio
    {
       public AudioClip[] audioClips;
