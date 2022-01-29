@@ -1,61 +1,51 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class ScoreManager : MonoBehaviour
+namespace Features.UI_Namespace
 {
-    public static ScoreManager instance;
-    [SerializeField] private CountdownController countdownController;
-    private int _collectedItemCounter;
-    private List<String> collectedItems;
-    void Awake()
+    public class ScoreManager : MonoBehaviour
     {
-        _collectedItemCounter = 0;
-        collectedItems = new List<string>();
-        instance = this;
-    }
+        [SerializeField] private CountdownController countdownController;
+        private int _collectedItemCounter;
+        private List<String> collectedItems;
+        public TextAsset text;
+        void Awake()
+        {
+            _collectedItemCounter = 0;
+            collectedItems = new List<string>();
+        }
 
-    public void AddPoints(String itemName)
-    {
-        _collectedItemCounter += 100;
-        collectedItems.Add(itemName);
-        Debug.Log("Picked up " + itemName + "/// Total points: " + _collectedItemCounter + (int)Math.Round(countdownController.GetTimeLeft()));
-    }
+        public void AddPoints(String itemName)
+        {
+            _collectedItemCounter += 100;
+            collectedItems.Add(itemName);
+            Debug.Log("Picked up " + itemName + "/// Total points: " + _collectedItemCounter + (int)Math.Round(countdownController.GetTimeLeft()));
+        }
+
+        public int GetEndPoints()
+        {
+            int timeLeft = (int)Math.Round(countdownController.GetTimeLeft());
+            GetEndMsg(timeLeft);
+            return timeLeft <= 0 ? _collectedItemCounter : (_collectedItemCounter + timeLeft);
+        }
     
-    public int GetEndResult()
-    {
-        int timeLeft = (int)Math.Round(countdownController.GetTimeLeft()*10);
-        if (timeLeft<=0)
+        public String GetEndMsg(int timeLeft)
         {
-            Debug.Log("Well shit... I think I owe them an apology...");
-            return _collectedItemCounter;
-        } else if ((!collectedItems.Any())) //did not collect anything
-        {
-            Debug.Log("You could have at least put on some pants for me... but at least you made it in time");
-            return _collectedItemCounter + timeLeft;
-        } else if (collectedItems.Count == 1) //did collect one things
-        {
-            Debug.Log("Collected one item text");
-            return _collectedItemCounter + timeLeft;
-        } else if (collectedItems.Count == 2) //did collect two things
-        {
-            Debug.Log("Collected two items text");
-            return _collectedItemCounter + timeLeft;
-        } else if(collectedItems.Count == 3) //did collect three things
-        {
-            Debug.Log("Collected three items text");
-            return _collectedItemCounter + timeLeft;
-        } else if(collectedItems.Count == 4) //did collect four things
-        {
-            Debug.Log("Collected four items text");
-            return _collectedItemCounter + timeLeft;
-        } else //did collect everything
-        {
-            Debug.Log("WOW look at you! You look really good ;)");
-            return _collectedItemCounter + timeLeft;
+            if (timeLeft <= 0)
+            {
+                return "Well shit... I think I owe them an apology...";
+            }
+
+            return _collectedItemCounter switch
+            {
+                0 => "You could have at least put on some pants for me... but at least you made it in time",
+                1 => "Collected one item",
+                2 => "Collected two items",
+                3 => "Collected three items",
+                4 => "Collected four items",
+                5 => "WOW look at you! You look really good ;)"
+            };
         }
     }
 }
