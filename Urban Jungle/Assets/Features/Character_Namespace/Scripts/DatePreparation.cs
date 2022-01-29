@@ -15,11 +15,12 @@ public enum PickableItems
 public class DatePreparation : MonoBehaviour
 {
     [SerializeField] private List<Collectables> collectablesList;
-
     [SerializeField] private AudioSource pickUpSound;
+    private ScoreManager scoreManager;
 
     private void Start()
     {
+        scoreManager = Object.FindObjectOfType<ScoreManager>();
         foreach (var collectable in collectablesList)
         {
             if (collectable.type != PickableItems.OldHairstyle)
@@ -27,6 +28,7 @@ public class DatePreparation : MonoBehaviour
                 collectable.item.SetActive(false);
             }
         }
+        
     }
 
     public void PickUpItem(PickableItems items, bool equip)
@@ -34,8 +36,8 @@ public class DatePreparation : MonoBehaviour
         foreach (var collectable in collectablesList.Where(collectable => collectable.type == items))
         {
             pickUpSound.Play();
+            scoreManager.AddPoints(collectable.type.ToString());
             collectable.item.SetActive(equip);
-            ScoreManager.instance.AddPoints(collectable.item.tag);
         }
     }
 

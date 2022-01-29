@@ -14,6 +14,7 @@ public class ScoreManager : MonoBehaviour
     void Awake()
     {
         _collectedItemCounter = 0;
+        collectedItems = new List<string>();
         instance = this;
     }
 
@@ -21,8 +22,7 @@ public class ScoreManager : MonoBehaviour
     {
         _collectedItemCounter += 100;
         collectedItems.Add(itemName);
-        Debug.Log("Points for picking up in total: " + _collectedItemCounter);
-        Debug.Log("item: " + itemName);
+        Debug.Log("Picked up " + itemName + "/// Total points: " + _collectedItemCounter + (int)Math.Round(countdownController.GetTimeLeft()));
     }
     
     public int GetEndResult()
