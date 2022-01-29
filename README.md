@@ -39,10 +39,22 @@ We are aMazed and we’ve teamed up to develop this 3D game for the course Game 
 * ArtistName: [SoundName](https://github.com/shirokonto/UrbanJungle/blob/main/README.md)
 
 :speaker: **Soundeffects by:**
-* insert the long long list here
+(Footstep Sounds)
+* INNERVISION.GD: [Footstep Sound Effects [PRO]](https://assetstore.unity.com/packages/audio/sound-fx/footstep-sound-effects-pro-169177)
+* NAMI - Releaxing Sounds: [Concrete Barefoot Footstep Sound Effect HD](https://www.youtube.com/watch?v=j0LFN7VbPzo)
+* SOUND and IMAGE FX: [Barefoot Footsteps On Wooden Floor Sound Effect](https://www.youtube.com/watch?v=9o28LeSeImM)
+(Bounce sounds)
+* FiftySounds: [Sfx Low and Funny Boing](https://www.fiftysounds.com/royalty-free-music/sfx-boing11.html)
+* FiftySounds: [Sfx Shaky Boing](https://www.fiftysounds.com/royalty-free-music/sfx-boing10.html)
+* FiftySounds: [Sfx Low Boing](https://www.fiftysounds.com/royalty-free-music/sfx-boing8.html)
+(PickUp sound)
+* B.G.M: [Shooting Sound](https://assetstore.unity.com/packages/audio/sound-fx/shooting-sound-177096)
 
 :space_invader: **Assets by:**
-* insert the long long list here
+* Synty Studios: [POLYGON City - Low Poly 3D Art by Synty](https://assetstore.unity.com/packages/3d/environments/urban/polygon-city-low-poly-3d-art-by-synty-95214)
+* Schatro Dev Assets: [Low Poly Barriers Pack Free](https://assetstore.unity.com/packages/3d/props/exterior/low-poly-barriers-pack-free-201810)
+* iPoly3D: [LowPoly Server Room Props](https://assetstore.unity.com/packages/3d/environments/lowpoly-server-room-props-197268)
+* Dreamerz Lab Ltd.[Low Poly Bed Room Furniture PBR](https://assetstore.unity.com/packages/3d/props/furniture/low-poly-bed-room-furniture-pbr-133977)
 
 :wrench: **Utils**
 * insert the long long list here
