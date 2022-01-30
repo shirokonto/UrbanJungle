@@ -26,7 +26,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.05
     animationPositionError: 0.05
     animationScaleError: 0.25
@@ -61,6 +61,48 @@ ModelImporter:
       events:
       - time: 0.9893617
         functionName: RequestState
+        data: 
+        objectReferenceParameter: {fileID: 11400000, guid: aacdff07b1c71fe429eaaff7b90d9a59, type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.1631579
+        functionName: LadderStep
+        data: 
+        objectReferenceParameter: {fileID: 11400000, guid: aacdff07b1c71fe429eaaff7b90d9a59, type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.2736842
+        functionName: LadderStep
+        data: 
+        objectReferenceParameter: {fileID: 11400000, guid: aacdff07b1c71fe429eaaff7b90d9a59, type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.37105262
+        functionName: LadderStep
+        data: 
+        objectReferenceParameter: {fileID: 11400000, guid: aacdff07b1c71fe429eaaff7b90d9a59, type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.5
+        functionName: Step
+        data: 
+        objectReferenceParameter: {fileID: 11400000, guid: aacdff07b1c71fe429eaaff7b90d9a59, type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.70789474
+        functionName: Step
+        data: 
+        objectReferenceParameter: {fileID: 11400000, guid: aacdff07b1c71fe429eaaff7b90d9a59, type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.80263156
+        functionName: Step
         data: 
         objectReferenceParameter: {fileID: 11400000, guid: aacdff07b1c71fe429eaaff7b90d9a59, type: 2}
         floatParameter: 0
