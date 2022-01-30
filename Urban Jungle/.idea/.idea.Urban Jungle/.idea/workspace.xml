@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="" />
+    <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Colors/New TMP Color Gradient.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Colors/New TMP Color Gradient.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.02.19 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.02.19 1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.02.19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.02.19.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.34.17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.34.17.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Menus/CanvasController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Menus/CanvasController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Menus/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Menus/PauseMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneSetup/CanvasController.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneSetup/CanvasController.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,18 +38,19 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/AnimatorStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Menus/MainMenu/GameLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/Assets/SceneSetup/CanvasController.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/AnimatorStateMachine.cs" />
       <option value="$PROJECT_DIR$/Assets/Features/Menus/MainMenu/GameLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Features/Smartphone/Link.cs" />
+      <option value="$PROJECT_DIR$/Assets/Features/Menus/CanvasController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Features/Menus/PauseMenu.cs" />
     </changedPaths>
   </component>
   <component name="MarkdownSettingsMigration">
@@ -108,6 +123,8 @@
       <workItem from="1643118560065" duration="2217000" />
       <workItem from="1643230914716" duration="1604000" />
       <workItem from="1643311174949" duration="3468000" />
+      <workItem from="1643515287157" duration="603000" />
+      <workItem from="1643561110329" duration="1306000" />
     </task>
     <task id="LOCAL-00001" summary="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526">
       <created>1640900662969</created>
@@ -242,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643421413403</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Create all first menu designs">
+      <created>1643515342105</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1643515342105</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +312,7 @@
     <MESSAGE value="First design and function tests for mainmenu" />
     <MESSAGE value="Add Link function and raw Highscore menu design" />
     <MESSAGE value="Raw design for win, lose, main, highscore &amp; settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Raw design for win, lose, main, highscore &amp; settings" />
+    <MESSAGE value="Create all first menu designs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create all first menu designs" />
   </component>
 </project>
