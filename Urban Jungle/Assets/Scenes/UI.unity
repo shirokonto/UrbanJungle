@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdownController: {fileID: 101580121}
+  endPoints: 0
 --- !u!1 &1011195778
 GameObject:
   m_ObjectHideFlags: 0
