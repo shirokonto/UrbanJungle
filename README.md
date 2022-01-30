@@ -1,11 +1,15 @@
 # Urban Jungle
 A third-person 3d platformer made in Unity using C# for a course project at HTW Berlin, Germany. :video_game:
 
-(INSERT MORE TEXT HERE AND ADAPT LINK)
+After a long night of partying, the chaotic Wilma wakes up in her room and remembers that
+she have to meet her date in half an hour at Pizza Plaza but oh my, the door won't open. She's been locked up and her roommates are all out.
+Her only way seems to be through the window over the city's rooftops. Maybe she finds something to dress to make a better impression on the date.
+Your goal is to get to the date as quickly as possible within the time limit and pick up as many items as possible. 
+
 The pre-release can be downloaded [here](https://github.com/shirokonto/UrbanJungle/blob/main/README.md)(Latest version: Version 1.0.0).
 
 ## Idea :bulb:
-During our first big brainstorming session, we each came up with concepts for what we want to do - drawing inspiration from our favourite games/series/films and breaking it down to what we could achieve together in six weeks. 
+Urban Jungle was inspired by Mirror's Edge and Infamous, where the player parkours over the roofs of 'The City' and Seattle. In our brainstorming session we planned the features, which we could achieve together in five weeks. 
 
 ## How to play (Controls) :joystick: 
 ### Keyboard
