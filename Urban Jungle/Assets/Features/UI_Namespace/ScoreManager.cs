@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Features.UI_Namespace
@@ -7,30 +6,31 @@ namespace Features.UI_Namespace
     public class ScoreManager : MonoBehaviour
     {
         [SerializeField] private CountdownController countdownController;
+        [SerializeField] private int endPoints;
         private int _collectedItemCounter;
-        private List<String> collectedItems;
-        public TextAsset text;
         void Awake()
         {
             _collectedItemCounter = 0;
-            collectedItems = new List<string>();
         }
 
-        public void AddPoints(String itemName)
+        public void AddPoints()
         {
             _collectedItemCounter += 100;
-            collectedItems.Add(itemName);
-            Debug.Log("Picked up " + itemName + "/// Total points: " + _collectedItemCounter + (int)Math.Round(countdownController.GetTimeLeft()));
+            Debug.Log("Picked up item /// Total points: " + _collectedItemCounter + (int)Math.Round(countdownController.GetTimeLeft()));
+        }
+
+        public void SetEndPoints()
+        {
+            var timeLeft = (int)Math.Round(countdownController.GetTimeLeft());
+            endPoints= timeLeft <= 0 ? _collectedItemCounter : (_collectedItemCounter + timeLeft);
         }
 
         public int GetEndPoints()
         {
-            int timeLeft = (int)Math.Round(countdownController.GetTimeLeft());
-            GetEndMsg(timeLeft);
-            return timeLeft <= 0 ? _collectedItemCounter : (_collectedItemCounter + timeLeft);
+            return endPoints;
         }
     
-        public String GetEndMsg(int timeLeft)
+        public string SetEndMsg(int timeLeft)
         {
             if (timeLeft <= 0)
             {
@@ -44,7 +44,8 @@ namespace Features.UI_Namespace
                 2 => "Collected two items",
                 3 => "Collected three items",
                 4 => "Collected four items",
-                5 => "WOW look at you! You look really good ;)"
+                5 => "WOW look at you! You look really good ;)",
+                _ => throw new ArgumentOutOfRangeException()
             };
         }
     }

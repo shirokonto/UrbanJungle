@@ -16,12 +16,12 @@ public class DatePreparation : MonoBehaviour
 {
     [SerializeField] private List<Collectables> collectablesList;
     [SerializeField] private AudioSource pickUpSound;
-    private ScoreManager scoreManager;
-    [SerializeField] private FootStepBehaviour _footStepBehaviour;
+    private ScoreManager _scoreManager;
+    [SerializeField] private FootStepBehaviour footStepBehaviour;
 
     private void Start()
     {
-        scoreManager = Object.FindObjectOfType<ScoreManager>();
+        _scoreManager = Object.FindObjectOfType<ScoreManager>();
         foreach (var collectable in collectablesList)
         {
             if (collectable.type != PickableItems.OldHairstyle)
@@ -37,11 +37,11 @@ public class DatePreparation : MonoBehaviour
         foreach (var collectable in collectablesList.Where(collectable => collectable.type == items))
         {
             pickUpSound.Play();
-            scoreManager.AddPoints(collectable.type.ToString());
+            _scoreManager.AddPoints();
             collectable.item.SetActive(equip);
             if (collectable.type == PickableItems.Shoes)
             {
-                _footStepBehaviour.PutOnShoes();
+                footStepBehaviour.PutOnShoes();
             }
         }
     }
