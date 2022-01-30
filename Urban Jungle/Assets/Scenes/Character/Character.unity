@@ -928,6 +928,10 @@ PrefabInstance:
       propertyPath: pickUpSound
       value: 
       objectReference: {fileID: 1769775296}
+    - target: {fileID: 537246899, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
+      propertyPath: _footStepBehaviour
+      value: 
+      objectReference: {fileID: 1769775294}
     - target: {fileID: 4810378045186561563, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
       propertyPath: m_Name
       value: Wilma
