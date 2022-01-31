@@ -1,14 +1,17 @@
 using System;
+using DataStructures.Variables;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Features.UI_Namespace
 {
     public class ScoreManager : MonoBehaviour
     {
-        [SerializeField] private CountdownController countdownController;
-        [SerializeField] private int endPoints;
+        [SerializeField] private FloatVariable timeLeft;
+        [SerializeField] private String endMsg;
         private int _collectedItemCounter;
         private int _itemPoints;
+        private int _endPoints;
         void Awake()
         {
             _collectedItemCounter = 0;
@@ -19,18 +22,18 @@ namespace Features.UI_Namespace
         {
             _collectedItemCounter += 100;
             _itemPoints += 1;
-            Debug.Log("Picked up item /// Total points: " + _collectedItemCounter + (int)Math.Round(countdownController.GetTimeLeft()));
+            Debug.Log("Picked up item /// Total points: " + _collectedItemCounter + (int)Math.Round(timeLeft.Get()));
         }
 
         public void SetEndPoints()
         {
-            var timeLeft = (int)Math.Round(countdownController.GetTimeLeft());
-            endPoints= timeLeft <= 0 ? _collectedItemCounter : (_collectedItemCounter + timeLeft);
+            var timeLeftAtEnd = (int)Math.Round(timeLeft.Get());
+            _endPoints= timeLeftAtEnd <= 0 ? _collectedItemCounter : (_collectedItemCounter + timeLeftAtEnd);
         }
 
         public int GetEndPoints()
         {
-            return endPoints;
+            return _endPoints;
         }
     
         public string GetEndMsg(int timeLeft)

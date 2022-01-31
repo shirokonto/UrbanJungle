@@ -1,66 +1,51 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using DataStructures.Variables;
 using UnityEngine;
 using UnityEngine.UI;
+using Utils.Event_Namespace;
 
 public class CountdownController : MonoBehaviour
 {
-    public float currentTime = 0f;
-
-    private float startingTime = 600f;
-
-    private string timeGrade;
-
+    [SerializeField] private FloatVariable currentTime;
     [SerializeField] private Text countdownInfo;
-    
     [SerializeField] private Text countdownTime;
+    [SerializeField] private GameEvent onLoadLoseMenu;
+    private float _startingTime = 600f;
+    private string _timeGrade;
     
     // Start is called before the first frame update
     void Start()
     { 
-        currentTime = startingTime;
-
-        timeGrade = "Ezzzzz";
-
-        countdownInfo.text = "Timing Level: " + timeGrade;
-
+        currentTime.Set(_startingTime);
+        _timeGrade = "Ezzzzz";
+        countdownInfo.text = "Timing Level: " + _timeGrade;
     }
 
     // Update is called once per frame
     void Update ()
     {
-        currentTime -= 1 * Time.deltaTime;
-
-        countdownTime.text = Math.Floor(currentTime / 60).ToString("0") + ":" + Math.Floor(currentTime % 60).ToString("00");
+        currentTime.Add(-1 * Time.deltaTime);
+        countdownTime.text = Math.Floor(currentTime.Get()/60).ToString("0") + ":" + Math.Floor(currentTime.Get() % 60).ToString("00");
         
-        if (currentTime <= 300f)
-        {
-            timeGrade = "Sweaty Armpits";
-            
-            countdownInfo.text = "Timing Level: " + timeGrade;
-            
+        if (currentTime.Get() <= 300f) {
+            _timeGrade = "Sweaty Armpits";
+            countdownInfo.text = "Timing Level: " + _timeGrade;
             countdownInfo.color = Color.yellow;
-            
             countdownTime.color = Color.yellow;
             
-            if (currentTime <= 60f)
+            if (currentTime.Get() <= 60f)
             {
-                timeGrade = "F************!";
-                
-                countdownInfo.text = timeGrade;
-
+                _timeGrade = "F************!";
+                countdownInfo.text = _timeGrade;
                 countdownInfo.fontStyle = FontStyle.BoldAndItalic;
-
                 countdownInfo.color = Color.red;
-                
                 countdownTime.color = Color.red;
                 
-                if (currentTime <= 0)
+                if (currentTime.Get() <= 0)
                 {
                     countdownTime.text = "";
                     countdownInfo.text = "You are too late!";
-                    // player looses?
+                    onLoadLoseMenu?.Raise();
                 }
             }
         }
@@ -68,6 +53,6 @@ public class CountdownController : MonoBehaviour
     
     public float GetTimeLeft()
     {
-        return currentTime;
+        return currentTime.Get();
     }
 }
