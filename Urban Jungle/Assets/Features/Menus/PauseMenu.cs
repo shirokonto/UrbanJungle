@@ -16,12 +16,12 @@ public class PauseMenu : MonoBehaviour
 
     
     /// <summary>
-    /// press "F" for PauseMenu
+    /// press "P" for PauseMenu
     /// if game is paused we want to go back to the game and if its not paused we want it to pause
     /// </summary>
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.P))
 
         {
             if (PausedGame)
@@ -64,7 +64,7 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 0f;
         PausedGame = true; 
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("");
 
       //  SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
       // Time.timeScale = 1f;
