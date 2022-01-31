@@ -8,14 +8,17 @@ namespace Features.UI_Namespace
         [SerializeField] private CountdownController countdownController;
         [SerializeField] private int endPoints;
         private int _collectedItemCounter;
+        private int _itemPoints;
         void Awake()
         {
             _collectedItemCounter = 0;
+            _itemPoints = 0;
         }
 
         public void AddPoints()
         {
             _collectedItemCounter += 100;
+            _itemPoints += 1;
             Debug.Log("Picked up item /// Total points: " + _collectedItemCounter + (int)Math.Round(countdownController.GetTimeLeft()));
         }
 
@@ -30,14 +33,14 @@ namespace Features.UI_Namespace
             return endPoints;
         }
     
-        public string SetEndMsg(int timeLeft)
+        public string GetEndMsg(int timeLeft)
         {
             if (timeLeft <= 0)
             {
                 return "Well shit... I think I owe them an apology...";
             }
 
-            return _collectedItemCounter switch
+            return _itemPoints switch
             {
                 0 => "You could have at least put on some pants for me... but at least you made it in time",
                 1 => "Collected one item",
