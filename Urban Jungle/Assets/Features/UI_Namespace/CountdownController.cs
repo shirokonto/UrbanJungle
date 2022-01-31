@@ -50,9 +50,4 @@ public class CountdownController : MonoBehaviour
             }
         }
     }
-    
-    public float GetTimeLeft()
-    {
-        return currentTime.Get();
-    }
 }
