@@ -8,6 +8,8 @@ Your goal is to get to the date as quickly as possible within the time limit and
 
 The pre-release can be downloaded [here](https://github.com/shirokonto/UrbanJungle/blob/main/README.md)(Latest version: Version 1.0.0).
 
+![WilmaRuns](https://user-images.githubusercontent.com/57158200/151724072-a355c962-94cc-47d5-b1b3-b378a9bf6538.gif)
+
 ## Idea :bulb:
 Urban Jungle was inspired by Mirror's Edge and Infamous, where the player parkours over the roofs of 'The City' and Seattle. In our brainstorming session we planned the features, which we could achieve together in five weeks. 
 
