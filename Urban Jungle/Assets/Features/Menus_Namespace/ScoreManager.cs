@@ -35,9 +35,18 @@ namespace Features.UI_Namespace
         public void SetEndTxts()
         {
             endMsgTxt.text = GetCorrectMessage();
-            timeLeftTxt.text = timeLeft.Get()<= 0 ? "00:00" : timeLeft.Get().ToString(); //TODO: format to right time
+            timeLeftTxt.text = GetTimeLeft();
             senderTxt.text = _timePoints <= 0 ? "Wilma" : "Alex";
             itemCounterTxt.text = itemCounter.Get().ToString();
+        }
+
+        private string GetTimeLeft()
+        {
+            if (timeLeft.Get() <= 0)
+            {
+                return "00:00";
+            }
+            return Math.Floor(timeLeft.Get()/60).ToString("0") + ":" + Math.Floor(timeLeft.Get() % 60).ToString("00");
         }
     
         private string GetCorrectMessage()
@@ -50,8 +59,8 @@ namespace Features.UI_Namespace
             return itemCounter.Get() switch
             {
                 0 => "You could have at least put on some pants for me... but at least you made it in time.",
-                1 => "Uhm, you sure look... different from what I expected... But I guess you put on some clothes?",
-                2 => "What...the.. Oh wait, I get it! Am I on Disaster Date? Where are the cameras?",
+                1 => "What...the.. Oh wait, I get it! Am I on Disaster Date? Where are the cameras?",
+                2 => "Uhm, you sure look... different from what I expected... But I guess you put on some clothes?",
                 3 => "I like that you didn't dress up for me, it shows how down-to-earth you are. *sarcastic*",
                 4 => "Well, you look pretty good for someone who just ran over half the city.",
                 5 => "WOW are you a professional parkour runner? You look really good!",
