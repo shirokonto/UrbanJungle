@@ -15,12 +15,15 @@ namespace Features.UI_Namespace
         [SerializeField] private TextMeshProUGUI timeLeftTxt;
         [SerializeField] private TextMeshProUGUI senderTxt;
         [SerializeField] private IntVariable itemCounter;
+        [SerializeField] private IntVariable endPoints;
+        
         private int _itemPoints;
         private int _timePoints;
         private int _endPoints;
         void Awake()
         {
             itemCounter.Set(0);
+            endPoints.Set(0);
             _itemPoints = _timePoints = _endPoints = 0;
         }
 
@@ -29,6 +32,7 @@ namespace Features.UI_Namespace
             _itemPoints = itemCounter.Get() * 1500;
             _timePoints = (int)Math.Round(timeLeft.Get()*10);
             _endPoints= _timePoints <= 0 ? _itemPoints : (_itemPoints + _timePoints);
+            endPoints.Set(_endPoints);
             endPointsTxt.text = _endPoints.ToString();
         }
 
@@ -39,7 +43,7 @@ namespace Features.UI_Namespace
             senderTxt.text = _timePoints <= 0 ? "Wilma" : "Alex";
             itemCounterTxt.text = itemCounter.Get().ToString();
         }
-    
+
         private string GetCorrectMessage()
         {
             if (_timePoints <= 0)
