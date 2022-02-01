@@ -10,7 +10,7 @@ public class CountdownController : MonoBehaviour
     [SerializeField] private Text countdownInfo;
     [SerializeField] private Text countdownTime;
     [SerializeField] private GameEvent onLoadLoseMenu;
-    private float _startingTime = 600f;
+    private float _startingTime = 900f;
     private string _timeGrade;
     
     // Start is called before the first frame update

@@ -4,6 +4,7 @@ using Features.Character_Namespace.Scripts.States;
 using StarterAssets;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Utils.Event_Namespace;
 using Utils.StateMachine_Namespace;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 #endif
@@ -49,6 +50,7 @@ namespace Features.Character_Namespace.Scripts
 		[Header("Sound")]
 		[SerializeField] private List<AudioClip> bounceSound;
 		[SerializeField] private AudioSource bounceAudio;
+		[SerializeField] private GameEvent raiseEndScreen;
 
 		//References getter and setter
 		public Animator Animator { get; private set; }
@@ -133,6 +135,10 @@ namespace Features.Character_Namespace.Scripts
 		
 		private void OnTriggerEnter(Collider trigger)
 		{
+			if (trigger.gameObject.layer == 6)
+			{
+				raiseEndScreen.Raise();
+			}
 			if (trigger.TryGetComponent(typeof(SeekTriggerBehaviour), out Component seekTriggerBehaviour))
 			{
 				seekAnimatorState.SetNextState(seekTriggerBehaviour as SeekTriggerBehaviour);
