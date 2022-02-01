@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &19678668
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1293,7 +1293,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.45
+  m_fontSize: 19.1
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1719,7 +1719,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.3
+  m_fontSize: 19.1
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2337,8 +2337,6 @@ GameObject:
   m_Component:
   - component: {fileID: 504220830}
   - component: {fileID: 504220829}
-  - component: {fileID: 504220832}
-  - component: {fileID: 504220831}
   m_Layer: 0
   m_Name: GameLoader
   m_TagString: Untagged
@@ -2379,62 +2377,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &504220831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504220828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14879ae99a78a24aac937a0d1317c9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  event: {fileID: 11400000, guid: b91f0df70583c40ba94d8ea2c213ae9f, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 504220829}
-        m_TargetAssemblyTypeName: GameLoader, Assembly-CSharp
-        m_MethodName: UnloadGameScenes
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 1b7a6ce8e3fbe4ebfb782ac0bef0950f, type: 2}
-          m_ObjectArgumentAssemblyTypeName: MenuType_SO, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &504220832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504220828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14879ae99a78a24aac937a0d1317c9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  event: {fileID: 11400000, guid: a25398a19a1664e4783964386a73a579, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 504220829}
-        m_TargetAssemblyTypeName: GameLoader, Assembly-CSharp
-        m_MethodName: UnloadGameScenes
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 7291ef442acf94970aaefc0f89117214, type: 2}
-          m_ObjectArgumentAssemblyTypeName: MenuType_SO, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &511685886
 GameObject:
   m_ObjectHideFlags: 0
@@ -3157,7 +3099,7 @@ GameObject:
   m_Component:
   - component: {fileID: 770679746}
   m_Layer: 5
-  m_Name: Walking_HorizontalLayoutGroup (1)
+  m_Name: Jump_HorizontalLayoutGroup (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3740,7 +3682,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1038916223}
   m_Layer: 5
-  m_Name: Walking_HorizontalLayoutGroup (2)
+  m_Name: Sprint_HorizontalLayoutGroup (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4480,7 +4422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1240245927}
   m_Layer: 5
-  m_Name: Walking_HorizontalLayoutGroup (3)
+  m_Name: Pause_HorizontalLayoutGroup (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5300,7 +5242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.45000002, y: 0.19600001}
   m_AnchorMax: {x: 0.51375, y: 0.23636398}
-  m_AnchoredPosition: {x: 3.0281067, y: -0.63067627}
+  m_AnchoredPosition: {x: 3.0281067, y: -0.63066864}
   m_SizeDelta: {x: 80.78549, y: 30.53627}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1460943654
@@ -6032,7 +5974,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.06665767}
   m_AnchorMax: {x: 1, y: 0.74300003}
-  m_AnchoredPosition: {x: -0.099998474, y: 1.3999996}
+  m_AnchoredPosition: {x: -3.2, y: 1.3999996}
   m_SizeDelta: {x: 13.768997, y: 9.7612}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1657974306
@@ -6055,7 +5997,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Walking:  \n"
+  m_text: "Move:  \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
@@ -6082,7 +6024,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.55
+  m_fontSize: 18.9
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6514,7 +6456,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1691370276
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7175,7 +7117,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1904384834
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7456,7 +7398,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8365,7 +8307,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14.45
+  m_fontSize: 15.9
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8447,8 +8389,8 @@ RectTransform:
   m_Father: {fileID: 562311004}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
