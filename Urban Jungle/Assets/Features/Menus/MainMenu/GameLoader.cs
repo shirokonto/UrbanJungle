@@ -56,15 +56,15 @@ public class GameLoader : MonoBehaviour
     {
       canvasManager.CloseCanvas();
       
-      scenesToLoad.Add(SceneManager.LoadSceneAsync("Character",LoadSceneMode.Additive));
       scenesToLoad.Add(SceneManager.LoadSceneAsync("WilmasRoom",LoadSceneMode.Additive));
       scenesToLoad.Add(SceneManager.LoadSceneAsync("RouteA",LoadSceneMode.Additive));
       scenesToLoad.Add(SceneManager.LoadSceneAsync("Route_B",LoadSceneMode.Additive));
       scenesToLoad.Add(SceneManager.LoadSceneAsync("Route_C",LoadSceneMode.Additive));
-      scenesToLoad.Add(SceneManager.LoadSceneAsync("Smartphone",LoadSceneMode.Additive));
+      //scenesToLoad.Add(SceneManager.LoadSceneAsync("Smartphone",LoadSceneMode.Additive));
       scenesToLoad.Add(SceneManager.LoadSceneAsync("CloudFloor",LoadSceneMode.Additive));
       scenesToLoad.Add(SceneManager.LoadSceneAsync("CollectableItems",LoadSceneMode.Additive));
       scenesToLoad.Add(SceneManager.LoadSceneAsync("UI",LoadSceneMode.Additive));
+      scenesToLoad.Add(SceneManager.LoadSceneAsync("Character",LoadSceneMode.Additive));
       scenesToLoad[scenesToLoad.Count - 1].completed +=  _ =>
       {
         onLoadGameScenesComplete.Raise();
@@ -89,7 +89,7 @@ public class GameLoader : MonoBehaviour
       SceneManager.UnloadSceneAsync("RouteA");
       SceneManager.UnloadSceneAsync("Route_B");
       SceneManager.UnloadSceneAsync("Route_C");
-      SceneManager.UnloadSceneAsync("Smartphone");
+      //SceneManager.UnloadSceneAsync("Smartphone");
       SceneManager.UnloadSceneAsync("CloudFloor");
       SceneManager.UnloadSceneAsync("CollectableItems");
       SceneManager.UnloadSceneAsync("UI");

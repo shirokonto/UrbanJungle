@@ -23,7 +23,7 @@ namespace DataStructures.Variables
             if (value.Equals(runtimeValue)) return;
             
             runtimeValue = value;
-            if(onValueChanged != null) onValueChanged.Raise();
+            if(onValueChanged != null) onValueChanged?.Raise();
         }
 
         public void Copy(AbstractVariable<T> other) => runtimeValue = other.runtimeValue;

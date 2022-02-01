@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using DataStructures.Variables;
 using Features.UI_Namespace;
 using UnityEngine;
 
@@ -16,12 +17,11 @@ public class DatePreparation : MonoBehaviour
 {
     [SerializeField] private List<Collectables> collectablesList;
     [SerializeField] private AudioSource pickUpSound;
-    private ScoreManager _scoreManager;
+    [SerializeField] private IntVariable itemCounter;
     [SerializeField] private FootStepBehaviour footStepBehaviour;
 
     private void Start()
     {
-        _scoreManager = Object.FindObjectOfType<ScoreManager>();
         foreach (var collectable in collectablesList)
         {
             if (collectable.type != PickableItems.OldHairstyle)
@@ -29,7 +29,6 @@ public class DatePreparation : MonoBehaviour
                 collectable.item.SetActive(false);
             }
         }
-        
     }
 
     public void PickUpItem(PickableItems items, bool equip)
@@ -37,7 +36,7 @@ public class DatePreparation : MonoBehaviour
         foreach (var collectable in collectablesList.Where(collectable => collectable.type == items))
         {
             pickUpSound.Play();
-            _scoreManager.AddPoints();
+            itemCounter.Add(1);
             collectable.item.SetActive(equip);
             if (collectable.type == PickableItems.Shoes)
             {
