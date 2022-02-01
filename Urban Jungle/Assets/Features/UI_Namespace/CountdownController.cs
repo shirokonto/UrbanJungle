@@ -9,9 +9,10 @@ public class CountdownController : MonoBehaviour
     [SerializeField] private FloatVariable currentTime;
     [SerializeField] private Text countdownInfo;
     [SerializeField] private Text countdownTime;
-    [SerializeField] private GameEvent onLoadLoseMenu;
-    private float _startingTime = 900f;
+    [SerializeField] private GameEvent onLoadEndMenu;
+    private float _startingTime = 100f;
     private string _timeGrade;
+    private bool _triggeredEndMenu;
     
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class CountdownController : MonoBehaviour
     // Update is called once per frame
     void Update ()
     {
+        if (_triggeredEndMenu) return;
         currentTime.Add(-1 * Time.deltaTime);
         countdownTime.text = Math.Floor(currentTime.Get()/60).ToString("0") + ":" + Math.Floor(currentTime.Get() % 60).ToString("00");
         
@@ -45,7 +47,8 @@ public class CountdownController : MonoBehaviour
                 {
                     countdownTime.text = "";
                     countdownInfo.text = "You are too late!";
-                    onLoadLoseMenu?.Raise();
+                    onLoadEndMenu?.Raise();
+                    _triggeredEndMenu = true;
                 }
             }
         }

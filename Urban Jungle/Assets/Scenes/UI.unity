@@ -240,7 +240,7 @@ MonoBehaviour:
   currentTime: {fileID: 11400000, guid: ff7ffd35159044c46867207a384e87ce, type: 2}
   countdownInfo: {fileID: 1023272720}
   countdownTime: {fileID: 1011195780}
-  onLoadLoseMenu: {fileID: 0}
+  onLoadEndMenu: {fileID: 11400000, guid: a25398a19a1664e4783964386a73a579, type: 2}
 --- !u!1 &1011195778
 GameObject:
   m_ObjectHideFlags: 0
