@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="542c13c4-88e2-4217-865f-54935251db37" name="Default Changelist" comment="">
+    <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneSetup/CanvasController.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneSetup/CanvasController.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Route_C.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Route_C.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/UI_Namespace/CountdownController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/UI_Namespace/CountdownController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/UI_Namespace/ScoreManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/UI_Namespace/ScoreManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TemporaryCanvas.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TemporaryCanvas.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,13 +30,12 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/AnimatorStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/Menus/MainMenu/GameLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Features/Menus/MainMenu/GameLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/hikar/Documents/Unity/UrbanJungle/Urban Jungle/Assets/Features/Music_Namespace.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/AnimatorStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -247,14 +248,7 @@
       <option name="project" value="LOCAL" />
       <updated>1643421413403</updated>
     </task>
-    <task id="LOCAL-00020" summary="merge changes from remote">
-      <created>1643587394711</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1643587394712</updated>
-    </task>
-    <option name="localTasksCounter" value="21" />
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +294,6 @@
     <MESSAGE value="First design and function tests for mainmenu" />
     <MESSAGE value="Add Link function and raw Highscore menu design" />
     <MESSAGE value="Raw design for win, lose, main, highscore &amp; settings" />
-    <MESSAGE value="merge changes from remote" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge changes from remote" />
+    <option name="LAST_COMMIT_MESSAGE" value="Raw design for win, lose, main, highscore &amp; settings" />
   </component>
 </project>
