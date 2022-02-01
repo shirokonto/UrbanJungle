@@ -14,8 +14,8 @@ public enum PickableItems
 public class DatePreparation : MonoBehaviour
 {
     [SerializeField] private List<Collectables> collectablesList;
-
     [SerializeField] private AudioSource pickUpSound;
+    [SerializeField] private FootStepBehaviour _footStepBehaviour;
 
     private void Start()
     {
@@ -34,6 +34,10 @@ public class DatePreparation : MonoBehaviour
         {
             pickUpSound.Play();
             collectable.item.SetActive(equip);
+            if (collectable.type == PickableItems.Shoes)
+            {
+                _footStepBehaviour.PutOnShoes();
+            }
         }
     }
 
