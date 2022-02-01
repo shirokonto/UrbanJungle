@@ -54,12 +54,22 @@ We are aMazed and we’ve teamed up to develop this 3D game for the course Game 
 * FiftySounds: [Sfx Shaky Boing](https://www.fiftysounds.com/royalty-free-music/sfx-boing10.html)
 * FiftySounds: [Sfx Low Boing](https://www.fiftysounds.com/royalty-free-music/sfx-boing8.html)
 * B.G.M: [Shooting Sound](https://assetstore.unity.com/packages/audio/sound-fx/shooting-sound-177096)
+* cabled_mess: [Minimal UI Sounds](https://assetstore.unity.com/packages/audio/sound-fx/minimal-ui-sounds-78266)
 
 :space_invader: **Assets by:**
+* Markus Art: [LOW POLY CHARACTERS CUSTOMIZABLE/MODULAR ( MALE AND FEMALE )](https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-modular-male-and-female-173975)
 * Synty Studios: [POLYGON City - Low Poly 3D Art by Synty](https://assetstore.unity.com/packages/3d/environments/urban/polygon-city-low-poly-3d-art-by-synty-95214)
 * Schatro Dev Assets: [Low Poly Barriers Pack Free](https://assetstore.unity.com/packages/3d/props/exterior/low-poly-barriers-pack-free-201810)
 * iPoly3D: [LowPoly Server Room Props](https://assetstore.unity.com/packages/3d/environments/lowpoly-server-room-props-197268)
 * Dreamerz Lab Ltd.[Low Poly Bed Room Furniture PBR](https://assetstore.unity.com/packages/3d/props/furniture/low-poly-bed-room-furniture-pbr-133977)
+* Dented Pixel: [LeanTween](https://assetstore.unity.com/packages/tools/animation/leantween-3595)
+* Unity Technologies: [Standard Assets (for Unity 2018.4)](https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-for-unity-2018-4-32351)
+* Avionx: [Skybox Series Free](https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633)
+* Unity Technologies: [Starter Assets - Third Person Character Controller](https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526)
 
 :wrench: **Utils**
-* insert the long long list here
+* Mixamo: [Animation for 3D Characters](https://www.mixamo.com/#/)
+* dreamlo: [add a leaderboard to your game right now](https://www.dreamlo.com/)
+* Ryan Hipple: [Unite2017](https://github.com/roboryantron/Unite2017)
+* Reckless Cowboys: [MultiScene: Save multi-scene configurations](https://github.com/RecklessCowboys/MultiScene)
+* Roman Papush: [Ultimate Clouds with Shader Graph in Unity, Made Easy [Tutorial]](https://www.youtube.com/watch?v=Y7r5n5TsX_E)
