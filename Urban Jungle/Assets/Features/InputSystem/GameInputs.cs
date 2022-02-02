@@ -7,7 +7,7 @@ using Utils.Event_Namespace;
 
 namespace Features.InputSystem
 {
-	public class GameInputs : MonoBehaviour
+	public class StarterAssetsInputs : MonoBehaviour
 	{
 		[SerializeField] private GameStateController_SO gameStateController;
 		[SerializeField] private PauseState_SO pauseState;
