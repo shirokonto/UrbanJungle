@@ -3,81 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="feat: implemented pause menu&#10;&#10;cleanup: moved scenes into scene setup scene">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Camera/Prefabs/PlayerFollowCamera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Camera/Prefabs/PlayerFollowCamera.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Wilma.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Wilma.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/RespawnController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/RespawnController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/GameStates_Namespace/Scripts/States/MenuState_SO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/GameStates_Namespace/Scripts/States/MenuState_SO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/InputSystem/StarterAssets.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/InputSystem/StarterAssets.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/InputSystem/StarterAssetsInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/InputSystem/StarterAssetsInputs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/CameraZoom5.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/CameraZoom5.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/CameraZoom6.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/CameraZoom6.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/FinalZoomAnimation.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/FinalZoomAnimation.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/CameraZoom.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/CameraZoom.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/CameraZoom2.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/CameraZoom2.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/CameraZoom3.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/CameraZoom3.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/CameraZoom4.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/CameraZoom4.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/TestAnimation.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/TestAnimation.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/ZoomCamera.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/ZoomCamera.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/ZoomInCamera.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/ZoomInCamera.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 02.01.41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 02.01.41.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 02.15.07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 02.15.07.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.42.27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.42.27.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.43.30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.43.30.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.43.43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.43.43.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.44.45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.44.45.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.45.47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.45.47.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-27 um 20.09.33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-27 um 20.09.33.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-29 um 16.15.27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-29 um 16.15.27.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-29 um 16.24.54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-29 um 16.24.54.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-29 um 16.27.11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-29 um 16.27.11.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-29 um 16.28.30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-29 um 16.28.30.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 03.50.28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 03.50.28.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 04.03.36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 04.03.36.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.02.19 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.02.19 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.02.19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.02.19.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.34.17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.34.17.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-31 um 00.13.08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-31 um 00.13.08.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/BlurPicture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/BlurPicture.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Link.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Link.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Stars.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Stars.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneSetup/CanvasController.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneSetup/CanvasController.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneSetup/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneSetup/Character.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneSetup/Smartphone.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneSetup/Smartphone.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/UI_Namespace/CountdownController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/UI_Namespace/CountdownController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,27 +28,17 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca496b8c93454b2f9b9924292c19379f13b800/de/03dc34b7/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca496b8c93454b2f9b9924292c19379f13b800/3f/93e88f97/Component.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../Local/ProceduralClimbing/Assets/StarterAssets/ThirdPersonController/Scripts/WallRunState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da6ab58261ca4bf88d2245fa0b5e29ff18000/74/5b1f66f1/Physics.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/OneDrive/Dokumente/GitHub/GreatMeadow/GreatMeadow/Library/PackageCache/com.unity.render-pipelines.core@10.6.0/Runtime/Common/ObservableList.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../Local/ProceduralClimbing/Assets/StarterAssets/ThirdPersonController/Scripts/ThirdPersonManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../BeforeTheLightGoesOut/BeforeTheLightGoesOut/Assets/Features/GameStates_Namespace/Scripts/States/GameInitializationBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/SceneSetup/Character.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/AnimatorStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/Smartphone/Scripts/HandyBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../BeforeTheLightGoesOut/BeforeTheLightGoesOut/Assets/Features/Menues_Namespace/Scripts/PauseMenu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/GameStates_Namespace/Scripts/States/GameInitializationBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fd824cfb55004855b9e6d51b008c90e4568778/a3/59eb1186/Attribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/SceneSetup/CanvasController.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da6ab58261ca4bf88d2245fa0b5e29ff18000/d2/8ba25403/PhysicsScene.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/EventSystem/RaycastSortingTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/AnimatorStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Features/GameStates_Namespace/Scripts/States/GameInitializationBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/Assets/SceneSetup/CanvasController.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Features/UI_Namespace/CountdownController.cs" />
+    </changedPaths>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

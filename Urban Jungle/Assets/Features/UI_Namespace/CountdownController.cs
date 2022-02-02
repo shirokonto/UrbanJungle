@@ -10,7 +10,7 @@ public class CountdownController : MonoBehaviour
     [SerializeField] private Text countdownInfo;
     [SerializeField] private Text countdownTime;
     [SerializeField] private GameEvent onLoadEndMenu;
-    private float _startingTime = 10f;
+    private float _startingTime = 900f;
     private string _timeGrade;
     private bool _triggeredEndMenu;
     
