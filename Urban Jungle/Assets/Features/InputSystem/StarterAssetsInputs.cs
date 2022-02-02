@@ -1,4 +1,7 @@
+using Features.GameStates_Namespace.Scripts.States;
 using UnityEngine;
+using UnityEngine.Events;
+using Utils.Event_Namespace;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 #endif
@@ -7,6 +10,11 @@ namespace StarterAssets
 {
 	public class StarterAssetsInputs : MonoBehaviour
 	{
+		[SerializeField] private GameStateController_SO gameStateController;
+		[SerializeField] private PauseState_SO pauseState;
+		[SerializeField] private PlayState_SO playState;
+		[SerializeField] private GameEvent onHandyButtonPressed;
+		
 		[Header("Character Input Values")]
 		public Vector2 move;
 		public Vector2 look;
@@ -43,6 +51,23 @@ namespace StarterAssets
 		public void OnSprint(InputValue value)
 		{
 			SprintInput(value.isPressed);
+		}
+
+		public void OnPause(InputValue value)
+		{
+			if (gameStateController.GetState() is PauseState_SO)
+			{
+				gameStateController.RequestState(playState);
+			}
+			else if (gameStateController.GetState() is PlayState_SO)
+			{
+				gameStateController.RequestState(pauseState);
+			}
+		}
+
+		public void OnHandyButton(InputValue value)
+		{
+			onHandyButtonPressed?.Raise();
 		}
 
 		public void MoveInput(Vector2 newMoveDirection)

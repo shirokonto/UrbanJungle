@@ -23,7 +23,7 @@ public class CameraController : MonoBehaviour
     private const float _threshold = 0.01f;
 
     // cinemachine
-    private float _cinemachineTargetYaw;
+    private float _cinemachineTargetYaw = 90f;
     private float _cinemachineTargetPitch;
     
     private void LateUpdate()

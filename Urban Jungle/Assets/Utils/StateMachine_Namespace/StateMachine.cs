@@ -1,6 +1,4 @@
 ﻿
-using UnityEngine;
-
 namespace Utils.StateMachine_Namespace
 {
     /// <summary>
@@ -11,48 +9,38 @@ namespace Utils.StateMachine_Namespace
     /// </summary>
     public class StateMachine
     {
-        public IStateAnimator currentStateAnimator { get; private set; }
-        public IStateAnimator previousStateAnimator;
+        public IState currentState { get; private set; }
+        public IState previousState;
 
-        public void Initialize(IStateAnimator startingStateAnimator, GameObject gameObject)
+        public void Initialize(IState startingState)
         {
-            currentStateAnimator = startingStateAnimator;
-            startingStateAnimator.Enter(gameObject);
+            currentState = startingState;
+            startingState.Enter();
         }
 
-        public void ChangeState(IStateAnimator newStateAnimator, GameObject gameObject)
+        public void ChangeState(IState newState)
         {
-            currentStateAnimator?.Exit();
-            previousStateAnimator = currentStateAnimator;
-            currentStateAnimator = newStateAnimator;
-            currentStateAnimator.Enter(gameObject);
+            currentState?.Exit();
+            previousState = currentState;
+            currentState = newState;
+            currentState.Enter();
         }
 
-        public IStateAnimator GetCurrentState()
+        public IState GetCurrentState()
         {
-            return currentStateAnimator;
-        }
-        
-        public IStateAnimator GetPreviousState()
-        {
-            return previousStateAnimator;
+            return currentState;
         }
 
         public void Update()
         {
-            currentStateAnimator?.Execute();
+            currentState?.Execute();
         }
 
-        public void OnAnimatorMove()
+        public void SwitchToPreviousState()
         {
-            currentStateAnimator?.OnAnimatorMove();
-        }
-
-        public void SwitchToPreviousState(GameObject gameObject)
-        {
-            currentStateAnimator.Exit();
-            currentStateAnimator = previousStateAnimator;
-            currentStateAnimator.Enter(gameObject);
+            currentState.Exit();
+            currentState = previousState;
+            currentState.Enter();
         }
     }
 }
