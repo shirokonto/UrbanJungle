@@ -19,6 +19,7 @@ Urban Jungle was inspired by Mirror's Edge and Infamous, where the player parkou
 * Sprint with Left Shift
 * Jump with Space
 * Look with Mouse
+* Pause with P/ESC
 
 ### Controller
 * Move with left stick
