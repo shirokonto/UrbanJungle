@@ -5,13 +5,13 @@ public class PickableItem : MonoBehaviour
 {
     [SerializeField] private GameObject item;
     [SerializeField] private PickableItems pickableItems;
-    private void OnTriggerEnter(Collider collider)
+    private void OnTriggerEnter(Collider itemCollider)
     {
-        if (collider.gameObject.CompareTag("Player"))
+        if (itemCollider.gameObject.CompareTag("Player"))
         {
             transform.GetChild(0).gameObject.SetActive(false);
             item.SetActive(false);
-            var datePreparation = collider.gameObject.GetComponent<DatePreparation>();
+            var datePreparation = itemCollider.gameObject.GetComponent<DatePreparation>();
             if (pickableItems == PickableItems.NewHairstyle)
             {
                 datePreparation.SwapHairStyle();

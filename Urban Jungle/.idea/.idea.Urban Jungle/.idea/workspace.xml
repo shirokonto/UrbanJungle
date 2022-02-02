@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="">
+    <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="feat: implemented pause menu&#10;&#10;cleanup: moved scenes into scene setup scene">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/UI_Namespace/CountdownController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/UI_Namespace/CountdownController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +27,18 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/Downloads/ScoreBoard/ScoreBoard/DisplayHighscores.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Downloads/ScoreBoard/ScoreBoard/HighScores.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Downloads/unity-sdk-main/unity-sdk-main/Runtime/Game/LootLockerSDKManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/AnimatorStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Features/GameStates_Namespace/Scripts/States/GameInitializationBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/Assets/SceneSetup/CanvasController.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Features/UI_Namespace/CountdownController.cs" />
+    </changedPaths>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -211,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643129217618</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: implemented pause menu&#10;&#10;cleanup: moved scenes into scene setup scene">
+      <created>1643814432024</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1643814432024</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +244,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -252,6 +267,7 @@
     <MESSAGE value="feat: Scenery, Lighting, Post Processing&#10;&#10;Light Baking, Overall Route adjustments to fit to scenery, improved post processing, shadow troubleshooting, when jumping now there is always a jump speed of at least 1 (smoother jumping on objects when standing directly before)" />
     <MESSAGE value="feat: Scenery, Lighting, Post Processing&#10;&#10;Light Baking, Overall Route adjustments to fit to scenery, improved post processing, shadow troubleshooting, when jumping now there is always a jump speed of at least 1 (smoother jumping on objects when standing directly before), made objects from route a, b, c and some inside the cloud floor static, enabled &quot;Generate Lightmap UV's&quot; for all static models (light backing)" />
     <MESSAGE value="adjusted ladder seek trigger size" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted ladder seek trigger size" />
+    <MESSAGE value="feat: implemented pause menu&#10;&#10;cleanup: moved scenes into scene setup scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented pause menu&#10;&#10;cleanup: moved scenes into scene setup scene" />
   </component>
 </project>

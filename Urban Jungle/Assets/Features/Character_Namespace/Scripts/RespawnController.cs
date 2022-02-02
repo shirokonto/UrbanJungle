@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
@@ -6,8 +7,6 @@ using UnityEngine.UIElements;
 
 public class RespawnController : MonoBehaviour
 {
-    [SerializeField] float playerHeight;
-
     [SerializeField] private Transform player;
 
     [SerializeField] private CharacterController charControl;
@@ -15,7 +14,12 @@ public class RespawnController : MonoBehaviour
     [SerializeField] private GameObject[] spawnPoint;
 
     private int _currentSpawnPoint;
-    
+
+    private void Awake()
+    {
+        _currentSpawnPoint = 0;
+    }
+
     public void Update()
     {
         if (_currentSpawnPoint == 0 && player.position.z <= -15)
@@ -28,8 +32,9 @@ public class RespawnController : MonoBehaviour
             _currentSpawnPoint = 4;
         if (_currentSpawnPoint == 4 && player.position.z >= -110)
             _currentSpawnPoint = 5;
+        
         if (player.position.y >= 0) return;
-
+        
         Respawn();
     }
 
@@ -42,6 +47,7 @@ public class RespawnController : MonoBehaviour
 
     public void Respawn()
     {
+        Debug.Log("o/");
         RespawnTo(_currentSpawnPoint);
     }
 }
