@@ -55,7 +55,7 @@ namespace Features.Character_Namespace.Scripts
 		//References getter and setter
 		public Animator Animator { get; private set; }
 		public CharacterController Controller { get; private set; }
-		public StarterAssetsInputs Input { get; private set; }
+		public GameInputs Input { get; private set; }
 		public GameObject MainCamera { get; private set; }
 		
 		//Values getter and setter
@@ -82,7 +82,7 @@ namespace Features.Character_Namespace.Scripts
 		{
 			Animator = GetComponent<Animator>();
 			Controller = GetComponent<CharacterController>();
-			Input = GetComponent<StarterAssetsInputs>();
+			Input = GetComponent<GameInputs>();
 
 			_animatorStateMachine = new AnimatorStateMachine();
 			_animatorStateMachine.Initialize(groundedState, gameObject);

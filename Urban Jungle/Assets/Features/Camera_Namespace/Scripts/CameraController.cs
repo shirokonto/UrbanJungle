@@ -6,7 +6,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private StarterAssetsInputs input;
+    [SerializeField] private GameInputs input;
     
     [Header("Cinemachine")]
     [Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
