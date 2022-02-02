@@ -3,13 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml~" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/StreetParalax_Namespace.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/StreetParalax_Namespace/StreetParalax.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/StreetParalax_Namespace/StreetParalax.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/CloudFloor.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CloudFloor.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Utils/ReadOnly.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Utils/ReadOnly/ReadOnlyAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Utils/ReadOnly/ReadOnlyAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Utils/ReadOnly/ReadOnlyDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Utils/ReadOnly/ReadOnlyDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Utils/Attributes/MinMaxRangeAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Utils/Attributes/MinMaxRangeAttribute.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Utils/Variables.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Utils/Variables/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Utils/Variables/Editor/RangedFloatDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Utils/Variables/Editor/RangedFloatDrawer.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,17 +37,17 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca496b8c93454b2f9b9924292c19379f13b800/de/03dc34b7/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca496b8c93454b2f9b9924292c19379f13b800/3f/93e88f97/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Local/ProceduralClimbing/Assets/StarterAssets/ThirdPersonController/Scripts/WallRunState.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da6ab58261ca4bf88d2245fa0b5e29ff18000/74/5b1f66f1/Physics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca496b8c93454b2f9b9924292c19379f13b800/de/03dc34b7/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fd824cfb55004855b9e6d51b008c90e4568778/a3/59eb1186/Attribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da6ab58261ca4bf88d2245fa0b5e29ff18000/d2/8ba25403/PhysicsScene.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/StreetParalax_Namespace/StreetParalax.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/OneDrive/Dokumente/GitHub/GreatMeadow/GreatMeadow/Library/PackageCache/com.unity.render-pipelines.core@10.6.0/Runtime/Common/ObservableList.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/EventSystem/RaycastSortingTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Local/ProceduralClimbing/Assets/StarterAssets/ThirdPersonController/Scripts/ThirdPersonManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca496b8c93454b2f9b9924292c19379f13b800/3f/93e88f97/Component.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../Local/ProceduralClimbing/Assets/StarterAssets/ThirdPersonController/Scripts/WallRunState.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -94,7 +97,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d75b8462-06c9-424e-9cc5-8a40d39c97c9" name="Changes" comment="" />
+      <changelist id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="" />
       <created>1640685838544</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -119,6 +122,7 @@
       <workItem from="1643203637152" duration="21838000" />
       <workItem from="1643370277977" duration="608000" />
       <workItem from="1643377096999" duration="2837000" />
+      <workItem from="1643803033102" duration="2056000" />
     </task>
     <task id="LOCAL-00001" summary="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526">
       <created>1640900662969</created>
@@ -225,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643129217618</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="started with paralax effect">
+      <created>1643760964799</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1643760964799</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +278,7 @@
     <MESSAGE value="feat: Scenery, Lighting, Post Processing&#10;&#10;Light Baking, Overall Route adjustments to fit to scenery, improved post processing, shadow troubleshooting, when jumping now there is always a jump speed of at least 1 (smoother jumping on objects when standing directly before)" />
     <MESSAGE value="feat: Scenery, Lighting, Post Processing&#10;&#10;Light Baking, Overall Route adjustments to fit to scenery, improved post processing, shadow troubleshooting, when jumping now there is always a jump speed of at least 1 (smoother jumping on objects when standing directly before), made objects from route a, b, c and some inside the cloud floor static, enabled &quot;Generate Lightmap UV's&quot; for all static models (light backing)" />
     <MESSAGE value="adjusted ladder seek trigger size" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted ladder seek trigger size" />
+    <MESSAGE value="started with paralax effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="started with paralax effect" />
   </component>
 </project>
