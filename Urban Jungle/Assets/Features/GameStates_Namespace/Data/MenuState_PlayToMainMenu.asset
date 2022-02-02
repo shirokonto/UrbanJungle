@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a460a4bab87f4d24db5993403d20644e, type: 3}
+  m_Name: MenuState_PlayToMainMenu
+  m_EditorClassIdentifier: 
+  validStateShifts:
+  - {fileID: 11400000, guid: feb9d728cfd193441914fefb558142da, type: 2}
+  gameStateController: {fileID: 11400000, guid: cbf3c7f9f813f3a41b593576cbb8c144, type: 2}
+  swapMenu: {fileID: 11400000, guid: f59fddf49e4fe450a90566c59fc48f5d, type: 2}
+  fadeTime: 1

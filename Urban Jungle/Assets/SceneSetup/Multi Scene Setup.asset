@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d574eac49093f724e82cc4daeb8a1825, type: 3}
+  m_Name: Multi Scene Setup
+  m_EditorClassIdentifier: 
+  Setups:
+  - m_Path: Assets/SceneSetup/CanvasController.unity
+    m_IsLoaded: 1
+    m_IsActive: 1
+    m_IsSubScene: 0
+  - m_Path: Assets/SceneSetup/Character.unity
+    m_IsLoaded: 1
+    m_IsActive: 0
+    m_IsSubScene: 0
+  - m_Path: Assets/SceneSetup/CollectableItems.unity
+    m_IsLoaded: 1
+    m_IsActive: 0
+    m_IsSubScene: 0
+  - m_Path: Assets/SceneSetup/CloudFloor.unity
+    m_IsLoaded: 1
+    m_IsActive: 0
+    m_IsSubScene: 0
+  - m_Path: Assets/SceneSetup/Route_A.unity
+    m_IsLoaded: 1
+    m_IsActive: 0
+    m_IsSubScene: 0
+  - m_Path: Assets/SceneSetup/Route_B.unity
+    m_IsLoaded: 1
+    m_IsActive: 0
+    m_IsSubScene: 0
+  - m_Path: Assets/SceneSetup/Route_C.unity
+    m_IsLoaded: 1
+    m_IsActive: 0
+    m_IsSubScene: 0
+  - m_Path: Assets/SceneSetup/IngameTimer.unity
+    m_IsLoaded: 1
+    m_IsActive: 0
+    m_IsSubScene: 0
+  - m_Path: Assets/SceneSetup/Smartphone.unity
+    m_IsLoaded: 1
+    m_IsActive: 0
+    m_IsSubScene: 0
+  - m_Path: Assets/SceneSetup/WilmasRoom.unity
+    m_IsLoaded: 1
+    m_IsActive: 0
+    m_IsSubScene: 0

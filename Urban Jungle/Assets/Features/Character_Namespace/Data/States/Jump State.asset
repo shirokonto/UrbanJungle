@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4030bd299b0b10446aceadf13ec79bb1, type: 3}
+  m_Name: Jump State
+  m_EditorClassIdentifier: 
+  validStateShifts:
+  - {fileID: 11400000, guid: 96d652a8f2516544a9680d783feeaeac, type: 2}
+  jumpHeight: 1.2

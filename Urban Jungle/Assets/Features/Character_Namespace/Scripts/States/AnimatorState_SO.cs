@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using StarterAssets;
+using Features.InputSystem;
 using UnityEngine;
 using Utils.StateMachine_Namespace;
 
@@ -16,7 +16,7 @@ namespace Features.Character_Namespace.Scripts.States
         protected bool HasAnimator => _manager.Animator != null;
         protected Animator Animator => _manager.Animator;
         protected CharacterController Controller => _manager.Controller;
-        protected StarterAssetsInputs Input => _manager.Input;
+        protected GameInputs Input => _manager.Input;
         protected GameObject GameObject => _manager.MainCamera;
 
         //fields

@@ -1,5 +1,4 @@
 using Features.Character_Namespace.Scripts.CharacterBehaviours;
-using StarterAssets;
 using UnityEngine;
 
 namespace Features.Character_Namespace.Scripts.States
