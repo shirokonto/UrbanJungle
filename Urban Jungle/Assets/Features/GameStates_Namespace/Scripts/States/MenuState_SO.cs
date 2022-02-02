@@ -21,15 +21,15 @@ namespace Features.GameStates_Namespace.Scripts.States
             ShowFadeMenu(() =>
             {
                 gameStateController.CanvasManager.AddCanvas(swapMenu);
-      
-                SceneManager.UnloadSceneAsync("Character");
+                
                 SceneManager.UnloadSceneAsync("WilmasRoom");
+                SceneManager.UnloadSceneAsync("CollectableItems");
                 SceneManager.UnloadSceneAsync("RouteA");
                 SceneManager.UnloadSceneAsync("Route_B");
                 SceneManager.UnloadSceneAsync("Route_C");
-                //SceneManager.UnloadSceneAsync("Smartphone");
                 SceneManager.UnloadSceneAsync("CloudFloor");
-                SceneManager.UnloadSceneAsync("CollectableItems");
+                SceneManager.UnloadSceneAsync("Character");
+                SceneManager.UnloadSceneAsync("Smartphone");
                 SceneManager.UnloadSceneAsync("UI");
 
                 ScenesToLoad[ScenesToLoad.Count - 1].completed += _ =>
@@ -49,15 +49,15 @@ namespace Features.GameStates_Namespace.Scripts.States
             ShowFadeMenu(() =>
             {
                 gameStateController.CanvasManager.HideCanvas();
-      
-                ScenesToLoad.Add(SceneManager.LoadSceneAsync("Character",LoadSceneMode.Additive));
+
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("WilmasRoom",LoadSceneMode.Additive));
+                ScenesToLoad.Add(SceneManager.LoadSceneAsync("CollectableItems",LoadSceneMode.Additive));
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("RouteA",LoadSceneMode.Additive));
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("Route_B",LoadSceneMode.Additive));
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("Route_C",LoadSceneMode.Additive));
-                //scenesToLoad.Add(SceneManager.LoadSceneAsync("Smartphone",LoadSceneMode.Additive));
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("CloudFloor",LoadSceneMode.Additive));
-                ScenesToLoad.Add(SceneManager.LoadSceneAsync("CollectableItems",LoadSceneMode.Additive));
+                ScenesToLoad.Add(SceneManager.LoadSceneAsync("Character",LoadSceneMode.Additive));
+                ScenesToLoad.Add(SceneManager.LoadSceneAsync("Smartphone",LoadSceneMode.Additive));
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("UI",LoadSceneMode.Additive));
 
                 ScenesToLoad[ScenesToLoad.Count - 1].completed +=  _ =>

@@ -1,388 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="">
+    <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="feat: implemented pause menu&#10;&#10;cleanup: moved scenes into scene setup scene">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Camera/Prefabs/PlayerFollowCamera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Camera/Prefabs/PlayerFollowCamera.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Wilma.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Prefabs/Wilma.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/RespawnController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/RespawnController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/GameStates_Namespace/Scripts/States/MenuState_SO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/GameStates_Namespace/Scripts/States/MenuState_SO.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Features/InputSystem/StarterAssets.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/InputSystem/StarterAssets.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/InputSystem/StarterAssets.inputsettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/InputSystem/StarterAssets.inputsettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Features/InputSystem/StarterAssetsInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/InputSystem/StarterAssetsInputs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Menus/CanvasManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Menus/CanvasManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Menus/EndMenu_SO.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Menus/EndMenu_SO.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Menus/MainMenu.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Menus/MainMenu/GameLoader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Menus/MainMenu/GameLoader.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Menus/OnFadeComplete.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Menus/OnFadeComplete.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Menus/OnLoadGameScenesComplete.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Menus/OnLoadGameScenesComplete.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Menus/PauseMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Menus/PauseMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/UI/BackButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/UI/BackButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PauseMenu.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PauseMenu.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/CameraZoom5.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/CameraZoom5.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/CameraZoom6.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/CameraZoom6.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/FinalZoomAnimation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/FinalZoomAnimation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/CameraZoom.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/CameraZoom.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/CameraZoom2.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/CameraZoom2.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/CameraZoom3.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/CameraZoom3.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/CameraZoom4.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/CameraZoom4.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/TestAnimation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/TestAnimation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/ZoomCamera.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/OldAnimations/ZoomCamera.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/ZoomInCamera.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Animations/ZoomInCamera.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 02.01.41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 02.01.41.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 02.15.07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 02.15.07.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.42.27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.42.27.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.43.30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.43.30.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.43.43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.43.43.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.44.45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.44.45.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.45.47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-24 um 21.45.47.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-27 um 20.09.33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-27 um 20.09.33.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-29 um 16.15.27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-29 um 16.15.27.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-29 um 16.24.54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-29 um 16.24.54.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-29 um 16.27.11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-29 um 16.27.11.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-29 um 16.28.30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-29 um 16.28.30.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 03.50.28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 03.50.28.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 04.03.36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 04.03.36.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.02.19 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.02.19 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.02.19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.02.19.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.34.17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-30 um 17.34.17.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-31 um 00.13.08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Bildschirmfoto 2022-01-31 um 00.13.08.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/BlurPicture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/BlurPicture.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Link.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Link.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Stars.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Smartphone/Stars.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SceneSetup/CanvasController.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneSetup/CanvasController.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Global Volume Profile.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Global Volume Profile.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/LightingData.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/LightingData.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-0_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-0_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-0_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-0_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-10_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-10_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-10_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-10_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-11_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-11_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-11_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-11_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-12_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-12_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-12_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-12_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-13_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-13_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-13_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-13_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-14_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-14_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-14_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-14_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-15_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-15_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-15_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-15_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-16_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-16_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-16_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-16_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-17_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-17_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-17_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-17_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-18_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-18_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-18_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-18_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-19_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-19_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-19_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-19_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-1_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-1_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-1_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-1_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-20_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-20_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-20_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-20_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-21_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-21_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-21_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-21_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-22_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-22_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-22_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-22_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-23_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-23_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-23_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-23_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-24_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-24_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-24_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-24_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-25_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-25_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-25_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-25_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-26_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-26_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-26_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-26_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-27_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-27_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-27_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-27_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-28_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-28_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-28_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-28_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-29_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-29_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-29_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-29_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-2_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-2_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-2_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-2_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-30_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-30_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-30_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-30_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-31_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-31_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-31_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-31_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-32_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-32_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-32_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-32_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-33_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-33_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-33_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-33_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-34_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-34_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-34_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-34_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-35_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-35_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-35_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-35_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-36_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-36_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-36_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-36_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-37_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-37_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-37_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-37_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-38_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-38_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-38_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-38_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-39_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-39_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-39_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-39_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-3_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-3_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-3_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-3_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-40_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-40_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-40_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-40_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-41_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-41_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-41_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-41_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-42_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-42_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-42_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-42_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-43_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-43_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-43_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-43_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-44_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-44_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-44_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-44_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-45_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-45_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-45_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-45_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-46_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-46_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-46_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-46_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-47_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-47_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-47_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-47_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-48_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-48_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-48_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-48_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-49_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-49_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-49_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-49_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-4_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-4_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-4_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-4_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-50_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-50_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-50_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-50_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-51_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-51_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-51_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-51_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-52_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-52_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-52_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-52_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-53_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-53_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-53_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-53_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-54_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-54_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-54_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-54_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-55_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-55_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-55_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-55_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-56_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-56_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-56_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-56_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-57_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-57_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-57_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-57_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-58_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-58_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-58_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-58_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-59_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-59_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-59_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-59_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-5_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-5_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-5_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-5_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-60_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-60_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-60_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-60_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-61_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-61_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-61_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-61_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-62_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-62_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-62_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-62_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-63_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-63_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-63_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-63_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-64_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-64_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-64_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-64_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-65_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-65_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-65_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-65_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-66_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-66_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-66_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-66_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-67_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-67_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-67_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-67_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-68_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-68_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-68_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-68_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-69_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-69_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-69_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-69_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-6_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-6_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-6_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-6_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-70_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-70_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-70_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-70_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-71_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-71_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-71_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-71_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-72_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-72_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-72_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-72_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-73_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-73_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-73_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-73_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-74_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-74_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-74_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-74_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-75_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-75_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-75_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-75_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-76_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-76_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-76_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-76_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-77_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-77_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-77_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-77_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-78_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-78_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-78_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-78_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-79_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-79_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-79_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-79_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-7_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-7_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-7_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-7_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-80_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-80_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-80_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-80_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-81_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-81_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-81_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-81_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-8_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-8_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-8_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-8_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-9_comp_dir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-9_comp_dir.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-9_comp_light.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/Lightmap-9_comp_light.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/ReflectionProbe-0.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/Character/ReflectionProbe-0.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/LightingSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Character/LightingSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CloudFloor.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CloudFloor.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CollectableItems.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CollectableItems.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RouteA.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RouteA.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Route_B.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Route_B.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Route_C.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Route_C.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Smartphone.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Smartphone.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WilmasRoom.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneSetup/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneSetup/Character.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneSetup/Smartphone.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneSetup/Smartphone.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -409,23 +103,26 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca496b8c93454b2f9b9924292c19379f13b800/de/03dc34b7/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../BeforeTheLightGoesOut/BeforeTheLightGoesOut/Assets/Features/Menues_Namespace/Scripts/PauseMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca496b8c93454b2f9b9924292c19379f13b800/3f/93e88f97/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Local/ProceduralClimbing/Assets/StarterAssets/ThirdPersonController/Scripts/WallRunState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/GameStates_Namespace/Scripts/States/GameInitializationBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da6ab58261ca4bf88d2245fa0b5e29ff18000/74/5b1f66f1/Physics.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fd824cfb55004855b9e6d51b008c90e4568778/a3/59eb1186/Attribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da6ab58261ca4bf88d2245fa0b5e29ff18000/d2/8ba25403/PhysicsScene.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/OneDrive/Dokumente/GitHub/GreatMeadow/GreatMeadow/Library/PackageCache/com.unity.render-pipelines.core@10.6.0/Runtime/Common/ObservableList.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/EventSystem/RaycastSortingTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Local/ProceduralClimbing/Assets/StarterAssets/ThirdPersonController/Scripts/ThirdPersonManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../BeforeTheLightGoesOut/BeforeTheLightGoesOut/Assets/Features/GameStates_Namespace/Scripts/States/GameInitializationBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/SceneSetup/Character.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/AnimatorStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/CommandStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Features/Smartphone/Scripts/HandyBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../BeforeTheLightGoesOut/BeforeTheLightGoesOut/Assets/Features/Menues_Namespace/Scripts/PauseMenu.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Features/GameStates_Namespace/Scripts/States/GameInitializationBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fd824cfb55004855b9e6d51b008c90e4568778/a3/59eb1186/Attribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projekte Unity/Git/UrbanJungle/Urban Jungle/Assets/SceneSetup/CanvasController.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da6ab58261ca4bf88d2245fa0b5e29ff18000/d2/8ba25403/PhysicsScene.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Unity/Hub/Editor/2020.3.19f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/EventSystem/RaycastSortingTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -605,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643129217618</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: implemented pause menu&#10;&#10;cleanup: moved scenes into scene setup scene">
+      <created>1643814432024</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1643814432024</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,6 +351,7 @@
     <MESSAGE value="feat: Scenery, Lighting, Post Processing&#10;&#10;Light Baking, Overall Route adjustments to fit to scenery, improved post processing, shadow troubleshooting, when jumping now there is always a jump speed of at least 1 (smoother jumping on objects when standing directly before)" />
     <MESSAGE value="feat: Scenery, Lighting, Post Processing&#10;&#10;Light Baking, Overall Route adjustments to fit to scenery, improved post processing, shadow troubleshooting, when jumping now there is always a jump speed of at least 1 (smoother jumping on objects when standing directly before), made objects from route a, b, c and some inside the cloud floor static, enabled &quot;Generate Lightmap UV's&quot; for all static models (light backing)" />
     <MESSAGE value="adjusted ladder seek trigger size" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted ladder seek trigger size" />
+    <MESSAGE value="feat: implemented pause menu&#10;&#10;cleanup: moved scenes into scene setup scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented pause menu&#10;&#10;cleanup: moved scenes into scene setup scene" />
   </component>
 </project>

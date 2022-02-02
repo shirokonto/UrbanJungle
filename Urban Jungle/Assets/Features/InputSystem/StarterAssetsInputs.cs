@@ -13,6 +13,7 @@ namespace StarterAssets
 		[SerializeField] private GameStateController_SO gameStateController;
 		[SerializeField] private PauseState_SO pauseState;
 		[SerializeField] private PlayState_SO playState;
+		[SerializeField] private GameEvent onHandyButtonPressed;
 		
 		[Header("Character Input Values")]
 		public Vector2 move;
@@ -62,6 +63,11 @@ namespace StarterAssets
 			{
 				gameStateController.RequestState(pauseState);
 			}
+		}
+
+		public void OnHandyButton(InputValue value)
+		{
+			onHandyButtonPressed?.Raise();
 		}
 
 		public void MoveInput(Vector2 newMoveDirection)

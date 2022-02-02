@@ -46,7 +46,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Start Run",
+                    "name": "HandyButton",
                     "type": "Button",
                     "id": "717f2eb9-6528-4e31-80be-a92b0821b990",
                     "expectedControlType": "Button",
@@ -260,7 +260,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Start Run",
+                    "action": "HandyButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
