@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
+using DataStructures.Variables;
+using Features.UI_Namespace;
 using UnityEngine;
 
 public enum PickableItems
@@ -15,7 +17,8 @@ public class DatePreparation : MonoBehaviour
 {
     [SerializeField] private List<Collectables> collectablesList;
     [SerializeField] private AudioSource pickUpSound;
-    [SerializeField] private FootStepBehaviour _footStepBehaviour;
+    [SerializeField] private IntVariable itemCounter;
+    [SerializeField] private FootStepBehaviour footStepBehaviour;
 
     private void Start()
     {
@@ -33,10 +36,11 @@ public class DatePreparation : MonoBehaviour
         foreach (var collectable in collectablesList.Where(collectable => collectable.type == items))
         {
             pickUpSound.Play();
+            itemCounter.Add(1);
             collectable.item.SetActive(equip);
             if (collectable.type == PickableItems.Shoes)
             {
-                _footStepBehaviour.PutOnShoes();
+                footStepBehaviour.PutOnShoes();
             }
         }
     }
