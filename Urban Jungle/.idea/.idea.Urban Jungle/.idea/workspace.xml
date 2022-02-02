@@ -97,7 +97,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d75b8462-06c9-424e-9cc5-8a40d39c97c9" name="Changes" comment="" />
+      <changelist id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="feat: implemented pause menu&#10;&#10;cleanup: moved scenes into scene setup scene" />
       <created>1640685838544</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -122,6 +122,7 @@
       <workItem from="1643203637152" duration="21838000" />
       <workItem from="1643370277977" duration="608000" />
       <workItem from="1643377096999" duration="2837000" />
+      <workItem from="1643836737186" duration="849000" />
     </task>
     <task id="LOCAL-00001" summary="completed PlayerMovement&#10;&#10;used some assets though: &#10;All animations and rigging from mixamo,&#10;&#10;character from https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-173975&#10;&#10;Third Person Character Scripts, Animator and general COncept from:&#10;https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526">
       <created>1640900662969</created>
