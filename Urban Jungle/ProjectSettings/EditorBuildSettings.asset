@@ -6,34 +6,34 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Character/Character.unity
+    path: Assets/SceneSetup/Character.unity
     guid: e9017d5f96b9f09489b4b37e1d6eb914
   - enabled: 1
-    path: Assets/Scenes/WilmasRoom.unity
+    path: Assets/SceneSetup/WilmasRoom.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/RouteA.unity
+    path: Assets/SceneSetup/RouteA.unity
     guid: 87438971ded75a44d80c8da3f2c3d4a2
   - enabled: 1
-    path: Assets/Scenes/Route_C.unity
+    path: Assets/SceneSetup/Route_C.unity
     guid: 96aa9477d52254724a134d68a1bc3114
   - enabled: 1
-    path: Assets/Scenes/Smartphone.unity
+    path: Assets/SceneSetup/Smartphone.unity
     guid: 0cee4b4f12d434f01b09a0c72e1ed9f3
   - enabled: 1
-    path: Assets/Scenes/CloudFloor.unity
+    path: Assets/SceneSetup/CloudFloor.unity
     guid: 79cb4ab66031b934587307831efbeef6
   - enabled: 1
-    path: Assets/Scenes/CollectableItems.unity
+    path: Assets/SceneSetup/CollectableItems.unity
     guid: 4bed88b09ab80c343be7cbdf8a09197c
   - enabled: 1
-    path: Assets/Scenes/Route_B.unity
+    path: Assets/SceneSetup/Route_B.unity
     guid: d9878be1a7425314a950e2c2666623a6
   - enabled: 1
     path: Assets/SceneSetup/CanvasController.unity
     guid: 8ba532b0b6f3e471b870421432d4b208
   - enabled: 1
-    path: Assets/Scenes/UI.unity
+    path: Assets/SceneSetup/UI.unity
     guid: 9717c5da720386046bd678eef4dcd580
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
