@@ -24,13 +24,13 @@ namespace Features.GameStates_Namespace.Scripts.States
                 
                 SceneManager.UnloadSceneAsync("WilmasRoom");
                 SceneManager.UnloadSceneAsync("CollectableItems");
-                SceneManager.UnloadSceneAsync("RouteA");
+                SceneManager.UnloadSceneAsync("Route_A");
                 SceneManager.UnloadSceneAsync("Route_B");
                 SceneManager.UnloadSceneAsync("Route_C");
                 SceneManager.UnloadSceneAsync("CloudFloor");
                 SceneManager.UnloadSceneAsync("Character");
                 SceneManager.UnloadSceneAsync("Smartphone");
-                SceneManager.UnloadSceneAsync("UI");
+                SceneManager.UnloadSceneAsync("IngameTimer");
 
                 ScenesToLoad[ScenesToLoad.Count - 1].completed += _ =>
                 {
@@ -52,13 +52,13 @@ namespace Features.GameStates_Namespace.Scripts.States
 
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("WilmasRoom",LoadSceneMode.Additive));
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("CollectableItems",LoadSceneMode.Additive));
-                ScenesToLoad.Add(SceneManager.LoadSceneAsync("RouteA",LoadSceneMode.Additive));
+                ScenesToLoad.Add(SceneManager.LoadSceneAsync("Route_A",LoadSceneMode.Additive));
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("Route_B",LoadSceneMode.Additive));
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("Route_C",LoadSceneMode.Additive));
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("CloudFloor",LoadSceneMode.Additive));
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("Character",LoadSceneMode.Additive));
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("Smartphone",LoadSceneMode.Additive));
-                ScenesToLoad.Add(SceneManager.LoadSceneAsync("UI",LoadSceneMode.Additive));
+                ScenesToLoad.Add(SceneManager.LoadSceneAsync("IngameTimer",LoadSceneMode.Additive));
 
                 ScenesToLoad[ScenesToLoad.Count - 1].completed +=  _ =>
                 {

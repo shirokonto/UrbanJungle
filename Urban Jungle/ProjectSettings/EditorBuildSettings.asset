@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/SceneSetup/WilmasRoom.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/SceneSetup/RouteA.unity
+    path: Assets/SceneSetup/Route_A.unity
     guid: 87438971ded75a44d80c8da3f2c3d4a2
   - enabled: 1
     path: Assets/SceneSetup/Route_C.unity
@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/SceneSetup/CanvasController.unity
     guid: 8ba532b0b6f3e471b870421432d4b208
   - enabled: 1
-    path: Assets/SceneSetup/UI.unity
+    path: Assets/SceneSetup/IngameTimer.unity
     guid: 9717c5da720386046bd678eef4dcd580
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
