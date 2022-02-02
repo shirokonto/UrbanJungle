@@ -330,6 +330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1395219204}
   - component: {fileID: 1395219203}
+  - component: {fileID: 1395219205}
   m_Layer: 0
   m_Name: SpawnPoints
   m_TagString: Untagged
@@ -379,6 +380,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1395219205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395219202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b14879ae99a78a24aac937a0d1317c9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  event: {fileID: 11400000, guid: dbdcd76b65289fc4080ac2d4fffb9443, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1395219203}
+        m_TargetAssemblyTypeName: RespawnController, Assembly-CSharp
+        m_MethodName: Respawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1402827283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -879,6 +908,34 @@ PrefabInstance:
       propertyPath: footStepBehaviour
       value: 
       objectReference: {fileID: 1769775294}
+    - target: {fileID: 1679353494092316316, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
+      propertyPath: playState
+      value: 
+      objectReference: {fileID: 11400000, guid: feb9d728cfd193441914fefb558142da, type: 2}
+    - target: {fileID: 1679353494092316316, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
+      propertyPath: pauseState
+      value: 
+      objectReference: {fileID: 11400000, guid: a61c9c2c2ab695a48aea2b7acbb31485, type: 2}
+    - target: {fileID: 1679353494092316316, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
+      propertyPath: gameStateController
+      value: 
+      objectReference: {fileID: 11400000, guid: cbf3c7f9f813f3a41b593576cbb8c144, type: 2}
+    - target: {fileID: 1679353494092316316, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
+      propertyPath: OnTogglePauseMenu.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679353494092316316, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
+      propertyPath: OnTogglePauseMenu.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1679353494092316316, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
+      propertyPath: OnTogglePauseMenu.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: cbf3c7f9f813f3a41b593576cbb8c144, type: 2}
+    - target: {fileID: 1679353494092316316, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
+      propertyPath: OnTogglePauseMenu.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4810378045186561563, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
       propertyPath: m_Name
       value: Wilma

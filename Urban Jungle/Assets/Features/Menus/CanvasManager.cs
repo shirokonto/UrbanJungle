@@ -7,7 +7,9 @@ using UnityEngine;
 public class CanvasManager : MonoBehaviour
 {
     private List<CanvasController> canvasControllerList;
-    private CanvasController lastActiveCanvas;
+    
+    private List<CanvasController> canvasCommandList = new List<CanvasController>();
+    private CanvasController CurrentCanvas => canvasCommandList[canvasCommandList.Count - 1];
 
     private void Awake()
     {
@@ -15,41 +17,81 @@ public class CanvasManager : MonoBehaviour
         canvasControllerList.ForEach(x => x.gameObject.SetActive(false));
         
         MenuType_SO startingMenu = canvasControllerList.Find(controller => controller.isStartMenu).canvasType;
-        SwitchCanvas(startingMenu);
+        AddCanvas(startingMenu);
     }
 
-    public void SwitchCanvas(MenuType_SO type)
+    public void HideCanvas()
     {
-        if (lastActiveCanvas != null)
+        CurrentCanvas.gameObject.SetActive(false);
+    }
+    
+    public void ShowCanvas()
+    {
+        CurrentCanvas.gameObject.SetActive(true);
+    }
+
+    public void AddCanvas(MenuType_SO type)
+    {
+        if (canvasCommandList.Count != 0)
         {
-            lastActiveCanvas.gameObject.SetActive(false);
+            CurrentCanvas.gameObject.SetActive(false);
         }
+        
         CanvasController desiredCanvas = canvasControllerList.Find(x => x.canvasType == type);
         if (desiredCanvas != null)
         {
             desiredCanvas.gameObject.SetActive(true);
-            lastActiveCanvas = desiredCanvas;
+            canvasCommandList.Add(desiredCanvas);
         }
         else
         {
             Debug.LogWarning("Desired canvas was not found");
         }
-        
-        
     }
 
-    public void CloseCanvas()
+    public void RemoveCanvas()
     {
-        if (lastActiveCanvas != null)
+        if (canvasCommandList.Count != 0)
         {
-            lastActiveCanvas.gameObject.SetActive(false);
-            lastActiveCanvas = null;
+            HideCanvas();
+            canvasCommandList.Remove(CurrentCanvas);
+            ShowCanvas();
         }
         else
         {
             Debug.LogWarning("No last active canvas");
         }
-        
     }
-    
+
+    public void RemoveCanvasTo(MenuType_SO type)
+    {
+        if (canvasCommandList.Count != 0)
+        {
+            CanvasController desiredCanvas = canvasCommandList.Find(x => x.canvasType == type);
+            
+            if (desiredCanvas != null)
+            {
+                HideCanvas();
+                
+                int canvasIndex = canvasCommandList.FindIndex(x => x.canvasType == type);
+                canvasCommandList.RemoveRange(canvasIndex + 1, canvasCommandList.Count - 1 - canvasIndex);
+                
+                desiredCanvas.gameObject.SetActive(true);
+            }
+            else
+            {
+                Debug.LogError("The requested menu wasn't opened before!");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("No last active canvas");
+        }
+    }
+
+    public void RemoveAllCanvas()
+    {
+        CurrentCanvas.gameObject.SetActive(false);
+        canvasCommandList.Clear();
+    }
 }
