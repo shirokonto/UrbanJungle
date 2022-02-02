@@ -1,9 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Cinemachine;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class RespawnController : MonoBehaviour
 {
@@ -22,16 +17,18 @@ public class RespawnController : MonoBehaviour
 
     public void Update()
     {
-        if (_currentSpawnPoint == 0 && player.position.z <= -15)
+        if (_currentSpawnPoint == 0 && player.position.z <= 54)
             _currentSpawnPoint = 1;
-        if (_currentSpawnPoint == 1 && player.position.z <= -102 && player.position.y >= 55)
+        if (_currentSpawnPoint == 1 && player.position.z <= -15)
             _currentSpawnPoint = 2;
-        if (_currentSpawnPoint == 2 && player.position.x <= -22 && player.position.z <= -160)
+        if (_currentSpawnPoint == 2 && player.position.z <= -102 && player.position.y >= 55)
             _currentSpawnPoint = 3;
-        if (_currentSpawnPoint == 3 && (player.position.x <= -64 || player.position.z <= -195))
+        if (_currentSpawnPoint == 3 && player.position.x <= -22 && player.position.z <= -160)
             _currentSpawnPoint = 4;
-        if (_currentSpawnPoint == 4 && player.position.z >= -110)
+        if (_currentSpawnPoint == 4 && (player.position.x <= -64 || player.position.z <= -195))
             _currentSpawnPoint = 5;
+        if (_currentSpawnPoint == 5 && player.position.z >= -110)
+            _currentSpawnPoint = 6;
         
         if (player.position.y >= 0) return;
         
