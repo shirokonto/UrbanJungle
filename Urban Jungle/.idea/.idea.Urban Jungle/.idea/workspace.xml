@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="feat: implemented pause menu&#10;&#10;cleanup: moved scenes into scene setup scene">
+    <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="Update Menus and Buttons">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Features/Room_Namespace.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Utils/Variables.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneSetup/CanvasController.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneSetup/CanvasController.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneSetup/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneSetup/Character.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneSetup/Route_C.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneSetup/Route_C.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643814432024</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Update Menus and Buttons">
+      <created>1643896907970</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1643896907970</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +277,7 @@
     <MESSAGE value="feat: Scenery, Lighting, Post Processing&#10;&#10;Light Baking, Overall Route adjustments to fit to scenery, improved post processing, shadow troubleshooting, when jumping now there is always a jump speed of at least 1 (smoother jumping on objects when standing directly before), made objects from route a, b, c and some inside the cloud floor static, enabled &quot;Generate Lightmap UV's&quot; for all static models (light backing)" />
     <MESSAGE value="adjusted ladder seek trigger size" />
     <MESSAGE value="feat: implemented pause menu&#10;&#10;cleanup: moved scenes into scene setup scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented pause menu&#10;&#10;cleanup: moved scenes into scene setup scene" />
+    <MESSAGE value="Update Menus and Buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Menus and Buttons" />
   </component>
 </project>
