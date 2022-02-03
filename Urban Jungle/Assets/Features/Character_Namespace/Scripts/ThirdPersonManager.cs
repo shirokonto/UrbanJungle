@@ -103,6 +103,7 @@ namespace Features.Character_Namespace.Scripts
 						if (floorCollider.TryGetComponent(out BounceBehaviour bounceBehaviour))
 						{
 							AudioClip clip = GetRandomClip(bounceSound);
+							bounceAudio.volume = 0.1f;
 							bounceAudio.PlayOneShot(clip);
 							bounceBehaviour.ApplyBounce(this);
 						}

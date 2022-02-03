@@ -60,7 +60,7 @@ public class FootStepBehaviour : MonoBehaviour
    private void LadderStep()
    {
       AudioClip clip = GetRandomClip(GetCorrectGroundAudio("Metal"));
-      _audioSource.volume = 0.013f;
+      _audioSource.volume = 0.1f;
       _audioSource.PlayOneShot(clip);
    }
    private AudioClip GetRandomClip(AudioClip[] audioClips)
@@ -85,10 +85,10 @@ public class FootStepBehaviour : MonoBehaviour
    {
       if (String.Equals(groundTag, Grounds.BarefootUntagged.ToString()) || String.Equals(groundTag, Grounds.BarefootWood.ToString()))
       {
-         _audioSource.volume = 0.1f;
+         _audioSource.volume = 0.3f;
       }else
       {
-         _audioSource.volume = 0.013f;
+         _audioSource.volume = 0.1f;
       }
    }
    
