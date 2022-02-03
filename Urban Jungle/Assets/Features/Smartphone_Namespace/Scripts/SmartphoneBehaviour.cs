@@ -1,27 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
 using Utils.Event_Namespace;
 
-public class HandyBehaviour : MonoBehaviour
+public class SmartphoneBehaviour : MonoBehaviour
 {
-    [SerializeField] private CinemachineVirtualCamera handyVC;
+    [SerializeField] private CinemachineVirtualCamera smartphoneVc;
     [SerializeField] private int priority = 20;
     [SerializeField] private GameEvent disableCameraRotation;
     [SerializeField] private GameEvent enableCameraRotation;
     
     private void Start()
     {
-        handyVC.Priority = priority;
+        smartphoneVc.Priority = priority;
         disableCameraRotation?.Raise();
     }
 
-    public void OnHandyInteraction()
+    public void OnSmartphoneInteraction()
     {
-        if (handyVC.Priority == priority)
+        if (smartphoneVc.Priority == priority)
         {
-            handyVC.Priority = 0;
+            smartphoneVc.Priority = 0;
+            GetComponent<AudioSource>().Play();
             enableCameraRotation?.Raise();
         }
     }
