@@ -16,8 +16,14 @@ namespace Features.GameStates_Namespace.Scripts.States
         
         public override void Enter()
         {
-            if (ScenesToLoad.Count == 0) return;
+            //the game starts
+            if (ScenesToLoad.Count == 0)
+            {
+                gameStateController.MusicBehaviour.Enable(fadeTime);
+                return;
+            }
             
+            //the game has to unload the game scenes
             ShowFadeMenu(() =>
             {
                 gameStateController.CanvasManager.AddCanvas(swapMenu);
@@ -38,7 +44,7 @@ namespace Features.GameStates_Namespace.Scripts.States
                     HideFadeMenu(() =>
                     {
                         ScenesToLoad.Clear();
-                        gameStateController.MusicBehaviour.Enable();
+                        gameStateController.MusicBehaviour.Enable(fadeTime);
                     });
                 };
             });
