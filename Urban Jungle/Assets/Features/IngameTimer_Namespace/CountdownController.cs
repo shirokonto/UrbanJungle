@@ -13,18 +13,25 @@ public class CountdownController : MonoBehaviour
     private float _startingTime = 900f;
     private string _timeGrade;
     private bool _triggeredEndMenu;
+    private bool _isInitialized;
+
+    private void Awake()
+    {
+        countdownInfo.text = "";
+        countdownTime.text = "";
+    }
     
-    // Start is called before the first frame update
-    void Start()
-    { 
+    public void Initialize()
+    {
+        _isInitialized = true;
         currentTime.Set(_startingTime);
         _timeGrade = "Ezzzzz";
         countdownInfo.text = "Timing Level: " + _timeGrade;
     }
 
-    // Update is called once per frame
-    void Update ()
+    private void Update ()
     {
+        if (!_isInitialized) return;
         if (_triggeredEndMenu) return;
         currentTime.Add(-1 * Time.deltaTime);
         countdownTime.text = Math.Floor(currentTime.Get()/60).ToString("0") + ":" + Math.Floor(currentTime.Get() % 60).ToString("00");
