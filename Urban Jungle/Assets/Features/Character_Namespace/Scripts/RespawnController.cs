@@ -3,9 +3,7 @@ using UnityEngine;
 public class RespawnController : MonoBehaviour
 {
     [SerializeField] private Transform player;
-
     [SerializeField] private CharacterController charControl;
-
     [SerializeField] private GameObject[] spawnPoint;
 
     private int _currentSpawnPoint;
@@ -45,6 +43,7 @@ public class RespawnController : MonoBehaviour
     public void Respawn()
     {
         Debug.Log("o/");
+        GetComponent<AudioSource>().Play();
         RespawnTo(_currentSpawnPoint);
     }
 }
