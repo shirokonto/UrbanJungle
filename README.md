@@ -48,9 +48,9 @@ We are aMazed and we’ve teamed up to develop this 3D game for the course Game 
 ## Credits :bow:
 :musical_note: **Music by:**
 * djlang59: [Drops of H2O ( The Filtered Water Treatment )](http://dig.ccmixter.org/files/djlang59/37792)
-* AlexBeroza: [Drive](http://ccmixter.org/files/AlexBeroza/43098)
-* AlexBeroza: [Spinnin'](http://ccmixter.org/files/AlexBeroza/32423)
-* 
+* AlexBeroza: [Drive](http://dig.ccmixter.org/files/AlexBeroza/43098)
+* AlexBeroza: [Spinnin'](http://dig.ccmixter.org/files/AlexBeroza/32423)
+* spinningmerkaba: [260809 Funky Nurykabe](http://dig.ccmixter.org/files/jlbrock44/29186)
 
 :speaker: **Soundeffects by:**
 * INNERVISION.GD: [Footstep Sound Effects [PRO]](https://assetstore.unity.com/packages/audio/sound-fx/footstep-sound-effects-pro-169177)
