@@ -26,6 +26,9 @@ namespace Features.Character_Namespace.Scripts
 		[SerializeField] public AirState airState;
 		[SerializeField] public JumpState jumpState;
 		[SerializeField] private SeekState seekAnimatorState;
+		
+		[Header("Events")]
+		[SerializeField] private GameEvent raiseEndScreen;
 
 		[Header("Character")]
 		[SerializeField] public Transform hipsRoot;
@@ -41,16 +44,17 @@ namespace Features.Character_Namespace.Scripts
 		[SerializeField] private float groundedRadius = 0.2f;
 		[Tooltip("What layers the character uses as ground")]
 		[SerializeField] private LayerMask groundLayers;
-		[SerializeField] public LayerMask bounceLayer;
 
 		[Header("Debug")]
 		public Color transparentGreen = new Color(0.0f, 1.0f, 0.0f, 0.35f);
 		public Color transparentRed = new Color(1.0f, 0.0f, 0.0f, 0.35f);
-		
-		[Header("Sound")]
+
+		[Header("Bounce")] 
+		[SerializeField] private float bounceTimeout = 0.15f;
+		[SerializeField] public LayerMask bounceLayer;
 		[SerializeField] private List<AudioClip> bounceSound;
 		[SerializeField] private AudioSource bounceAudio;
-		[SerializeField] private GameEvent raiseEndScreen;
+		
 
 		//References getter and setter
 		public Animator Animator { get; private set; }
@@ -66,6 +70,7 @@ namespace Features.Character_Namespace.Scripts
 
 		private Collider[] _groundedColliders;
 		private AnimatorStateMachine _animatorStateMachine;
+		private float _bounceTimeoutDelta;
 
 		public IStateAnimator PreviousState => _animatorStateMachine.GetPreviousState();
 
@@ -76,6 +81,8 @@ namespace Features.Character_Namespace.Scripts
 			{
 				MainCamera = GameObject.FindGameObjectWithTag("MainCamera");
 			}
+
+			_bounceTimeoutDelta = bounceTimeout;
 		}
 
 		private void Start()
@@ -93,15 +100,20 @@ namespace Features.Character_Namespace.Scripts
 		{
 			Animator = GetComponent<Animator>();
 			GroundedCheck();
-			
+
 			_animatorStateMachine.Update();
+			
+			_bounceTimeoutDelta -= Time.deltaTime;
 			switch (grounded)
 			{
 				case true when _animatorStateMachine.GetCurrentState() is AirState:
 					if (IsGroundedToLayer(bounceLayer, out Collider floorCollider))
 					{
+						if (_bounceTimeoutDelta > 0f) return;
+						
 						if (floorCollider.TryGetComponent(out BounceBehaviour bounceBehaviour))
 						{
+							_bounceTimeoutDelta = bounceTimeout;
 							AudioClip clip = GetRandomClip(bounceSound);
 							bounceAudio.PlayOneShot(clip);
 							bounceBehaviour.ApplyBounce(this);
