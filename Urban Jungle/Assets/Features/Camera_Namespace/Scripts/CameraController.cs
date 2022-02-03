@@ -54,4 +54,9 @@ public class CameraController : MonoBehaviour
         if (lfAngle > 360f) lfAngle -= 360f;
         return Mathf.Clamp(lfAngle, lfMin, lfMax);
     }
+
+    public void IsLocked(bool value)
+    {
+        LockCameraPosition = value;
+    }
 }

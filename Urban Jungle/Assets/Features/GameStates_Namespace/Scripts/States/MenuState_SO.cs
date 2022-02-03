@@ -31,6 +31,7 @@ namespace Features.GameStates_Namespace.Scripts.States
                 SceneManager.UnloadSceneAsync("Character");
                 SceneManager.UnloadSceneAsync("Smartphone");
                 SceneManager.UnloadSceneAsync("IngameTimer");
+                SceneManager.UnloadSceneAsync("Music");
 
                 ScenesToLoad[ScenesToLoad.Count - 1].completed += _ =>
                 {
@@ -59,6 +60,7 @@ namespace Features.GameStates_Namespace.Scripts.States
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("Character",LoadSceneMode.Additive));
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("Smartphone",LoadSceneMode.Additive));
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("IngameTimer",LoadSceneMode.Additive));
+                ScenesToLoad.Add(SceneManager.LoadSceneAsync("Music",LoadSceneMode.Additive));
 
                 ScenesToLoad[ScenesToLoad.Count - 1].completed +=  _ =>
                 {
