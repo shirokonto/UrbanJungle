@@ -37,15 +37,20 @@ We are aMazed and we’ve teamed up to develop this 3D game for the course Game 
 ![crew](https://user-images.githubusercontent.com/57158200/145291622-66e7eb9e-e5c7-43a8-91e0-eb666a80f1e5.png)
 
 :page_facing_up: **Programming & Design:** 
-
 * Cansu Ilhan
 * Lukas Glasmacher
 * Hikari Sophia Stölzle 
 * Robin Simeon Jaspers
 
+:speech_balloon: **Character Voicing:** 
+* Cansu Ilhan
+
 ## Credits :bow:
 :musical_note: **Music by:**
-* ArtistName: [SoundName](https://github.com/shirokonto/UrbanJungle/blob/main/README.md)
+* djlang59: [Drops of H2O ( The Filtered Water Treatment )](http://dig.ccmixter.org/files/djlang59/37792)
+* AlexBeroza: [Drive](http://ccmixter.org/files/AlexBeroza/43098)
+* AlexBeroza: [Spinnin'](http://ccmixter.org/files/AlexBeroza/32423)
+* 
 
 :speaker: **Soundeffects by:**
 * INNERVISION.GD: [Footstep Sound Effects [PRO]](https://assetstore.unity.com/packages/audio/sound-fx/footstep-sound-effects-pro-169177)
@@ -54,8 +59,12 @@ We are aMazed and we’ve teamed up to develop this 3D game for the course Game 
 * FiftySounds: [Sfx Low and Funny Boing](https://www.fiftysounds.com/royalty-free-music/sfx-boing11.html)
 * FiftySounds: [Sfx Shaky Boing](https://www.fiftysounds.com/royalty-free-music/sfx-boing10.html)
 * FiftySounds: [Sfx Low Boing](https://www.fiftysounds.com/royalty-free-music/sfx-boing8.html)
+* FiftySounds: [Transition windy swoosh](https://mixkit.co/free-sound-effects/swoosh/)
 * B.G.M: [Shooting Sound](https://assetstore.unity.com/packages/audio/sound-fx/shooting-sound-177096)
 * cabled_mess: [Minimal UI Sounds](https://assetstore.unity.com/packages/audio/sound-fx/minimal-ui-sounds-78266)
+* XxChr0nosxX: [Woosh 2](https://pixabay.com/sound-effects/woosh-2-6471/)
+* MixKit: [Car ignition](https://mixkit.co/free-sound-effects/car/)
+* 
 
 :space_invader: **Assets by:**
 * Markus Art: [LOW POLY CHARACTERS CUSTOMIZABLE/MODULAR ( MALE AND FEMALE )](https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-characters-customizable-modular-male-and-female-173975)
