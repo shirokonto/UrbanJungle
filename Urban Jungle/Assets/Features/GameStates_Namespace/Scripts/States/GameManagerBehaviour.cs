@@ -4,9 +4,10 @@ using UnityEngine.SceneManagement;
 
 namespace Features.GameStates_Namespace.Scripts.States
 {
-    public class GameInitializationBehaviour : MonoBehaviour
+    public class GameManagerBehaviour : MonoBehaviour
     {
         [SerializeField] private GameStateController_SO gameStateController;
+        [SerializeField] private PauseState_SO pauseState;
         [SerializeField] private CanvasManager canvasManager;
         [SerializeField] private CanvasGroup fadeMenu;
         [SerializeField] private MusicBehaviour musicBehaviour;
@@ -40,6 +41,14 @@ namespace Features.GameStates_Namespace.Scripts.States
         public void Quit()
         {
             Application.Quit();
+        }
+        
+        private void OnApplicationPause(bool pauseStatus)
+        {
+            if (gameStateController.GetState() is PlayState_SO)
+            {
+                gameStateController.RequestState(pauseState);
+            }
         }
     }
 }

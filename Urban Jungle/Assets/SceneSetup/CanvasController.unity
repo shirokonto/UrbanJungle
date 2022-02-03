@@ -4162,6 +4162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateController: {fileID: 11400000, guid: cbf3c7f9f813f3a41b593576cbb8c144, type: 2}
+  pauseState: {fileID: 11400000, guid: a61c9c2c2ab695a48aea2b7acbb31485, type: 2}
   canvasManager: {fileID: 1664194535}
   fadeMenu: {fileID: 691079415}
   musicBehaviour: {fileID: 677210459}

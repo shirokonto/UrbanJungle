@@ -8,11 +8,13 @@ namespace Features.GameStates_Namespace.Scripts.States
         public override void Enter()
         {
             Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
         public override void Exit()
         {
             Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }
