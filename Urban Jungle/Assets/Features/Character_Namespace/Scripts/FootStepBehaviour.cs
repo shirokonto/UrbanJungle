@@ -85,7 +85,7 @@ public class FootStepBehaviour : MonoBehaviour
    {
       if (String.Equals(groundTag, Grounds.BarefootUntagged.ToString()) || String.Equals(groundTag, Grounds.BarefootWood.ToString()))
       {
-         _audioSource.volume = 0.3f;
+         _audioSource.volume = 0.8f;
       }else
       {
          _audioSource.volume = 0.1f;
