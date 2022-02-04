@@ -42,7 +42,6 @@ public class RespawnController : MonoBehaviour
 
     public void Respawn()
     {
-        Debug.Log("o/");
         GetComponent<AudioSource>().Play();
         RespawnTo(_currentSpawnPoint);
     }

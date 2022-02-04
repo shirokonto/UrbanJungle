@@ -195,7 +195,6 @@ namespace Features.Character_Namespace.Scripts
 		{
 			if (((AnimatorState_SO) _animatorStateMachine.GetCurrentState()).IsValidStateShift(requestedState))
 			{
-				Debug.Log(requestedState.name);
 				_animatorStateMachine.ChangeState(requestedState, gameObject);
 				currentState = requestedState;
 			}

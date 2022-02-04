@@ -445,7 +445,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: ee9e5cf42be692949b67953a08f11fe3, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2.06
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -701,6 +701,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1219410022984866819, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
+      propertyPath: m_Pitch
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4810378045186561563, guid: ef9345cd22cb7054e8bcf40dc52acc56, type: 3}
       propertyPath: m_Name
       value: Wilma

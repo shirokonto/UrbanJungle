@@ -43,8 +43,6 @@ public class FootStepBehaviour : MonoBehaviour
       if(thirdPersonManager.TryGetGroundedColliders(out Collider[] floorColliders) && floorColliders.Length != 0 && _soundTimeoutDelta <= 0)
       {
          string groundTag = floorColliders[0].tag;
-         Debug.Log(groundTag);
-
          if (_barefoot && floorColliders[0].tag.Equals("Untagged"))
          {
             groundTag = Grounds.BarefootUntagged.ToString();
@@ -60,7 +58,7 @@ public class FootStepBehaviour : MonoBehaviour
    private void LadderStep()
    {
       AudioClip clip = GetRandomClip(GetCorrectGroundAudio("Metal"));
-      _audioSource.volume = 0.1f;
+      _audioSource.volume = 0.09f;
       _audioSource.PlayOneShot(clip);
    }
    private AudioClip GetRandomClip(AudioClip[] audioClips)
@@ -71,9 +69,9 @@ public class FootStepBehaviour : MonoBehaviour
 
    //Get the correct step sound given by the tag.
    //Untagged objects always results into concrete.
-   private AudioClip[] GetCorrectGroundAudio(String tagName)
+   private AudioClip[] GetCorrectGroundAudio(string tagName)
    {
-      return groundAudioList.Where(audio => audio.type.ToString().Equals(tagName)).Select(audio => audio.audioClips).FirstOrDefault();
+      return groundAudioList.Where(sound => sound.type.ToString().Equals(tagName)).Select(sound => sound.audioClips).FirstOrDefault();
    }
 
    public void PutOnShoes()
@@ -81,14 +79,14 @@ public class FootStepBehaviour : MonoBehaviour
       _barefoot = false;
    }
 
-   private void SetAudioVolume(String groundTag)
+   private void SetAudioVolume(string groundTag)
    {
-      if (String.Equals(groundTag, Grounds.BarefootUntagged.ToString()) || String.Equals(groundTag, Grounds.BarefootWood.ToString()))
+      if (string.Equals(groundTag, Grounds.BarefootUntagged.ToString()) || string.Equals(groundTag, Grounds.BarefootWood.ToString()))
       {
-         _audioSource.volume = 0.8f;
+         _audioSource.volume = 0.6f;
       }else
       {
-         _audioSource.volume = 0.1f;
+         _audioSource.volume = 0.08f;
       }
    }
    
