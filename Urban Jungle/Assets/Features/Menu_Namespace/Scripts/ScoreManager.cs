@@ -31,9 +31,16 @@ namespace Features.UI_Namespace
         {
             _itemPoints = itemCounter.Get() * 1500;
             _timePoints = (int)Math.Round(timeLeft.Get()*10);
-            _endPoints= _timePoints <= 0 ? _itemPoints : (_itemPoints + _timePoints);
+            _endPoints= _timePoints <= 0 ? GetDeductedItemPoints() : (_itemPoints + _timePoints);
             endPoints.Set(_endPoints);
             endPointsTxt.text = _endPoints.ToString();
+        }
+
+        //If there is no more time left, item points are deducted in ascending order (10% to 50%)
+        public int GetDeductedItemPoints()
+        {
+            Debug.Log("_itemPoints: " + _itemPoints + " and itemCounter.Get: " + itemCounter.Get() + "Result: " + (int)Math.Round((_itemPoints) * (1 - (0.1 * itemCounter.Get()))));
+            return (int)Math.Round((_itemPoints) * (1 - (0.1 * itemCounter.Get())));
         }
 
         public void SetEndTxts()
