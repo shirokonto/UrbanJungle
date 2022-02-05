@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="Update Menus and Buttons">
+    <list default="true" id="6b398009-bc6d-4ffc-8142-ced03ec14fd1" name="Changes" comment="Fix bounce behavior on burger">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Urban Jungle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneSetup/CanvasController.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneSetup/CanvasController.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneSetup/Character.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneSetup/Character.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SceneSetup/Route_C.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SceneSetup/Route_C.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +28,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/Assets/SceneSetup/Route_C.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Utils/StateMachine_Namespace/AnimatorStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/GameStates_Namespace/Scripts/States/GameInitializationBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/SeekState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/C.I.0/Documents/UrbanJungle/Urban Jungle/Assets/SceneSetup/Character.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Character_Namespace/Scripts/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -234,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643896907970</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fix bounce behavior on burger">
+      <created>1643930026902</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1643930026902</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +284,7 @@
     <MESSAGE value="adjusted ladder seek trigger size" />
     <MESSAGE value="feat: implemented pause menu&#10;&#10;cleanup: moved scenes into scene setup scene" />
     <MESSAGE value="Update Menus and Buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Menus and Buttons" />
+    <MESSAGE value="Fix bounce behavior on burger" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bounce behavior on burger" />
   </component>
 </project>
