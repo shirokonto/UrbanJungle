@@ -10,20 +10,20 @@ public class MusicBehaviour : MonoBehaviour
     
     public void Disable(float musicFadeTime)
     {
-        StartCoroutine(FadeTrack(soundTracks[currentTrackIndex], 0, musicFadeTime));
+        StartCoroutine(FadeOutTrack(soundTracks[currentTrackIndex], 0, musicFadeTime));
     }
     
-    public void Enable()
+    public void Enable(float musicFadeTime)
     {
         gameObject.SetActive(true);
         
         StartCoroutine(PlayNextTrack());
+        StartCoroutine(FadeInTrack(soundTracks[currentTrackIndex], soundTracks[currentTrackIndex].volume, musicFadeTime));
     }
 
     private void Awake()
     {
         currentTrackIndex = Random.Range(0, soundTracks.Count);
-        StartCoroutine(PlayNextTrack());
     }
 
     private IEnumerator PlayNextTrack()
@@ -43,7 +43,7 @@ public class MusicBehaviour : MonoBehaviour
         }
     }
     
-    private IEnumerator FadeTrack(AudioSource audioSource, float toVal, float duration)
+    private IEnumerator FadeOutTrack(AudioSource audioSource, float toVal, float duration)
     {
         float counter = 0f;
         float startVolume = audioSource.volume;
@@ -62,5 +62,24 @@ public class MusicBehaviour : MonoBehaviour
         gameObject.SetActive(false);
         audioSource.volume = startVolume;
         StopAllCoroutines();
+    }
+    
+    private IEnumerator FadeInTrack(AudioSource audioSource, float toVal, float duration)
+    {
+        audioSource.volume = 0f;
+            
+        float counter = 0f;
+        float startVolume = audioSource.volume;
+
+        while (counter < duration)
+        {
+            if (Time.timeScale == 0)
+                counter += Time.unscaledDeltaTime;
+            else
+                counter += Time.deltaTime;
+            
+            audioSource.volume = Mathf.Lerp(startVolume, toVal, counter / duration);
+            yield return null;
+        }
     }
 }

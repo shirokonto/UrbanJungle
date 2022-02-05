@@ -22,6 +22,7 @@ namespace Features.StreetParallax_Namespace
         private void Instantiate()
         {
             GameObject car = Instantiate(carPool[Random.Range(0, carPool.Count)], transform);
+            car.GetComponent<AudioSource>().enabled = true;
             car.transform.position = spawn.position;
             car.transform.LookAt(target);
 

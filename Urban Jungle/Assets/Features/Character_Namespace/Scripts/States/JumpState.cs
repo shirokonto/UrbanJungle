@@ -1,4 +1,3 @@
-using UnityEditor.Sprites;
 using UnityEngine;
 
 namespace Features.Character_Namespace.Scripts.States
