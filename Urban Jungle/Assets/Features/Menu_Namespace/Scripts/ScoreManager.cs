@@ -7,8 +7,6 @@ namespace Features.UI_Namespace
 {
     public class ScoreManager : MonoBehaviour
     {
-        [SerializeField] private FloatVariable timeLeft;
-        
         [SerializeField] private TextMeshProUGUI endMsgTxt;
         [SerializeField] private TextMeshProUGUI endPointsTxt;
         [SerializeField] private TextMeshProUGUI itemCounterTxt;
@@ -16,15 +14,14 @@ namespace Features.UI_Namespace
         [SerializeField] private TextMeshProUGUI senderTxt;
         [SerializeField] private IntVariable itemCounter;
         [SerializeField] private IntVariable endPoints;
+        [SerializeField] private FloatVariable timeLeft;
         
         private int _itemPoints;
         private int _timePoints;
         private int _endPoints;
         void Awake()
         {
-            itemCounter.Set(0);
-            endPoints.Set(0);
-            _itemPoints = _timePoints = _endPoints = 0;
+            ResetPoints();
         }
 
         public void SetEndPoints()
@@ -35,20 +32,20 @@ namespace Features.UI_Namespace
             endPoints.Set(_endPoints);
             endPointsTxt.text = _endPoints.ToString();
         }
-
-        //If there is no more time left, item points are deducted in ascending order (10% to 50%)
-        public int GetDeductedItemPoints()
-        {
-            Debug.Log("_itemPoints: " + _itemPoints + " and itemCounter.Get: " + itemCounter.Get() + "Result: " + (int)Math.Round((_itemPoints) * (1 - (0.1 * itemCounter.Get()))));
-            return (int)Math.Round((_itemPoints) * (1 - (0.1 * itemCounter.Get())));
-        }
-
+        
         public void SetEndTxts()
         {
             endMsgTxt.text = GetCorrectMessage();
             timeLeftTxt.text = GetTimeLeft();
             senderTxt.text = _timePoints <= 0 ? "Wilma" : "Alex";
             itemCounterTxt.text = itemCounter.Get().ToString();
+            ResetPoints();
+        }
+
+        //If there is no more time left, item points are deducted in ascending order (10% to 50%)
+        public int GetDeductedItemPoints()
+        {
+            return (int)Math.Round((_itemPoints) * (1 - (0.1 * itemCounter.Get())));
         }
 
         private string GetTimeLeft()
@@ -59,7 +56,7 @@ namespace Features.UI_Namespace
             }
             return Math.Floor(timeLeft.Get()/60).ToString("0") + ":" + Math.Floor(timeLeft.Get() % 60).ToString("00");
         }
-    
+        
         private string GetCorrectMessage()
         {
             if (_timePoints <= 0)
@@ -77,6 +74,13 @@ namespace Features.UI_Namespace
                 5 => "WOW are you a professional parkour runner? You look really good!",
                 _ => throw new ArgumentOutOfRangeException()
             };
+        }
+
+        private void ResetPoints()
+        {
+            _itemPoints = _timePoints = _endPoints = 0;
+            itemCounter.Set(0);
+            timeLeft.Set(0);
         }
     }
 }

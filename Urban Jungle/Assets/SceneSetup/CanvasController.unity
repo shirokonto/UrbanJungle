@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.5784518, g: 0.61573404, b: 0.6087278, a: 1}
+  m_IndirectSpecularColor: {r: 0.5776984, g: 0.6152097, b: 0.6084664, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -847,7 +847,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.93000007, y: 0.051479783}
   m_AnchorMax: {x: 0.95875, y: 0.11400001}
-  m_AnchoredPosition: {x: 13, y: -1.86586}
+  m_AnchoredPosition: {x: 13, y: -1.8658752}
   m_SizeDelta: {x: 27, y: 9.043999}
   m_Pivot: {x: 1, y: 0}
 --- !u!82 &170477212
@@ -1089,7 +1089,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.9412501, y: 0.049632363}
   m_AnchorMax: {x: 0.9562501, y: 0.08463237}
-  m_AnchoredPosition: {x: 11.228638, y: -4.800064}
+  m_AnchoredPosition: {x: 11.228638, y: -4.8000793}
   m_SizeDelta: {x: 30.1637, y: 20.7229}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &182902914
@@ -2225,7 +2225,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.85
+  m_fontSize: 19.4
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3041,7 +3041,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.8
+  m_fontSize: 19.45
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -12991,7 +12991,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.75
+  m_fontSize: 19
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -14294,7 +14294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.155, y: 0.16733827}
   m_AnchorMax: {x: 0.3285, y: 0.21400002}
-  m_AnchoredPosition: {x: -1.8999023, y: -0.69983673}
+  m_AnchoredPosition: {x: -1.8999023, y: -0.6998291}
   m_SizeDelta: {x: -8.311707, y: 36.887}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1781042245
@@ -17363,7 +17363,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15.6
+  m_fontSize: 16.6
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -18034,6 +18034,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputName: {fileID: 627579202}
   endPoints: {fileID: 11400000, guid: 88ee41c468a547248be554e706a1e352, type: 2}
+  itemCounter: {fileID: 11400000, guid: 92fcc0ceaedcf7e4ebbec48e91f98f91, type: 2}
+  timeLeft: {fileID: 11400000, guid: ff7ffd35159044c46867207a384e87ce, type: 2}
   playerScore: {fileID: 1152417826}
 --- !u!1001 &3464595769212811352
 PrefabInstance:
