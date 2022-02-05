@@ -181,7 +181,7 @@ MonoBehaviour:
   jump: 0
   sprint: 0
   analogMovement: 0
-  cursorLocked: 1
+  cursorLocked: 0
   cursorInputForLook: 1
 --- !u!114 &2134437460783636511
 MonoBehaviour:
@@ -222,10 +222,10 @@ AudioSource:
   m_GameObject: {fileID: 4810378045186561563}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 920514e6345d5a248b74d163b02f361d, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -453,7 +453,7 @@ AudioSource:
   m_GameObject: {fileID: 8151795947452736324}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 920514e6345d5a248b74d163b02f361d, type: 2}
   m_audioClip: {fileID: 8300000, guid: b1b9c1f0ea1fcae439ed1a4d44ff05fd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.211

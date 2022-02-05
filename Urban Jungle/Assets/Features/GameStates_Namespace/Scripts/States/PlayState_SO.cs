@@ -7,7 +7,14 @@ namespace Features.GameStates_Namespace.Scripts.States
     {
         public override void Enter()
         {
-            Debug.Log("enter playstate");
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
+        public override void Exit()
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }

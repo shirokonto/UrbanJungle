@@ -115,6 +115,7 @@ namespace Features.Character_Namespace.Scripts
 						{
 							_bounceTimeoutDelta = bounceTimeout;
 							AudioClip clip = GetRandomClip(bounceSound);
+							bounceAudio.volume = 0.1f;
 							bounceAudio.PlayOneShot(clip);
 							bounceBehaviour.ApplyBounce(this);
 						}
@@ -206,7 +207,6 @@ namespace Features.Character_Namespace.Scripts
 		{
 			if (((AnimatorState_SO) _animatorStateMachine.GetCurrentState()).IsValidStateShift(requestedState))
 			{
-				Debug.Log(requestedState.name);
 				_animatorStateMachine.ChangeState(requestedState, gameObject);
 				currentState = requestedState;
 			}

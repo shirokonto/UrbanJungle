@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using DataStructures.Variables;
-using Features.UI_Namespace;
 using UnityEngine;
 
 public enum PickableItems
@@ -31,12 +30,12 @@ public class DatePreparation : MonoBehaviour
         }
     }
 
-    public void PickUpItem(PickableItems items, bool equip)
+    public void PickUpItem(PickableItems items, bool equip, bool addPoints)
     {
         foreach (var collectable in collectablesList.Where(collectable => collectable.type == items))
         {
             pickUpSound.Play();
-            itemCounter.Add(1);
+            if(addPoints){itemCounter.Add(1);}
             collectable.item.SetActive(equip);
             if (collectable.type == PickableItems.Shoes)
             {
@@ -48,8 +47,8 @@ public class DatePreparation : MonoBehaviour
     public void SwapHairStyle()
     {
         pickUpSound.Play();
-        PickUpItem(PickableItems.OldHairstyle, false);
-        PickUpItem(PickableItems.NewHairstyle, true);
+        PickUpItem(PickableItems.OldHairstyle, false, true);
+        PickUpItem(PickableItems.NewHairstyle, true, false);
     }
     
     [System.Serializable]
