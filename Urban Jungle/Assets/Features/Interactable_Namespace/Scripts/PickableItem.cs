@@ -18,7 +18,7 @@ public class PickableItem : MonoBehaviour
             }
             else
             {
-                datePreparation.PickUpItem(pickableItems, true);
+                datePreparation.PickUpItem(pickableItems, true, true);
             }
         }
     }

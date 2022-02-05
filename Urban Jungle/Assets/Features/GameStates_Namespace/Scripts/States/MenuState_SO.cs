@@ -16,8 +16,14 @@ namespace Features.GameStates_Namespace.Scripts.States
         
         public override void Enter()
         {
-            if (ScenesToLoad.Count == 0) return;
+            //the game starts
+            if (ScenesToLoad.Count == 0)
+            {
+                gameStateController.MusicBehaviour.Enable(fadeTime);
+                return;
+            }
             
+            //the game has to unload the game scenes
             ShowFadeMenu(() =>
             {
                 gameStateController.CanvasManager.AddCanvas(swapMenu);
@@ -31,13 +37,14 @@ namespace Features.GameStates_Namespace.Scripts.States
                 SceneManager.UnloadSceneAsync("Character");
                 SceneManager.UnloadSceneAsync("Smartphone");
                 SceneManager.UnloadSceneAsync("IngameTimer");
+                SceneManager.UnloadSceneAsync("Music");
 
                 ScenesToLoad[ScenesToLoad.Count - 1].completed += _ =>
                 {
                     HideFadeMenu(() =>
                     {
                         ScenesToLoad.Clear();
-                        gameStateController.MusicBehaviour.Enable();
+                        gameStateController.MusicBehaviour.Enable(fadeTime);
                     });
                 };
             });
@@ -59,6 +66,7 @@ namespace Features.GameStates_Namespace.Scripts.States
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("Character",LoadSceneMode.Additive));
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("Smartphone",LoadSceneMode.Additive));
                 ScenesToLoad.Add(SceneManager.LoadSceneAsync("IngameTimer",LoadSceneMode.Additive));
+                ScenesToLoad.Add(SceneManager.LoadSceneAsync("Music",LoadSceneMode.Additive));
 
                 ScenesToLoad[ScenesToLoad.Count - 1].completed +=  _ =>
                 {
