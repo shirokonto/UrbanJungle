@@ -21,7 +21,7 @@ namespace Features.UI_Namespace
         private int _endPoints;
         void Awake()
         {
-            ResetPoints();
+              ResetPoints();
         }
 
         public void SetEndPoints()
@@ -39,7 +39,7 @@ namespace Features.UI_Namespace
             timeLeftTxt.text = GetTimeLeft();
             senderTxt.text = _timePoints <= 0 ? "Wilma" : "Alex";
             itemCounterTxt.text = itemCounter.Get().ToString();
-            ResetPoints();
+            ResetItems();
         }
 
         //If there is no more time left, item points are deducted in ascending order (10% to 50%)
@@ -79,8 +79,12 @@ namespace Features.UI_Namespace
         private void ResetPoints()
         {
             _itemPoints = _timePoints = _endPoints = 0;
-            itemCounter.Set(0);
             timeLeft.Set(0);
+        }
+
+        private void ResetItems()
+        {
+            itemCounter.Set(0);
         }
     }
 }
