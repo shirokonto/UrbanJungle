@@ -192,7 +192,8 @@ namespace Features.Character_Namespace.Scripts
 			bool any = false;
 			foreach (Collider groundedCollider in _groundedColliders)
 			{
-				if (1 << groundedCollider.gameObject.layer == layerMask)
+				//condition from: https://www.codegrepper.com/code-examples/csharp/unity+check+if+layer+is+in+layermask
+				if ((layerMask.value & (1 << groundedCollider.gameObject.layer)) > 0)
 				{
 					floorCollider = groundedCollider;
 					any = true;
