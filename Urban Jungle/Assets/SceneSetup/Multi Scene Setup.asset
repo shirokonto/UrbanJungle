@@ -53,3 +53,7 @@ MonoBehaviour:
     m_IsLoaded: 1
     m_IsActive: 0
     m_IsSubScene: 0
+  - m_Path: Assets/SceneSetup/Music.unity
+    m_IsLoaded: 1
+    m_IsActive: 0
+    m_IsSubScene: 0
