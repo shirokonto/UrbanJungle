@@ -1,4 +1,4 @@
-# Urban Jungle
+# Wilma On Edge
 A third-person 3d platformer made in Unity using C# for a course project at HTW Berlin, Germany. :video_game:
 
 After a long night of partying, the chaotic Wilma wakes up in her room and remembers that
@@ -11,7 +11,7 @@ The pre-release can be downloaded [here](https://github.com/shirokonto/UrbanJung
 ![WilmaRuns](https://user-images.githubusercontent.com/57158200/151724072-a355c962-94cc-47d5-b1b3-b378a9bf6538.gif)
 
 ## Idea :bulb:
-Urban Jungle was inspired by Mirror's Edge and Infamous, where the player parkours over the roofs of 'The City' and Seattle. In our brainstorming session we planned the features, which we could achieve together in five weeks. 
+Wilma On Edge (working title: Urban Jungle) was inspired by Mirror's Edge and Infamous, where the player parkours over the roofs of 'The City' and Seattle. In our brainstorming session we planned the features, which we could achieve together in five weeks. 
 
 ## How to play (Controls) :joystick: 
 ### Keyboard
@@ -28,8 +28,7 @@ Urban Jungle was inspired by Mirror's Edge and Infamous, where the player parkou
 * Look with Right Stick
 
 ## Level Sketch :clipboard:
-<img width="653" alt="LevelSketch" src="https://user-images.githubusercontent.com/57158200/151640875-69ae39d2-ed8c-4d47-90ad-ba74574af82e.jpeg">
-
+![IMG_9277](https://user-images.githubusercontent.com/57158200/152856743-3ca1ec29-fff2-48f1-9ee0-f938503c7208.jpg)
 
 ## Team :busts_in_silhouette:
 
