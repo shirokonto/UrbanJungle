@@ -39,7 +39,8 @@ namespace Features.Character_Namespace.Scripts
 		[Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
 		[SerializeField] private bool grounded = true;
 		[Tooltip("Useful for rough ground")]
-		[SerializeField] private float groundedOffset = -0.1f;
+		[SerializeField] private float groundedOffset1 = -0.15f;
+		[SerializeField] private float groundedOffset2 = -0.25f;
 		[Tooltip("The radius of the grounded check. Should match the radius of the CharacterController")]
 		[SerializeField] private float groundedRadius = 0.2f;
 		[Tooltip("What layers the character uses as ground")]
@@ -106,7 +107,7 @@ namespace Features.Character_Namespace.Scripts
 			_bounceTimeoutDelta -= Time.deltaTime;
 			switch (grounded)
 			{
-				case true when _animatorStateMachine.GetCurrentState() is AirState:
+				case true when _animatorStateMachine.GetCurrentState() is AirState || _animatorStateMachine.GetCurrentState() is JumpState:
 					if (IsGroundedToLayer(bounceLayer, out Collider floorCollider))
 					{
 						if (_bounceTimeoutDelta > 0f) return;
@@ -164,9 +165,10 @@ namespace Features.Character_Namespace.Scripts
 		{
 			// set sphere position, with offset
 			Vector3 position = transform.position;
-			Vector3 spherePosition = new Vector3(position.x, position.y - groundedOffset, position.z);
-			
-			_groundedColliders = Physics.OverlapSphere(spherePosition, groundedRadius, groundLayers,
+			Vector3 spherePosition1 = new Vector3(position.x, position.y - groundedOffset1, position.z);
+			Vector3 spherePosition2 = new Vector3(position.x, position.y - groundedOffset2, position.z);
+
+			_groundedColliders = Physics.OverlapCapsule(spherePosition2, spherePosition1, groundedRadius, groundLayers,
 				QueryTriggerInteraction.Ignore);
 
 			grounded = _groundedColliders.Length != 0;
@@ -178,7 +180,8 @@ namespace Features.Character_Namespace.Scripts
 		
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Vector3 position = transform.position;
-			Gizmos.DrawSphere(new Vector3(position.x, position.y - groundedOffset, position.z), groundedRadius);
+			Gizmos.DrawSphere(new Vector3(position.x, position.y - groundedOffset1, position.z), groundedRadius);
+			Gizmos.DrawSphere(new Vector3(position.x, position.y - groundedOffset2, position.z), groundedRadius);
 		}
 
 		public bool IsGrounded() => grounded;
