@@ -6,7 +6,7 @@ she have to meet her date in half an hour at Pizza Plaza but oh my, the door won
 Her only way seems to be through the window over the city's rooftops. Maybe she finds something to dress to make a better impression on the date.
 Your goal is to get to the date as quickly as possible within the time limit and pick up as many items as possible. 
 
-The pre-release can be downloaded [here](https://github.com/shirokonto/UrbanJungle/blob/main/README.md)(Latest version: Version 1.0.0).
+The pre-release can be downloaded [here](https://github.com/shirokonto/UrbanJungle/releases)(Latest version: Version 1.0.0).
 
 ![WilmaRuns](https://user-images.githubusercontent.com/57158200/151724072-a355c962-94cc-47d5-b1b3-b378a9bf6538.gif)
 
