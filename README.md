@@ -82,3 +82,6 @@ We are aMazed and we’ve teamed up to develop this 3D game for the course Game 
 * Ryan Hipple: [Unite2017](https://github.com/roboryantron/Unite2017)
 * Reckless Cowboys: [MultiScene: Save multi-scene configurations](https://github.com/RecklessCowboys/MultiScene)
 * Roman Papush: [Ultimate Clouds with Shader Graph in Unity, Made Easy [Tutorial]](https://www.youtube.com/watch?v=Y7r5n5TsX_E)
+* miloslavsy9000: [Hand painted wood planks texture Texture](https://www.cgtrader.com/free-3d-models/textures/architectural-textures/hand-painted-wood-planks-texture)
+* sai pavan: [Low Poly Art Timelapse - Blender3d "FLOATING ISLAND"](https://cdnb.artstation.com/p/assets/images/images/016/333/245/large/sai-pavan-op2.jpg?1551778380)
+* chanin suasungnern: Blueberry Day [ ChaninS Character Design](https://www.artstation.com/artwork/rAR9OO)
