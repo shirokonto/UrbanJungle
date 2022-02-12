@@ -75,6 +75,7 @@ We are aMazed and we’ve teamed up to develop this 3D game for the course Game 
 * Unity Technologies: [Standard Assets (for Unity 2018.4)](https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-for-unity-2018-4-32351)
 * Avionx: [Skybox Series Free](https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633)
 * Unity Technologies: [Starter Assets - Third Person Character Controller](https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526)
+* VioletBoom: [Hair Brush](https://sketchfab.com/3d-models/hair-brush-77dbf9d035cc45f09fe771a72462f89a)
 
 :wrench: **Utils**
 * Mixamo: [Animation for 3D Characters](https://www.mixamo.com/#/)
