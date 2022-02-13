@@ -86,3 +86,5 @@ We are aMazed and we’ve teamed up to develop this 3D game for the course Game 
 * miloslavsy9000: [Hand painted wood planks texture Texture](https://www.cgtrader.com/free-3d-models/textures/architectural-textures/hand-painted-wood-planks-texture)
 * sai pavan: [Low Poly Art Timelapse - Blender3d "FLOATING ISLAND"](https://cdnb.artstation.com/p/assets/images/images/016/333/245/large/sai-pavan-op2.jpg?1551778380)
 * chanin suasungnern: Blueberry Day [ ChaninS Character Design](https://www.artstation.com/artwork/rAR9OO)
+* EngiGames: [Best practices: Controlling buttons in Unity!](https://www.youtube.com/watch?v=U8XiDji23U0&list=PLetFbUN1HtXRd0ujDTo425RGp3iAFo4fY&index=3)
+* EngiGames: [Best Practices: Controlling your game menus in Unity!](https://www.youtube.com/watch?v=vmKxLibGrMo)
