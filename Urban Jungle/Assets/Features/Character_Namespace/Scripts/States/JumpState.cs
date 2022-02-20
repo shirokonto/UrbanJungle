@@ -1,3 +1,4 @@
+using Features.GameStates_Namespace.Scripts;
 using UnityEngine;
 
 namespace Features.Character_Namespace.Scripts.States
@@ -5,13 +6,20 @@ namespace Features.Character_Namespace.Scripts.States
     [CreateAssetMenu]
     public class JumpState : AnimatorState_SO
     {
+        [SerializeField] private float exitTime;
+        [SerializeField] private AnimatorState_SO exitTimeStateSwitch;
+        
         [Tooltip("The height the player can jump")]
         [SerializeField] private float jumpHeight = 1.2f;
 
         [SerializeField] private float MaxAirSpeed = 10f;
+
+        private float _exitTimeDelta;
         
         protected override void Enter()
         {
+            _exitTimeDelta = 0;
+            
             // the square root of H * -2 * G = how much velocity needed to reach desired height
             _manager.VerticalVelocity = Mathf.Sqrt(jumpHeight * -2f * _manager.gravity);
 
@@ -31,6 +39,12 @@ namespace Features.Character_Namespace.Scripts.States
             base.Execute();
             
             ApplyGravity();
+
+            _exitTimeDelta += Time.deltaTime;
+            if (_exitTimeDelta >= exitTime)
+            {
+                _manager.RequestState(exitTimeStateSwitch);
+            }
         }
         
         public override void OnAnimatorMove()
